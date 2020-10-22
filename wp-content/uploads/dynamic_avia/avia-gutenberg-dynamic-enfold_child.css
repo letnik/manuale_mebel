@@ -1,0 +1,41 @@
+
+
+
+.editor-block-list__block,
+.editor-block-list__block p {background-color:#ffffff; color:#000000; font-size:15px;}
+.editor-block-list__block h1,
+.editor-block-list__block h2,
+.editor-block-list__block h3,
+.editor-block-list__block h4,
+.editor-block-list__block h5,
+.editor-block-list__block h6 {color:#000000;}
+.editor-post-title__block textarea {color:#7a4093; background-color:#e7cfe0;}
+.editor-block-list__block a,
+.editor-block-list__block strong,
+.editor-block-list__block b,
+.editor-block-list__block b a,
+.editor-block-list__block strong a {color:#000000;}
+.editor-block-list__block .wp-block-heading,
+.editor-post-title__block textarea,
+.wc-block-featured-product__wrapper h2,
+.wc-block-featured-category__wrapper h2 {font-family:'montserrat', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;}
+.editor-block-list__block,
+.wc-block-all-reviews div,
+.wc-block-reviews-by-category div,
+.wc-block-featured-product__wrapper,
+.wc-block-grid ul,
+.wc-block-product-categories ul,
+.wc-block-product-categories div {font-family:'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;}
+.wc-block-grid .wc-block-grid__product-title,
+.wc-block-grid .wc-block-grid__product-price {color: #000000;}
+.wc-block-grid .wc-block-grid__product-price del {color: #a3a3a3;}
+.wc-block-grid .wp-block-button a,
+.wc-block-featured-product__wrapper .wp-block-button .wp-block-button__link,
+.wc-block-featured-category__wrapper .wp-block-button .wp-block-button__link,
+.wc-block-load-more .wp-block-button__link {background-color: #000000; color: #ffffff; border-color: #000000;}
+.wc-block-featured-product__wrapper .wp-block-button.is-style-outline .wp-block-button__link,
+.wc-block-featured-category__wrapper .wp-block-button.is-style-outline .wp-block-button__link {background-color: transparent;}
+.wc-block-grid .wp-block-button a:hover,
+.wc-block-featured-product__wrapper .wp-block-button .wp-block-button__link:hover,
+.wc-block-featured-category__wrapper .wp-block-button .wp-block-button__link:hover,
+.wc-block-load-more .wp-block-button__link:hover {background-color: #f1be8c; color: #ffffff; border-color: #d09c6a;}

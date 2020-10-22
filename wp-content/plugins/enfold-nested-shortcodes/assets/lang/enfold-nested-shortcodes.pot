@@ -1,0 +1,217 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Enfold - Nested Shortcodes\n"
+"POT-Creation-Date: 2017-01-08 20:08+0100\n"
+"PO-Revision-Date: 2017-01-08 20:08+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.10\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-WPHeader: enfold-nested-shortcodes.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/controller/adminscript.php:144 includes/controller/metabox.php:121
+msgid "Copy"
+msgstr ""
+
+#: includes/controller/adminscript.php:145
+msgid "Copied to clipboard"
+msgstr ""
+
+#: includes/controller/adminscript.php:146
+msgid "Press CMD + C on the Mac, or STRG + C on Windows"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: includes/controller/initialize.php:84
+msgid "Enfold - Nested Shortcodes"
+msgstr ""
+
+#: includes/controller/initialize.php:132
+msgid "The PHP version must be at least 5.4 for this plugin to work."
+msgstr ""
+
+#: includes/controller/initialize.php:164
+msgid "The Enfold Theme must be active for this plugin to work."
+msgstr ""
+
+#: includes/controller/initialize.php:171
+msgid " Error(s): "
+msgstr ""
+
+#: includes/controller/initialize.php:173
+msgid "The plugin has been disabled. Please fix the error(s) and try again."
+msgstr ""
+
+#: includes/controller/metabox.php:93 includes/controller/posttype.php:93
+msgid "Enfold Shortcode"
+msgstr ""
+
+#: includes/controller/metabox.php:122
+msgid "Add a title and save the post."
+msgstr ""
+
+#: includes/controller/optiontab.php:86
+msgid "Nested Shortcodes"
+msgstr ""
+
+#: includes/controller/optiontab.php:109
+msgid "Enfold - Nested Shortcodes: Settings"
+msgstr ""
+
+#: includes/controller/optiontab.php:110
+msgid ""
+"Fill in your Envato credentials for automatic updates and determine whether "
+"to delete your data when uninstalling. If you have already registered your "
+"data for Theme Updates and these data are the same as those you used to buy "
+"\"Enfold - Nested Shortcodes\", you do not need to enter anything in the "
+"fields below."
+msgstr ""
+
+#: includes/controller/optiontab.php:120
+msgid "Your Envato User Name"
+msgstr ""
+
+#: includes/controller/optiontab.php:121
+msgid "Enter your user name with which you purchased this item."
+msgstr ""
+
+#: includes/controller/optiontab.php:131
+msgid "Your Envato API-Key"
+msgstr ""
+
+#: includes/controller/optiontab.php:132
+msgid "Here you can enter your API-Key."
+msgstr ""
+
+#: includes/controller/optiontab.php:142
+msgid "Delete data when uninstalling"
+msgstr ""
+
+#: includes/controller/optiontab.php:143
+msgid ""
+"Here you can choose to delete all data during deinstallation. Please note "
+"that this process can not be undone. Enfold must be enabled for this action "
+"to access the options."
+msgstr ""
+
+#: includes/controller/posttype.php:122 includes/controller/posttype.php:124
+#: includes/controller/posttype.php:125
+msgid "Shortcodes"
+msgstr ""
+
+#: includes/controller/posttype.php:123
+msgid "Shortcode"
+msgstr ""
+
+#: includes/controller/posttype.php:126 includes/controller/posttype.php:128
+msgid "New Shortcode"
+msgstr ""
+
+#: includes/controller/posttype.php:127
+msgid "Add new Shortcode"
+msgstr ""
+
+#: includes/controller/posttype.php:129
+msgid "Edit Shortcode"
+msgstr ""
+
+#: includes/controller/posttype.php:130
+msgid "View Shortcode"
+msgstr ""
+
+#: includes/controller/posttype.php:131
+msgid "All Shortcodes"
+msgstr ""
+
+#: includes/controller/posttype.php:132
+msgid "Search Shortcode"
+msgstr ""
+
+#: includes/controller/posttype.php:133
+msgid "Parent Shortcode"
+msgstr ""
+
+#: includes/controller/posttype.php:134
+msgid "Shortcode not found"
+msgstr ""
+
+#: includes/controller/posttype.php:135
+msgid "No Shortcodes in trash"
+msgstr ""
+
+#: includes/controller/posttype.php:142
+msgid "Shortcode Description"
+msgstr ""
+
+#: includes/controller/shortcodes.php:83
+msgid "Please check your used title.."
+msgstr ""
+
+#: includes/controller/tinymce.php:176
+msgid "Simply choose your shortcode from dropdown and hit ok."
+msgstr ""
+
+#: includes/controller/tinymce.php:177
+msgid "Nothing Selected"
+msgstr ""
+
+#: includes/controller/tinymce.php:178
+msgid "No shortcodes available"
+msgstr ""
+
+#: includes/controller/update/envato.php:104
+#: includes/controller/update/envato.php:141
+#: includes/controller/update/envato.php:197
+msgid "Please enter your Envato Marketplace Username."
+msgstr ""
+
+#: includes/controller/update/envato.php:108
+msgid "Please enter your Envato Marketplace API Key."
+msgstr ""
+
+#: includes/controller/update/envato.php:133
+msgid "The API \"set\" is a required parameter."
+msgstr ""
+
+#: includes/controller/update/envato.php:225
+msgid "The Envato Marketplace \"item ID\" is a required parameter."
+msgstr ""
+
+#: includes/controller/update/update.php:177
+msgid " There were errors: "
+msgstr ""
+
+#: includes/view/loader.php:123
+msgid "The file does not exist.."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://ensc.indikator-design.de/enfold-nested-shortcodes-documentation-and-"
+"faq/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Enfold - Nested Shortcodes gives you the possibility to nest Enfold "
+"shortcodes in a very simple and comfortable way."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Bruno Bouyajdad | Indikator Design"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://indikator-design.de"
+msgstr ""
