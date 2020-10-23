@@ -1,0 +1,297 @@
+@import 'parts/variables'
+@import 'parts/display'
+@import 'parts/layout'
+// @import 'fonts'
+
+
+@import 'parts/top_nav'
+@import 'parts/header'
+
+
+#top .home_page_ts .avia-slideshow 
+  min-height: 450px
+  max-height: 450px
+  // height: 450px !important
+
+
+#avia-menu .menu-item .avia-menu-text:before 
+  font-family: 'fontello'
+  margin-right: 15px
+  font-size: 30px
+
+#avia-menu .current-menu-item
+  &.menu-item-chairs
+    background: red
+  &.menu-item-chairs-2
+    background: yellow
+  &.menu-item-chairs-2
+    background: blue
+  &.menu-item-chairs-2
+    background: green
+  &.menu-item-chairs-2
+    background: pink
+  &.menu-item-chairs-2
+    background: cyan
+  &.menu-item-chairs-2
+    background: orange
+  
+.menu-item-chairs .avia-menu-text:before 
+  content: '\e837'
+
+.menu-item-chairs-2 .avia-menu-text:before 
+  content: '\e838'
+
+#avia-menu .menu-item .avia-menu-text 
+  display: flex !important
+  align-items: center
+
+
+
+.top-nav 
+  position: fixed
+  top: 0
+  z-index: 200
+  width: calc(100% - 300px)
+  display: flex
+  justify-content: space-between
+  text-align: center
+  background: $top_nav
+  .page-navigation 
+    ul 
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 0
+      li 
+        padding: 21px 26px
+        font-family: $ff-montserrat
+        a 
+          color: #000
+
+
+#breadcrumbs
+  span
+    span
+      a, strong
+        font-family: $ff-montserrat
+        font-size: 17px
+        color: grey
+      .breadcrumb_last
+        font-family: $ff-montserrat
+        font-size: 15px
+        color: grey
+
+
+
+
+.icon-home-custom
+  &:before
+    font-family: 'fontello'
+    content: '\e840'
+    font-size: 26px
+    color: #000
+
+
+
+#main 
+  padding-top: 60px
+
+
+
+#top
+  .navigation-accaunt 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .navigation-accaunt_item 
+      padding: 10px 26px
+      position: relative
+      
+      &.phone 
+        a 
+          font-size: 14px
+          color: #000   
+      &.accaunt
+        a.log_ico 
+          span 
+            &:before 
+              font-family: 'fontello'
+              content: '\e843'
+              font-size: 26px
+              color: #000
+      &.wishlist 
+        a.wishlist_products_counter
+          position: relative
+          &:before 
+            font-size: 26px
+            color: #000
+          
+          .wishlist_products_counter_text 
+            display: none
+          
+          .wishlist_products_counter_number 
+            position: absolute
+            top: -13px
+            left: 17px
+            background: #FFD523
+            color: $text_dark
+            border-radius: 50%
+            width: 20px
+            height: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+      &.cart
+        .menu-item.cart_dropdown
+          position: static
+          border: none
+          a
+            position: relative
+            &:nth-child(1)
+              font-size: 20px
+            .av-cart-counter
+              position: absolute
+              top: 19px
+              left: 26px
+              background: #FFD523
+              color: $text_dark
+              border-radius: 50%
+              width: 20px
+              height: 20px
+              display: flex
+              align-items: center
+              justify-content: center
+      
+              
+#top
+  .quantity
+    input
+      border-radius: 10% !important
+      &.minus
+        background: green !important
+    
+
+          
+
+
+
+
+      
+.slideshow_caption
+  padding-left: 0
+  padding-right: 0
+  width: 48%
+  
+
+
+.avia-caption-title.slider_title_hp 
+  width: 100%
+  display: block
+  .sl_title 
+    line-height: 61px
+    font-size: 50px
+    padding: 8px 61px 11px 35px
+    background: #81A3B5
+    display: inline-block
+  .sl_subtitle 
+    font-size: 35px
+    line-height: 43px
+    padding: 18px 69px 19px 35px
+    background: #A1B8C5
+    display: inline-block
+
+
+
+#top
+  .main_color
+    .avia-button
+      color: #000
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 20px
+      // padding: 13px 65px
+      text-transform: none
+    .avia-multi-slideshow-button.avia-slideshow-button
+      margin-right: 0
+      margin-left: 30px
+
+.html_header_sidebar #header .av-main-nav > li
+  margin: 0
+  // padding: 1% 13%
+  a
+    border: none
+    padding: 20px 30px
+    &:hover
+        background: red
+  &:nth-child(1)
+    a
+      &:hover
+        background: red
+  &:nth-child(2)
+    a
+      &:hover
+        background: yellow
+  &:nth-child(3)
+    a
+      &:hover
+        background: blue
+  &:nth-child(4)
+    a
+      &:hover
+        background: green
+  &:nth-child(5)
+    a
+      &:hover
+        background: pink
+  &:nth-child(6)
+    a
+      &:hover
+        background: cyan
+  &:nth-child(7)
+    a
+      &:hover
+        background: orange
+
+#menu-navigacziya-po-straniczam li
+  &:nth-child(1)
+    a:hover
+      color: red
+  &:nth-child(2)
+    a:hover
+      color: yellow
+  &:nth-child(3)
+    a:hover
+      color: blue
+  &:nth-child(4)
+    a:hover
+      color: pink
+  &:nth-child(5)
+    a:hover
+      color: cyan
+
+
+
+
+#menu-navigacziya-po-straniczam li.current-menu-item 
+  &#menu-item-673
+    a
+      color: red
+  &#menu-item-828
+    a
+      color: yellow
+  &#menu-item-830
+    a
+      color: blue
+  &#menu-item-827
+    a
+      color: pink
+  &#menu-item-831
+    a
+      color: cyan
+
+.widget_product_categories
+  li
+    a
+      background: none
