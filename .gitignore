@@ -19,6 +19,7 @@ _tmp/_oss/
 # ignore specific themes
 wp-content/themes/twenty*/
 wp-content/themes/enfold/
+_tmp_my/
 wp-admin
 
 # ignore node dependency directories
