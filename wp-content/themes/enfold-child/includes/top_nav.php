@@ -14,7 +14,7 @@
             $output .= '</span>' . do_shortcode("[ti_wishlist_products_counter]") . '</div>';
             echo $output;
         ?>
-        <?php
+        <?php 
             wp_nav_menu( [
                 'container_class' => 'menu',
                 'menu'  => '34',
