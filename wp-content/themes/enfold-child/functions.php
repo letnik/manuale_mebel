@@ -10,9 +10,6 @@ add_action('avia_builder_mode', 'builder_set_debug');
 
 add_filter('show_admin_bar', '__return_false');
 
-
-
-
 function sl_add_scripts() 
 {
     //Custom JS
@@ -84,7 +81,7 @@ function popup_inline() {
         });
         });
         </script>
-
+    
     <?php
 }
 
