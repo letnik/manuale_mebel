@@ -14,7 +14,7 @@
         ?>
    </div>
    <div id="access-2" class="navigation-accaunt d-flex">
-        <div class="phone header-phone">
+        <div class="navigation-accaunt-item header-phone">
 
             <!-- header-phone -->
             <?php
@@ -25,13 +25,13 @@
 
         </div>
 
-        <div class="header-wishlist">
+        <div class="navigation-accaunt-item header-wishlist">
 
             <?php echo do_shortcode("[ti_wishlist_products_counter]"); ?>
 
         </div>
 
-        <div class="header-cart">
+        <div class="navigation-accaunt-item header-cart">
 
             <!-- cart -->
             <?php
