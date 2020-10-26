@@ -2,7 +2,7 @@
 
 ?>
 
-<div class="top-nav">    
+<div class="top-nav d-flex jc-between">    
     <div id="access-1" class="page-navigation">
 
         <?php
@@ -13,7 +13,7 @@
             ]);
         ?>
    </div>
-   <div id="access-2" class="navigation-accaunt">
+   <div id="access-2" class="navigation-accaunt d-flex">
         <div class="phone header-phone">
 
             <!-- header-phone -->
