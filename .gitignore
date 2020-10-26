@@ -14,7 +14,7 @@ wp-content/plugins/hello.php
 wp-content/plugins/akismet
 wp-content/plugins/index.php
 _tmp/_oss/
-!wp-content/backupwordpress*
+# !wp-content/backupwordpress*
 
 # ignore specific themes
 wp-content/themes/twenty*/
