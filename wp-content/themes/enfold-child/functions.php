@@ -37,15 +37,6 @@ function callback_avia_logo() {
 }
 
 
-// Дозволяєм SVG
-function my_myme_types($mime_types){
-    $mime_types['svg'] = 'image/svg+xml'; // поддержка SVG
-    return $mime_types;
-}
-add_filter('upload_mimes', 'my_myme_types', 1, 1);
-
-
-
 // top nav start
 
 add_action( 'ava_after_main_container', 'add_top_menu' );
@@ -101,3 +92,63 @@ function show_phone_1() {
     return $output;
 }
 
+
+
+// Дозволяєм завантаження усіх файлів
+// define( 'ALLOW_UNFILTERED_UPLOADS', true );
+
+// Дозволяєм завантаження SVG
+function my_myme_types($mime_types){
+    $mime_types['svg'] = 'image/svg+xml'; // поддержка SVG
+    return $mime_types;
+}
+add_filter('upload_mimes', 'my_myme_types', 1, 1);
+
+
+
+add_filter( 'wp_check_filetype_and_ext', 'fix_svg_mime_type', 10, 5 );
+
+# Исправление MIME типа для SVG файлов.
+function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
+
+	// WP 5.1 +
+	if( version_compare( $GLOBALS['wp_version'], '5.1.0', '>=' ) )
+		$dosvg = in_array( $real_mime, [ 'image/svg', 'image/svg+xml' ] );
+	else
+		$dosvg = ( '.svg' === strtolower( substr($filename, -4) ) );
+
+	// mime тип был обнулен, поправим его
+	// а также проверим право пользователя
+	if( $dosvg ){
+
+		// разрешим
+		if( current_user_can('manage_options') ){
+
+			$data['ext']  = 'svg';
+			$data['type'] = 'image/svg+xml';
+		}
+		// запретим
+		else {
+			$data['ext'] = $type_and_ext['type'] = false;
+		}
+
+	}
+
+	return $data;
+}
+
+
+
+add_filter( 'wp_prepare_attachment_for_js', 'show_svg_in_media_library' );
+
+# Формирует данные для отображения SVG как изображения в медиабиблиотеке.
+function show_svg_in_media_library( $response ) {
+	if ( $response['mime'] === 'image/svg+xml' ) {
+		// С выводом названия файла
+		$response['image'] = [
+			'src' => $response['url'],
+		];
+	}
+
+	return $response;
+}
