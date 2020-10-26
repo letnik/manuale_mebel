@@ -21,6 +21,23 @@
                 $phone_1 = get_field('sd_phone_1', 'options');
                 $phone = '<a href="tel:' . sl_tel($phone_1) . '">' . $phone_1 . '</a>';
                 echo $phone;
+
+                function my_account_loginout_link() {    
+
+                    if (is_user_logged_in() ) {  
+                        global $wp; 
+                        $current_user = get_user_by( 'id', get_current_user_id() ); 
+                        // echo '<a class="nav-link" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'shop' ) ) ) .'">выйти</a>'; 
+                        
+                        echo '<strong><a class="nav-link" href="'. get_permalink( wc_get_page_id( 'myaccount' ) ) .'">'.$current_user->display_name.'</a></strong>';    
+                    }   
+                    elseif (!is_user_logged_in() ) {        
+                        echo '<a class="nav-link" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">Авторизация/Регистрация</a>';   
+                    }
+                    
+                }
+                
+                my_account_loginout_link();   
             ?>
 
         </div>
