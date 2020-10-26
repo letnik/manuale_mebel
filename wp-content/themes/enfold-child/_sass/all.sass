@@ -217,42 +217,39 @@
       margin-right: 0
       margin-left: 30px
 
+#header
+  box-shadow: 4px 0px 10px rgba(56, 85, 119, 0.15)
+
+
 .html_header_sidebar #header .av-main-nav > li
   margin: 0
   // padding: 1% 13%
   a
     border: none
-    padding: 20px 30px
+    padding: 15px 0 15px 30px
     &:hover
-        background: red
-  &:nth-child(1)
-    a
-      &:hover
-        background: red
-  &:nth-child(2)
-    a
-      &:hover
-        background: yellow
-  &:nth-child(3)
-    a
-      &:hover
-        background: blue
-  &:nth-child(4)
-    a
-      &:hover
-        background: green
-  &:nth-child(5)
-    a
-      &:hover
-        background: pink
-  &:nth-child(6)
-    a
-      &:hover
-        background: cyan
-  &:nth-child(7)
-    a
-      &:hover
-        background: orange
+      background: #EDFCFF
+    .avia-menu-text
+      .menu-image-hover-wrapper
+        position: relative
+        width: 35px
+        height: 25px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+          // width: 100%
+        img.hovered-image
+          // background: #26f501
+          position: absolute
+          margin-left: 0!important
+      .menu-image-title-after.menu-image-title 
+        padding-left: 40px
+
+      
+      
+
+ 
 
 #menu-navigacziya-po-straniczam li
   &:nth-child(1)
@@ -295,3 +292,14 @@
   li
     a
       background: none
+
+
+.html_header_left #main
+  border-left: none
+
+html.html_header_sidebar
+  .logo
+    border-bottom: none
+  #header 
+    .av-main-nav
+      padding: 0
