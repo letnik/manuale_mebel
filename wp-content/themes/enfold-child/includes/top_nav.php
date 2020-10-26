@@ -14,24 +14,33 @@
         ?>
    </div>
    <div id="access-2" class="navigation-accaunt">
-        
-        <!-- header-phone -->
-        <?php
-            $phone_1 = get_field('sd_phone_1', 'options');
+        <div class="phone header-phone">
 
-            $phone = '<div class="phone header-phone">';
-            $phone .= '<a href="tel:' . sl_tel($phone_1) . '">' . $phone_1 . '</a>';
-            $phone .= '</div>';
-            echo $phone;
-        ?>
+            <!-- header-phone -->
+            <?php
+                $phone_1 = get_field('sd_phone_1', 'options');
+                $phone = '<a href="tel:' . sl_tel($phone_1) . '">' . $phone_1 . '</a>';
+                echo $phone;
+            ?>
 
-        <!-- cart -->
-        <?php
-            do_action('ava_inside_main_menu'); // todo: replace action with filter, might break user customizations
-            //output the whole menu    
-            echo $output;    
-        ?>
+        </div>
 
+        <div class="header-wishlist">
+
+            <?php echo do_shortcode("[ti_wishlist_products_counter]"); ?>
+
+        </div>
+
+        <div class="header-cart">
+
+            <!-- cart -->
+            <?php
+                do_action('ava_inside_main_menu'); // todo: replace action with filter, might break user customizations
+                //output the whole menu    
+                echo $output;    
+            ?>
+
+        </div>
 
         <?php
             // wp_nav_menu( [
