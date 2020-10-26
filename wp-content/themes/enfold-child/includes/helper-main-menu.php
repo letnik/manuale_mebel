@@ -187,7 +187,7 @@ if($headerS['header_topbar'] == true)
 						    * Hook that can be used for plugins and theme extensions
 						    */
 						    ob_start();
-						    do_action('ava_inside_main_menu'); // todo: replace action with filter, might break user customizations
+						    // do_action('ava_inside_main_menu'); // todo: replace action with filter, might break user customizations
 						    $main_nav .= ob_get_clean();
 						    
 						    if($icon_beside)
