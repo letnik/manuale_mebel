@@ -152,4 +152,14 @@ function show_svg_in_media_library( $response ) {
 }
 
 
+function my_template_loop_product_title(){
+    global $product;
+
+    $dimensions = $product->get_dimensions();
+    $length = $product->get_length();
+    echo  $length;
+
+}
+add_action( 'woocommerce_after_shop_loop_item_title', 'my_template_loop_product_title', 10 );
+
 
