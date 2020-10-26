@@ -13,17 +13,30 @@
   max-height: 450px
   // height: 450px !important
 
-.html_header_sidebar .cart_dropdown 
-    top: 31px !important
-    border-radiu
+#avia-menu .menu-item .avia-menu-text 
+  display: flex !important
+  align-items: center
+
+#breadcrumbs
+  span
+    span
+      a, strong
+        font-family: $ff-montserrat
+        font-size: 17px
+        color: grey
+      .breadcrumb_last
+        font-family: $ff-montserrat
+        font-size: 15px
+        color: grey
 
 #main 
-  padding-top: 60px      
+  padding-top: 60px
+
 .slideshow_caption
   padding-left: 0
   padding-right: 0
   width: 48%
-  
+
 
 .avia-caption-title.slider_title_hp 
   width: 100%
@@ -88,52 +101,6 @@
         padding-left: 40px
 
       
-      
-
- 
-
-#menu-navigacziya-po-straniczam li
-  &:nth-child(1)
-    a:hover
-      color: red
-  &:nth-child(2)
-    a:hover
-      color: yellow
-  &:nth-child(3)
-    a:hover
-      color: blue
-  &:nth-child(4)
-    a:hover
-      color: pink
-  &:nth-child(5)
-    a:hover
-      color: cyan
-
-
-
-
-#menu-navigacziya-po-straniczam li.current-menu-item 
-  &#menu-item-673
-    a
-      color: red
-  &#menu-item-828
-    a
-      color: yellow
-  &#menu-item-830
-    a
-      color: blue
-  &#menu-item-827
-    a
-      color: pink
-  &#menu-item-831
-    a
-      color: cyan
-
-.widget_product_categories
-  li
-    a
-      background: none
-
 
 .html_header_left #main
   border-left: none
@@ -144,3 +111,35 @@ html.html_header_sidebar
   #header 
     .av-main-nav
       padding: 0
+
+
+.top-nav
+  position: fixed
+  top: 0
+  left: 0
+  margin-left: 300px
+  z-index: 200
+  width: calc( 100% - 300px)
+  background: #E5E5E5
+  *
+    box-sizing: border-box
+  #access-1
+    .menu
+      ul 
+        margin: 0
+        li 
+          a
+            display: inline-block
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 19px
+            padding: 26px 28px
+            color: #000
+
+#access-2
+  display: flex
+  align-items: center
+  
+    
