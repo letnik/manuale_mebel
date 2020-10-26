@@ -43,8 +43,6 @@ add_action( 'ava_after_main_container', 'add_top_menu' );
 
 function add_top_menu() {
 
-    $phone_1 = get_field('sd_phone_1', 'options');
-
     //Includes
     require_once 'includes/top_nav.php';
 }
@@ -152,3 +150,6 @@ function show_svg_in_media_library( $response ) {
 
 	return $response;
 }
+
+
+

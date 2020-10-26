@@ -1,4 +1,9 @@
-<div id="access-1" class="page-navigation">
+<?php
+
+?>
+
+<div class="top-nav">    
+    <div id="access-1" class="page-navigation">
 
         <?php
             wp_nav_menu( [
@@ -9,18 +14,31 @@
         ?>
    </div>
    <div id="access-2" class="navigation-accaunt">
+        
+        <!-- header-phone -->
         <?php
-            $output = '<div class="phone header-phone"><span>';
-            $output .= $phone_1;
-            $output .= '</span>' . do_shortcode("[ti_wishlist_products_counter]") . '</div>';
-            echo $output;
+            $phone_1 = get_field('sd_phone_1', 'options');
+
+            $phone = '<div class="phone header-phone">';
+            $phone .= '<a href="tel:' . sl_tel($phone_1) . '">' . $phone_1 . '</a>';
+            $phone .= '</div>';
+            echo $phone;
         ?>
 
+        <!-- cart -->
         <?php
-            wp_nav_menu( [
-                'container_class' => 'menu',
-                'menu'  => '34',
-            ]);
- ?>
+            do_action('ava_inside_main_menu'); // todo: replace action with filter, might break user customizations
+            //output the whole menu    
+            echo $output;    
+        ?>
+
+
+        <?php
+            // wp_nav_menu( [
+                // 'container_class' => 'menu',
+                // 'menu'  => '34',
+            // ]);
+        ?>
       
    </div>
+</div>
