@@ -153,10 +153,24 @@ html.html_header_sidebar
   .header-wishlist
     a 
       &:before
-        font-family: fontello
+        font-family: fontello !important
         font-size: 25px
         color: #000000
-        content: '/0xe800'
+        content: '\e800'
+  .header-cart
+    .cart_dropdown 
+      top: 11px
+      border: none
+      li 
+        a
+          span[data-av_iconfont*=fontello]
+            &:before 
+              font-family: fontello  !important
+              font-size: 25px
+              color: #000000
+              content: '\e80d'
+              
+            
         
 
     
