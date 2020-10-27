@@ -121,6 +121,10 @@ html.html_header_sidebar
   z-index: 200
   width: calc( 100% - 300px)
   background: #E5E5E5
+
+  > .container 
+    &:after
+      display: none
   *
     box-sizing: border-box
   #access-1
@@ -141,35 +145,81 @@ html.html_header_sidebar
 #access-2
   display: flex
   align-items: center
+  .navigation-accaunt-item
+    padding: 0 20px
   .header-phone
-    padding-right: 43px
-    a 
+    a
       font-family: Open Sans
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 19px
       color: #000
-  .header-wishlist
+  .header-accaunt 
     a 
+      span 
+        &:before
+          font-size: 25px
+          color: #000
+
+  .header-wishlist
+    a
+      position: relative
       &:before
         font-family: fontello !important
         font-size: 25px
         color: #000000
         content: '\e800'
+      .wishlist_products_counter_number
+        position: absolute
+        top: -24px
+        left: 19px
+        background: yellow
+        line-height: 0
+        width: 22px
+        height: 22px
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        line-height: 5px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #000
   .header-cart
     .cart_dropdown 
-      top: 11px
+      position: relative
+      top: 0
       border: none
       li 
         a
+          position: relative
           span[data-av_iconfont*=fontello]
             &:before 
               font-family: fontello  !important
               font-size: 25px
               color: #000000
               content: '\e80d'
-              
+          .av-cart-counter.av-active-counter
+            position: absolute
+            top: 9px
+            left: 19px
+            background: yellow
+            line-height: 0
+            width: 22px
+            height: 22px
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 5px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #000
             
         
 
