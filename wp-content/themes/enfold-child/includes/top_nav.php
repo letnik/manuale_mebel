@@ -42,7 +42,7 @@
                             echo '<strong><a class="nav-link" href="'. get_permalink( wc_get_page_id( 'myaccount' ) ) .'"><span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon="" data-av_iconfont="fontello"></span><span class="label">Вход</span></a></strong>';    
                         }   
                         elseif (!is_user_logged_in() ) {        
-                            echo '<a class="nav-link" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '"><span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon="" data-av_iconfont="fontello"></span><span class="label">Выход</span></a>';   
+                            echo '<a class="nav-link" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '"><span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon="" data-av_iconfont="fontello"></span><span class="label">Здраствуйте '.$current_user->display_name.'</span></a>';   
                         }
                         
                     }
