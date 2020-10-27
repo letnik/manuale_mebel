@@ -50,3 +50,4 @@ node_modules/
 /wp-trackback.php
 /xmlrpc.php
 /wp-config.php
+/wp-content/themes/enfold-child/css/all.css
