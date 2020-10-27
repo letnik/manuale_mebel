@@ -157,10 +157,20 @@ html.html_header_sidebar
       color: #000
   .header-accaunt 
     a 
+      display: flex
+      align-items: center
       span 
         &:before
           font-size: 25px
           color: #000
+      .label
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 19px
+        margin-left: 6px
+        color: #000000
 
   .header-wishlist
     a
@@ -172,8 +182,8 @@ html.html_header_sidebar
         content: '\e800'
       .wishlist_products_counter_number
         position: absolute
-        top: -24px
-        left: 19px
+        top: -21px
+        left: 20px
         background: yellow
         line-height: 0
         width: 22px
@@ -199,13 +209,13 @@ html.html_header_sidebar
           span[data-av_iconfont*=fontello]
             &:before 
               font-family: fontello  !important
-              font-size: 25px
+              font-size: 26px
               color: #000000
               content: '\e80d'
           .av-cart-counter.av-active-counter
             position: absolute
-            top: 9px
-            left: 19px
+            top: 11px
+            left: 25px
             background: yellow
             line-height: 0
             width: 22px
@@ -222,5 +232,103 @@ html.html_header_sidebar
             color: #000
             
         
+#top
+  .container_wrap
+    border: none
 
-    
+
+.products
+  .product
+    .inner_product
+      border: none
+      position: relative
+      // width: 292px
+    &:hover
+      box-shadow: 0 3px 16px 1px rgba(0, 0, 0, 0.5)
+    a
+      .inner_product_header
+        padding-right: 15px !important
+        .inner_product_header_cell
+          .category-name
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 16px
+            color: $decoreted_text
+          h2.woocommerce-loop-product__title
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 20px
+            color: #000000
+            padding: 9px 0
+            display: block
+          .attribut-title
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 16px
+            color: #060606
+          .price
+            padding: 9px auto 7px 0
+            del 
+              .woocommerce-Price-amount.amount
+                bdi 
+                  font-family: Open Sans
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 12px
+                  line-height: 16px
+                  color: $decoreted_text
+            .woocommerce-Price-amount.amount
+              bdi 
+                font-family: Open Sans
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                color: #000000
+          .product-attributes-wrap
+            padding: 7px 0 
+            .product-attributes-list
+              .product-attributes-title
+                padding-bottom: 4px
+                span
+                  font-family: Open Sans
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 12px
+                  line-height: 16px
+                  color: #060606
+              .product-size-table
+                padding-bottom: 15px
+                .product-size
+                  padding-right: 25px
+                  .product-size-title
+                    font-family: Open Sans
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 16px
+                    color: $decoreted_text
+                  .product-size-value
+                    font-family: Open Sans
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 16px
+                    color: #000000
+
+
+          .onsale
+            display: none
+          &:before
+
+              
+
+
+
+          
