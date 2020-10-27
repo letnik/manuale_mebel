@@ -153,3 +153,16 @@ function show_svg_in_media_library( $response ) {
 
 // кастомні атрибути в каталозі/сітці товару
 require_once 'includes/woocommerce_custom_attribute.php';
+
+
+
+add_filter( 'loop_shop_per_page', 'truemisha_products_per_page', 20 );
+ 
+function truemisha_products_per_page( $per_page ) {
+ 
+	$per_page = 29;
+	// по умолчанию wc_get_default_products_per_row() * wc_get_default_product_rows_per_page()
+ 
+	return $per_page;
+ 
+}
