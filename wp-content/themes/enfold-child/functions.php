@@ -152,7 +152,7 @@ function show_svg_in_media_library( $response ) {
 }
 
 // кастомні атрибути в каталозі/сітці товару
-require_once 'includes/woocommerce_custom_attribute.php';
+require_once 'includes/woocommerce_customizer.php';
 
 
 
