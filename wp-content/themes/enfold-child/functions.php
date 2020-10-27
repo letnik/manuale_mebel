@@ -139,7 +139,7 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 
 add_filter( 'wp_prepare_attachment_for_js', 'show_svg_in_media_library' );
 
-# Формирует данные для отображения SVG как изображения в медиабиблиотеке.
+# Формирует данные для отображения SVG как изображения в медиа библиотеке.
 function show_svg_in_media_library( $response ) {
 	if ( $response['mime'] === 'image/svg+xml' ) {
 		// С выводом названия файла
@@ -155,9 +155,21 @@ function show_svg_in_media_library( $response ) {
 function my_template_loop_product_title(){
     global $product;
 
-    $dimensions = $product->get_dimensions();
+    // $dimensions = $product->get_dimensions();
+
     $length = $product->get_length();
-    echo  $length;
+    $width = $product->get_width();
+    $height = $product->get_height();
+    $lengthArrt = $product->get_attribute('razmer-mesta-dlinna');
+
+    $custom_attribute = '<div class="d-flex">';
+    $custom_attribute .= '<div>' . $lengthArrt . '</div> x ';
+    // $custom_attribute .= '<div>' . $width . '</div> x ';
+    // $custom_attribute .= '<div>' . $height . '</div>';
+    $custom_attribute .= '</div>';
+
+    
+    echo  $custom_attribute;
 
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'my_template_loop_product_title', 10 );
