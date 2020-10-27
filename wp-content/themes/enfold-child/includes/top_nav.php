@@ -39,10 +39,10 @@
                             $current_user = get_user_by( 'id', get_current_user_id() ); 
                             // echo '<a class="nav-link" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'shop' ) ) ) .'">выйти</a>'; 
                             
-                            echo '<strong><a class="nav-link" href="'. get_permalink( wc_get_page_id( 'myaccount' ) ) .'"><span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon="" data-av_iconfont="fontello"></span></a></strong>';    
+                            echo '<strong><a class="nav-link" href="'. get_permalink( wc_get_page_id( 'myaccount' ) ) .'"><span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon="" data-av_iconfont="fontello"></span><span class="label">'.$current_user->display_name.'</span></a></strong>';    
                         }   
                         elseif (!is_user_logged_in() ) {        
-                            echo '<a class="nav-link" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '"><span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon="" data-av_iconfont="fontello"></span></a>';   
+                            echo '<a class="nav-link" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '"><span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon="" data-av_iconfont="fontello"></span><span class="label">Вход</span></a>';   
                         }
                         
                     }
