@@ -235,100 +235,138 @@ html.html_header_sidebar
 #top
   .container_wrap
     border: none
-
-
-.products
-  .product
-    .inner_product
-      border: none
-      position: relative
-      // width: 292px
-    &:hover
-      box-shadow: 0 3px 16px 1px rgba(0, 0, 0, 0.5)
-    a
-      .inner_product_header
-        padding-right: 15px !important
-        .inner_product_header_cell
-          .category-name
-            font-family: Open Sans
-            font-style: normal
-            font-weight: normal
-            font-size: 12px
-            line-height: 16px
-            color: $decoreted_text
-          h2.woocommerce-loop-product__title
-            font-family: Open Sans
-            font-style: normal
-            font-weight: normal
-            font-size: 15px
-            line-height: 20px
-            color: #000000
-            padding: 9px 0
-            display: block
-          .attribut-title
-            font-family: Open Sans
-            font-style: normal
-            font-weight: normal
-            font-size: 12px
-            line-height: 16px
-            color: #060606
-          .price
-            padding: 9px auto 7px 0
-            del 
-              .woocommerce-Price-amount.amount
-                bdi 
-                  font-family: Open Sans
-                  font-style: normal
-                  font-weight: normal
-                  font-size: 12px
-                  line-height: 16px
-                  color: $decoreted_text
-            .woocommerce-Price-amount.amount
-              bdi 
-                font-family: Open Sans
-                font-style: normal
-                font-weight: normal
-                font-size: 18px
-                line-height: 25px
-                color: #000000
-          .product-attributes-wrap
-            padding: 7px 0 
-            .product-attributes-list
-              .product-attributes-title
-                padding-bottom: 4px
-                span
-                  font-family: Open Sans
-                  font-style: normal
-                  font-weight: normal
-                  font-size: 12px
-                  line-height: 16px
-                  color: #060606
-              .product-size-table
-                padding-bottom: 15px
-                .product-size
-                  padding-right: 25px
-                  .product-size-title
+  .products
+    .product
+      .inner_product
+        border: none
+        position: relative
+        // width: 292px
+      &:hover
+        box-shadow: 0 3px 16px 1px rgba(0, 0, 0, 0.5)
+      .tinvwl-loop-button-wrapper
+        position: absolute
+        top: 0
+        right: 16px
+        z-index: 12
+        width: 25px
+        height: 25px
+      a
+        .inner_product_header
+          padding-right: 15px !important
+          .inner_product_header_cell
+            .category-name
+              font-family: Open Sans
+              font-style: normal
+              font-weight: normal
+              font-size: 12px
+              line-height: 16px
+              color: $decoreted_text
+            h2.woocommerce-loop-product__title
+              font-family: Open Sans
+              font-style: normal
+              font-weight: normal
+              font-size: 15px
+              line-height: 20px
+              color: #000000
+              padding: 9px 0
+              display: block
+            .attribut-title
+              font-family: Open Sans
+              font-style: normal
+              font-weight: normal
+              font-size: 12px
+              line-height: 16px
+              color: #060606
+            .price
+              padding: 9px auto 7px 0
+              del 
+                .woocommerce-Price-amount.amount
+                  bdi 
                     font-family: Open Sans
                     font-style: normal
                     font-weight: normal
                     font-size: 12px
                     line-height: 16px
                     color: $decoreted_text
-                  .product-size-value
+              .woocommerce-Price-amount.amount
+                bdi 
+                  font-family: Open Sans
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 18px
+                  line-height: 25px
+                  color: #000000
+            .product-attributes-wrap
+              padding: 7px 0 
+              .product-attributes-list
+                .product-attributes-title
+                  padding-bottom: 4px
+                  span
                     font-family: Open Sans
                     font-style: normal
                     font-weight: normal
                     font-size: 12px
                     line-height: 16px
-                    color: #000000
+                    color: #060606
+                .product-size-table
+                  padding-bottom: 15px
+                  .product-size
+                    padding-right: 25px
+                    .product-size-title
+                      font-family: Open Sans
+                      font-style: normal
+                      font-weight: normal
+                      font-size: 12px
+                      line-height: 16px
+                      color: $decoreted_text
+                    .product-size-value
+                      font-family: Open Sans
+                      font-style: normal
+                      font-weight: normal
+                      font-size: 12px
+                      line-height: 16px
+                      color: #000000
 
 
-          .onsale
+            .onsale
+              display: none
+            // &:before доробити карточку sake
+      .avia_cart_buttons 
+        padding: 25px
+        border: none
+        .add_to_cart_button
+          background: #FFD523
+          padding: 13px 20px
+          font-family: Open Sans
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 18px
+          display: flex
+          align-items: center
+          justify-content: center
+          span
             display: none
-          &:before
+        .show_details_button
+          padding: 13px 24px
+          border: 0.75px solid #FFD523 
+          padding: 13px 20px
+          font-family: Open Sans
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 18px
+          display: flex
+          align-items: center
+          justify-content: center
+          span
+            display: none
+        .button-mini-delimiter
+          display: none
 
-              
+
+                
 
 
 
-          
+            
