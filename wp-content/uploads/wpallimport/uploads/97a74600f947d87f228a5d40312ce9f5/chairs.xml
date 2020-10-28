@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<id><![CDATA[1001]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Генри]]></product_name>
+		<color_1><![CDATA[лак|орех|венге]]></color_1>
+		<color_2><![CDATA[орех]]></color_2>
+		<color_3><![CDATA[венге]]></color_3>
+		<color_4><![CDATA[черные]]></color_4>
+		<color_5><![CDATA[по ралу]]></color_5>
+		<external_length><![CDATA[80]]></external_length>
+		<external_height><![CDATA[90]]></external_height>
+		<external_width><![CDATA[70]]></external_width>
+		<price><![CDATA[8500]]></price>
+		<discount_price><![CDATA[7000]]></discount_price>
+		<hair_legs_1><![CDATA[стандартные]]></hair_legs_1>
+		<hair_legs_2><![CDATA[золотые]]></hair_legs_2>
+		<hair_legs_3><![CDATA[хромированные]]></hair_legs_3>
+		<additional_equipment_1><![CDATA[без стежки,с стежка]]></additional_equipment_1>
+		<additional_equipment_2><![CDATA[с стежка]]></additional_equipment_2>
+		<foto_1><![CDATA[foto/chairs/1001/5.jpeg,foto/chairs/1001/4.jpeg,foto/chairs/1001/3.jpeg,foto/chairs/1001/1.jpeg]]></foto_1>
+		<description><![CDATA[Большой и удобный «Порту» – симфония домашнего уюта и комфортного отдыха. Широкое сиденье и лаконичные формы сделали этот диван любимцем в семьях, где любят проводить время вместе или принимать гостей. Весомые преимущества модели – возможность трансформации в полноценное спальное место, простой и надежный механизм раскладывания и, конечно, демократичная цена!]]></description>
+		<briefdescription><![CDATA[Короткий опимс]]></briefdescription>
+	</node>
+	<node>
+		<id><![CDATA[1002]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Каталония]]></product_name>
+		<color_1><![CDATA[лак]]></color_1>
+		<color_2><![CDATA[орех]]></color_2>
+		<color_3><![CDATA[венге]]></color_3>
+		<color_4><![CDATA[черные]]></color_4>
+		<color_5><![CDATA[по ралу]]></color_5>
+		<external_length><![CDATA[90]]></external_length>
+		<external_height><![CDATA[70]]></external_height>
+		<external_width><![CDATA[50]]></external_width>
+		<price><![CDATA[9500]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hair_legs_1><![CDATA[стандартные]]></hair_legs_1>
+		<hair_legs_2><![CDATA[золотые]]></hair_legs_2>
+		<hair_legs_3><![CDATA[хромированные]]></hair_legs_3>
+		<additional_equipment_1><![CDATA[без стежки]]></additional_equipment_1>
+		<additional_equipment_2><![CDATA[с стежка]]></additional_equipment_2>
+		<foto_1><![CDATA[1.jpeg,2.jpeg,3.jpeg]]></foto_1>
+		<description><![CDATA[Большой и удобный «Порту» – симфония домашнего уюта и комфортного отдыха. Широкое сиденье и лаконичные формы сделали этот диван любимцем в семьях, где любят проводить время вместе или принимать гостей. Весомые преимущества модели – возможность трансформации в полноценное спальное место, простой и надежный механизм раскладывания и, конечно, демократичная цена!]]></description>
+		<briefdescription><![CDATA[Короткий опимс]]></briefdescription>
+	</node>
+	<node>
+		<id><![CDATA[1003]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Манхэтен]]></product_name>
+		<color_1><![CDATA[лак]]></color_1>
+		<color_2><![CDATA[орех]]></color_2>
+		<color_3><![CDATA[венге]]></color_3>
+		<color_4><![CDATA[черные]]></color_4>
+		<color_5><![CDATA[по ралу]]></color_5>
+		<external_length><![CDATA[70]]></external_length>
+		<external_height><![CDATA[60]]></external_height>
+		<external_width><![CDATA[65]]></external_width>
+		<price><![CDATA[8500]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hair_legs_1><![CDATA[стандартные]]></hair_legs_1>
+		<hair_legs_2><![CDATA[золотые]]></hair_legs_2>
+		<hair_legs_3><![CDATA[хромированные]]></hair_legs_3>
+		<additional_equipment_1><![CDATA[без стежки]]></additional_equipment_1>
+		<additional_equipment_2><![CDATA[с стежка]]></additional_equipment_2>
+		<foto_1><![CDATA[foto/chairs/1003/*]]></foto_1>
+		<description><![CDATA[Большой и удобный «Порту» – симфония домашнего уюта и комфортного отдыха. Широкое сиденье и лаконичные формы сделали этот диван любимцем в семьях, где любят проводить время вместе или принимать гостей. Весомые преимущества модели – возможность трансформации в полноценное спальное место, простой и надежный механизм раскладывания и, конечно, демократичная цена!]]></description>
+		<briefdescription><![CDATA[Короткий опимс]]></briefdescription>
+	</node>
+	<node>
+		<id><![CDATA[1004]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Дарвин]]></product_name>
+		<color_1><![CDATA[лак]]></color_1>
+		<color_2><![CDATA[орех]]></color_2>
+		<color_3><![CDATA[венге]]></color_3>
+		<color_4><![CDATA[черные]]></color_4>
+		<color_5><![CDATA[по ралу]]></color_5>
+		<external_length><![CDATA[80]]></external_length>
+		<external_height><![CDATA[75]]></external_height>
+		<external_width><![CDATA[60]]></external_width>
+		<price><![CDATA[8500]]></price>
+		<discount_price><![CDATA[5000]]></discount_price>
+		<hair_legs_1><![CDATA[стандартные]]></hair_legs_1>
+		<hair_legs_2><![CDATA[золотые]]></hair_legs_2>
+		<hair_legs_3><![CDATA[хромированные]]></hair_legs_3>
+		<additional_equipment_1><![CDATA[]]></additional_equipment_1>
+		<additional_equipment_2><![CDATA[]]></additional_equipment_2>
+		<foto_1><![CDATA[foto/chairs/1004/]]></foto_1>
+		<description><![CDATA[Большой и удобный «Порту» – симфония домашнего уюта и комфортного отдыха. Широкое сиденье и лаконичные формы сделали этот диван любимцем в семьях, где любят проводить время вместе или принимать гостей. Весомые преимущества модели – возможность трансформации в полноценное спальное место, простой и надежный механизм раскладывания и, конечно, демократичная цена!]]></description>
+		<briefdescription><![CDATA[Короткий опимс]]></briefdescription>
+	</node>
+	<node>
+		<id><![CDATA[1005]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Zizi]]></product_name>
+		<color_1><![CDATA[лак]]></color_1>
+		<color_2><![CDATA[орех]]></color_2>
+		<color_3><![CDATA[венге]]></color_3>
+		<color_4><![CDATA[черные]]></color_4>
+		<color_5><![CDATA[по ралу]]></color_5>
+		<external_length><![CDATA[90]]></external_length>
+		<external_height><![CDATA[60]]></external_height>
+		<external_width><![CDATA[45]]></external_width>
+		<price><![CDATA[9200]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hair_legs_1><![CDATA[стандартные]]></hair_legs_1>
+		<hair_legs_2><![CDATA[золотые]]></hair_legs_2>
+		<hair_legs_3><![CDATA[хромированные]]></hair_legs_3>
+		<additional_equipment_1><![CDATA[без стежки]]></additional_equipment_1>
+		<additional_equipment_2><![CDATA[с стежка]]></additional_equipment_2>
+		<foto_1><![CDATA[foto/chairs/1005/]]></foto_1>
+		<description><![CDATA[Большой и удобный «Порту» – симфония домашнего уюта и комфортного отдыха. Широкое сиденье и лаконичные формы сделали этот диван любимцем в семьях, где любят проводить время вместе или принимать гостей. Весомые преимущества модели – возможность трансформации в полноценное спальное место, простой и надежный механизм раскладывания и, конечно, демократичная цена!]]></description>
+		<briefdescription><![CDATA[Короткий опимс]]></briefdescription>
+	</node>
+	<node>
+		<id><![CDATA[1006]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Каталония барный]]></product_name>
+		<color_1><![CDATA[лак]]></color_1>
+		<color_2><![CDATA[орех]]></color_2>
+		<color_3><![CDATA[венге]]></color_3>
+		<color_4><![CDATA[черные]]></color_4>
+		<color_5><![CDATA[по ралу]]></color_5>
+		<external_length><![CDATA[70]]></external_length>
+		<external_height><![CDATA[70]]></external_height>
+		<external_width><![CDATA[50]]></external_width>
+		<price><![CDATA[14500]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hair_legs_1><![CDATA[стандартные]]></hair_legs_1>
+		<hair_legs_2><![CDATA[золотые]]></hair_legs_2>
+		<hair_legs_3><![CDATA[хромированные]]></hair_legs_3>
+		<additional_equipment_1><![CDATA[]]></additional_equipment_1>
+		<additional_equipment_2><![CDATA[]]></additional_equipment_2>
+		<foto_1><![CDATA[foto/chairs/1006/]]></foto_1>
+		<description><![CDATA[Большой и удобный «Порту» – симфония домашнего уюта и комфортного отдыха. Широкое сиденье и лаконичные формы сделали этот диван любимцем в семьях, где любят проводить время вместе или принимать гостей. Весомые преимущества модели – возможность трансформации в полноценное спальное место, простой и надежный механизм раскладывания и, конечно, демократичная цена!]]></description>
+		<briefdescription><![CDATA[Короткий опимс]]></briefdescription>
+	</node>
+	<node>
+		<id><![CDATA[1007]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Варешка]]></product_name>
+		<color_1><![CDATA[лак]]></color_1>
+		<color_2><![CDATA[орех]]></color_2>
+		<color_3><![CDATA[венге]]></color_3>
+		<color_4><![CDATA[черные]]></color_4>
+		<color_5><![CDATA[по ралу]]></color_5>
+		<external_length><![CDATA[75]]></external_length>
+		<external_height><![CDATA[85]]></external_height>
+		<external_width><![CDATA[40]]></external_width>
+		<price><![CDATA[9200]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hair_legs_1><![CDATA[стандартные]]></hair_legs_1>
+		<hair_legs_2><![CDATA[золотые]]></hair_legs_2>
+		<hair_legs_3><![CDATA[хромированные]]></hair_legs_3>
+		<additional_equipment_1><![CDATA[без стежки]]></additional_equipment_1>
+		<additional_equipment_2><![CDATA[с стежка]]></additional_equipment_2>
+		<foto_1><![CDATA[foto/chairs/1007/]]></foto_1>
+		<description><![CDATA[Большой и удобный «Порту» – симфония домашнего уюта и комфортного отдыха. Широкое сиденье и лаконичные формы сделали этот диван любимцем в семьях, где любят проводить время вместе или принимать гостей. Весомые преимущества модели – возможность трансформации в полноценное спальное место, простой и надежный механизм раскладывания и, конечно, демократичная цена!]]></description>
+		<briefdescription><![CDATA[Короткий опимс]]></briefdescription>
+	</node>
+</data>
