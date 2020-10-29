@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<id><![CDATA[1147]]></id>
+		<type><![CDATA[simple]]></type>
+		<sku><![CDATA[121]]></sku>
+		<name><![CDATA[диван]]></name>
+		<published><![CDATA[1]]></published>
+		<isfeatured><![CDATA[0]]></isfeatured>
+		<visibilityincatalog><![CDATA[visible]]></visibilityincatalog>
+		<shortdescription><![CDATA[короткое описание товара]]></shortdescription>
+		<description><![CDATA[диван на ножках с подушками]]></description>
+		<datesalepricestarts><![CDATA[]]></datesalepricestarts>
+		<datesalepriceends><![CDATA[]]></datesalepriceends>
+		<taxstatus><![CDATA[taxable]]></taxstatus>
+		<taxclass><![CDATA[]]></taxclass>
+		<instock><![CDATA[1]]></instock>
+		<stock><![CDATA[]]></stock>
+		<lowstockamount><![CDATA[]]></lowstockamount>
+		<backordersallowed><![CDATA[0]]></backordersallowed>
+		<soldindividually><![CDATA[0]]></soldindividually>
+		<weightkg><![CDATA[100]]></weightkg>
+		<lengthcm><![CDATA[20]]></lengthcm>
+		<widthcm><![CDATA[180]]></widthcm>
+		<heightcm><![CDATA[56]]></heightcm>
+		<allowcustomerreviews><![CDATA[1]]></allowcustomerreviews>
+		<purchasenote><![CDATA[Purchase note]]></purchasenote>
+		<saleprice><![CDATA[]]></saleprice>
+		<regularprice><![CDATA[12000]]></regularprice>
+		<categories><![CDATA[Диваны]]></categories>
+		<tags><![CDATA[тег]]></tags>
+		<shippingclass><![CDATA[]]></shippingclass>
+		<images><![CDATA[https://s7.cdn.eg.ru/wp-content/uploads/2018/10/44106503-1931124213640736-4791973124717412352-n014401.jpg, http://manuale-mebel/wp-content/uploads/2020/10/bg121.png, http://manuale-mebel/wp-content/uploads/2020/10/galery_3.png, http://manuale-mebel/wp-content/uploads/2020/10/galery_2.png, http://manuale-mebel/wp-content/uploads/2020/10/galery_1.png]]></images>
+		<downloadlimit><![CDATA[]]></downloadlimit>
+		<downloadexpirydays><![CDATA[]]></downloadexpirydays>
+		<parent><![CDATA[]]></parent>
+		<groupedproducts><![CDATA[]]></groupedproducts>
+		<upsells><![CDATA[]]></upsells>
+		<crosssells><![CDATA[]]></crosssells>
+		<externalurl><![CDATA[]]></externalurl>
+		<buttontext><![CDATA[]]></buttontext>
+		<position><![CDATA[1]]></position>
+		<attribute1name><![CDATA[Цвет]]></attribute1name>
+		<attribute1values><![CDATA[желтый, зеленый, красный]]></attribute1values>
+		<attribute1visible><![CDATA[1]]></attribute1visible>
+		<attribute1global><![CDATA[1]]></attribute1global>
+		<attribute2name><![CDATA[Доп комплектация]]></attribute2name>
+		<attribute2values><![CDATA[аксесуары, модули]]></attribute2values>
+		<attribute2visible><![CDATA[1]]></attribute2visible>
+		<attribute2global><![CDATA[1]]></attribute2global>
+		<attribute3name><![CDATA[Ножки]]></attribute3name>
+		<attribute3values><![CDATA[Метал, Пластик]]></attribute3values>
+		<attribute3visible><![CDATA[1]]></attribute3visible>
+		<attribute3global><![CDATA[1]]></attribute3global>
+		<attribute4name><![CDATA[Наполнитель]]></attribute4name>
+		<attribute4values><![CDATA[конструкция, материал]]></attribute4values>
+		<attribute4visible><![CDATA[1]]></attribute4visible>
+		<attribute4global><![CDATA[1]]></attribute4global>
+		<attribute5name><![CDATA[Размер места - длинна]]></attribute5name>
+		<attribute5values><![CDATA[160, 170\,, 180, 190]]></attribute5values>
+		<attribute5visible><![CDATA[1]]></attribute5visible>
+		<attribute5global><![CDATA[1]]></attribute5global>
+		<attribute6name><![CDATA[Размер места - ширина]]></attribute6name>
+		<attribute6values><![CDATA[160, 170, 180, 190]]></attribute6values>
+		<attribute6visible><![CDATA[1]]></attribute6visible>
+		<attribute6global><![CDATA[1]]></attribute6global>
+		<attribute7name><![CDATA[Тип ткани]]></attribute7name>
+		<attribute7values><![CDATA[економ, ексклюзив, премиум, стандарт]]></attribute7values>
+		<attribute7visible><![CDATA[1]]></attribute7visible>
+		<attribute7global><![CDATA[1]]></attribute7global>
+		<meta_avialayoutbuilder_active><![CDATA[]]></meta_avialayoutbuilder_active>
+		<meta_avia_sc_parser_state><![CDATA[disabled]]></meta_avia_sc_parser_state>
+		<meta_avialayoutbuildercleandata><![CDATA[описание]]></meta_avialayoutbuildercleandata>
+		<meta_av_el_mgr_version><![CDATA[1]]></meta_av_el_mgr_version>
+		<metalayout><![CDATA[]]></metalayout>
+		<metasidebar><![CDATA[]]></metasidebar>
+		<metafooter><![CDATA[]]></metafooter>
+		<metaheader_title_bar><![CDATA[]]></metaheader_title_bar>
+		<metaheader_transparency><![CDATA[]]></metaheader_transparency>
+		<meta_product_hover><![CDATA[hover_active]]></meta_product_hover>
+		<meta_yoast_wpseo_content_score><![CDATA[60]]></meta_yoast_wpseo_content_score>
+		<meta_yoast_wpseo_primary_product_cat><![CDATA[38]]></meta_yoast_wpseo_primary_product_cat>
+		<meta_yoast_wpseo_focuskw><![CDATA[диван]]></meta_yoast_wpseo_focuskw>
+		<meta_yoast_wpseo_linkdex><![CDATA[31]]></meta_yoast_wpseo_linkdex>
+		<meta_yoast_wpseo_title><![CDATA[ваываываываSEO-заголовок]]></meta_yoast_wpseo_title>
+		<meta_yoast_wpseo_metadesc><![CDATA[ываенМета-описание]]></meta_yoast_wpseo_metadesc>
+		<meta_yoast_wpseo_opengraphtitle><![CDATA[вапвапвапFacebook title]]></meta_yoast_wpseo_opengraphtitle>
+		<meta_yoast_wpseo_opengraphdescription><![CDATA[Facebook description]]></meta_yoast_wpseo_opengraphdescription>
+		<meta_yoast_wpseo_opengraphimage><![CDATA[http://manuale-mebel/wp-content/uploads/2020/10/galery_5.png]]></meta_yoast_wpseo_opengraphimage>
+		<meta_yoast_wpseo_opengraphimageid><![CDATA[740]]></meta_yoast_wpseo_opengraphimageid>
+		<meta_yoast_wpseo_twittertitle><![CDATA[выв]]></meta_yoast_wpseo_twittertitle>
+		<meta_yoast_wpseo_twitterdescription><![CDATA[ыв]]></meta_yoast_wpseo_twitterdescription>
+		<meta_yoast_wpseo_twitterimage><![CDATA[http://manuale-mebel/wp-content/uploads/2020/10/galery_2.png]]></meta_yoast_wpseo_twitterimage>
+		<meta_yoast_wpseo_twitterimageid><![CDATA[711]]></meta_yoast_wpseo_twitterimageid>
+	</node>
+	<node>
+		<id><![CDATA[1148]]></id>
+		<type><![CDATA[simple]]></type>
+		<sku><![CDATA[имя]]></sku>
+		<name><![CDATA[диван 2]]></name>
+		<published><![CDATA[1]]></published>
+		<isfeatured><![CDATA[0]]></isfeatured>
+		<visibilityincatalog><![CDATA[visible]]></visibilityincatalog>
+		<shortdescription><![CDATA[короткое описание товара]]></shortdescription>
+		<description><![CDATA[диван на ножках с подушками второй]]></description>
+		<datesalepricestarts><![CDATA[]]></datesalepricestarts>
+		<datesalepriceends><![CDATA[]]></datesalepriceends>
+		<taxstatus><![CDATA[taxable]]></taxstatus>
+		<taxclass><![CDATA[]]></taxclass>
+		<instock><![CDATA[1]]></instock>
+		<stock><![CDATA[]]></stock>
+		<lowstockamount><![CDATA[]]></lowstockamount>
+		<backordersallowed><![CDATA[0]]></backordersallowed>
+		<soldindividually><![CDATA[0]]></soldindividually>
+		<weightkg><![CDATA[100]]></weightkg>
+		<lengthcm><![CDATA[20]]></lengthcm>
+		<widthcm><![CDATA[180]]></widthcm>
+		<heightcm><![CDATA[56]]></heightcm>
+		<allowcustomerreviews><![CDATA[1]]></allowcustomerreviews>
+		<purchasenote><![CDATA[Purchase note]]></purchasenote>
+		<saleprice><![CDATA[10500]]></saleprice>
+		<regularprice><![CDATA[13500]]></regularprice>
+		<categories><![CDATA[Диваны]]></categories>
+		<tags><![CDATA[тег]]></tags>
+		<shippingclass><![CDATA[]]></shippingclass>
+		<images><![CDATA[http://manuale-mebel/wp-content/uploads/2015/03/winter-girl-small.jpg, http://manuale-mebel/wp-content/uploads/2020/10/bg121.png, http://manuale-mebel/wp-content/uploads/2020/10/galery_3.png, http://manuale-mebel/wp-content/uploads/2020/10/galery_2.png, http://manuale-mebel/wp-content/uploads/2020/10/galery_1.png]]></images>
+		<downloadlimit><![CDATA[]]></downloadlimit>
+		<downloadexpirydays><![CDATA[]]></downloadexpirydays>
+		<parent><![CDATA[]]></parent>
+		<groupedproducts><![CDATA[]]></groupedproducts>
+		<upsells><![CDATA[]]></upsells>
+		<crosssells><![CDATA[]]></crosssells>
+		<externalurl><![CDATA[]]></externalurl>
+		<buttontext><![CDATA[]]></buttontext>
+		<position><![CDATA[2]]></position>
+		<attribute1name><![CDATA[Доп комплектация]]></attribute1name>
+		<attribute1values><![CDATA[модули]]></attribute1values>
+		<attribute1visible><![CDATA[1]]></attribute1visible>
+		<attribute1global><![CDATA[1]]></attribute1global>
+		<attribute2name><![CDATA[Ножки]]></attribute2name>
+		<attribute2values><![CDATA[Метал]]></attribute2values>
+		<attribute2visible><![CDATA[1]]></attribute2visible>
+		<attribute2global><![CDATA[1]]></attribute2global>
+		<attribute3name><![CDATA[Размер места - длинна]]></attribute3name>
+		<attribute3values><![CDATA[170\,, 180, 190]]></attribute3values>
+		<attribute3visible><![CDATA[1]]></attribute3visible>
+		<attribute3global><![CDATA[1]]></attribute3global>
+		<attribute4name><![CDATA[Размер места - ширина]]></attribute4name>
+		<attribute4values><![CDATA[170, 180, 190]]></attribute4values>
+		<attribute4visible><![CDATA[1]]></attribute4visible>
+		<attribute4global><![CDATA[1]]></attribute4global>
+		<attribute5name><![CDATA[]]></attribute5name>
+		<attribute5values><![CDATA[]]></attribute5values>
+		<attribute5visible><![CDATA[]]></attribute5visible>
+		<attribute5global><![CDATA[]]></attribute5global>
+		<attribute6name><![CDATA[]]></attribute6name>
+		<attribute6values><![CDATA[]]></attribute6values>
+		<attribute6visible><![CDATA[]]></attribute6visible>
+		<attribute6global><![CDATA[]]></attribute6global>
+		<attribute7name><![CDATA[]]></attribute7name>
+		<attribute7values><![CDATA[]]></attribute7values>
+		<attribute7visible><![CDATA[]]></attribute7visible>
+		<attribute7global><![CDATA[]]></attribute7global>
+		<meta_avialayoutbuilder_active><![CDATA[]]></meta_avialayoutbuilder_active>
+		<meta_avia_sc_parser_state><![CDATA[disabled]]></meta_avia_sc_parser_state>
+		<meta_avialayoutbuildercleandata><![CDATA[описание]]></meta_avialayoutbuildercleandata>
+		<meta_av_el_mgr_version><![CDATA[1]]></meta_av_el_mgr_version>
+		<metalayout><![CDATA[]]></metalayout>
+		<metasidebar><![CDATA[]]></metasidebar>
+		<metafooter><![CDATA[]]></metafooter>
+		<metaheader_title_bar><![CDATA[]]></metaheader_title_bar>
+		<metaheader_transparency><![CDATA[]]></metaheader_transparency>
+		<meta_product_hover><![CDATA[hover_active]]></meta_product_hover>
+		<meta_yoast_wpseo_content_score><![CDATA[60]]></meta_yoast_wpseo_content_score>
+		<meta_yoast_wpseo_primary_product_cat><![CDATA[38]]></meta_yoast_wpseo_primary_product_cat>
+		<meta_yoast_wpseo_focuskw><![CDATA[диван 2]]></meta_yoast_wpseo_focuskw>
+		<meta_yoast_wpseo_linkdex><![CDATA[25]]></meta_yoast_wpseo_linkdex>
+		<meta_yoast_wpseo_title><![CDATA[]]></meta_yoast_wpseo_title>
+		<meta_yoast_wpseo_metadesc><![CDATA[]]></meta_yoast_wpseo_metadesc>
+		<meta_yoast_wpseo_opengraphtitle><![CDATA[]]></meta_yoast_wpseo_opengraphtitle>
+		<meta_yoast_wpseo_opengraphdescription><![CDATA[]]></meta_yoast_wpseo_opengraphdescription>
+		<meta_yoast_wpseo_opengraphimage><![CDATA[]]></meta_yoast_wpseo_opengraphimage>
+		<meta_yoast_wpseo_opengraphimageid><![CDATA[]]></meta_yoast_wpseo_opengraphimageid>
+		<meta_yoast_wpseo_twittertitle><![CDATA[]]></meta_yoast_wpseo_twittertitle>
+		<meta_yoast_wpseo_twitterdescription><![CDATA[]]></meta_yoast_wpseo_twitterdescription>
+		<meta_yoast_wpseo_twitterimage><![CDATA[]]></meta_yoast_wpseo_twitterimage>
+		<meta_yoast_wpseo_twitterimageid><![CDATA[]]></meta_yoast_wpseo_twitterimageid>
+	</node>
+</data>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<id><![CDATA[1001]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Генри]]></product_name>
+		<color><![CDATA[лак
+орех
+венге
+черные
+по ралу]]></color>
+		<external_length><![CDATA[80]]></external_length>
+		<external_height><![CDATA[90]]></external_height>
+		<external_width><![CDATA[70]]></external_width>
+		<price><![CDATA[8500]]></price>
+		<discount_price><![CDATA[7000]]></discount_price>
+		<hairlegs><![CDATA[Стандартные
+Золотые
+Хромированные]]></hairlegs>
+		<undefined10><![CDATA[без стежки
+с стежка]]></undefined10>
+		<undefined11><![CDATA[]]></undefined11>
+	</node>
+	<node>
+		<id><![CDATA[1002]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Каталония]]></product_name>
+		<color><![CDATA[лак
+орех
+венге
+черные
+по ралу]]></color>
+		<external_length><![CDATA[90]]></external_length>
+		<external_height><![CDATA[70]]></external_height>
+		<external_width><![CDATA[50]]></external_width>
+		<price><![CDATA[9500]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hairlegs><![CDATA[Стандартные
+Золотые
+Хромированные]]></hairlegs>
+		<undefined10><![CDATA[без стежки
+с стежка]]></undefined10>
+		<undefined11><![CDATA[]]></undefined11>
+	</node>
+	<node>
+		<id><![CDATA[1003]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Манхэтен]]></product_name>
+		<color><![CDATA[лак
+орех
+венге
+черные
+по ралу]]></color>
+		<external_length><![CDATA[70]]></external_length>
+		<external_height><![CDATA[60]]></external_height>
+		<external_width><![CDATA[65]]></external_width>
+		<price><![CDATA[8500]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hairlegs><![CDATA[Стандартные
+Золотые
+Хромированные]]></hairlegs>
+		<undefined10><![CDATA[без стежки
+с стежка]]></undefined10>
+		<undefined11><![CDATA[]]></undefined11>
+	</node>
+	<node>
+		<id><![CDATA[1004]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Дарвин]]></product_name>
+		<color><![CDATA[лак
+орех
+венге
+черные
+по ралу]]></color>
+		<external_length><![CDATA[80]]></external_length>
+		<external_height><![CDATA[75]]></external_height>
+		<external_width><![CDATA[60]]></external_width>
+		<price><![CDATA[8500]]></price>
+		<discount_price><![CDATA[5000]]></discount_price>
+		<hairlegs><![CDATA[Стандартные
+Золотые
+Хромированные]]></hairlegs>
+		<undefined10><![CDATA[]]></undefined10>
+		<undefined11><![CDATA[]]></undefined11>
+	</node>
+	<node>
+		<id><![CDATA[1005]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Zizi]]></product_name>
+		<color><![CDATA[лак
+орех
+венге
+черные
+по ралу]]></color>
+		<external_length><![CDATA[90]]></external_length>
+		<external_height><![CDATA[60]]></external_height>
+		<external_width><![CDATA[45]]></external_width>
+		<price><![CDATA[9200]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hairlegs><![CDATA[Стандартные
+Золотые
+Хромированные]]></hairlegs>
+		<undefined10><![CDATA[без стежки
+с стежка]]></undefined10>
+		<undefined11><![CDATA[]]></undefined11>
+	</node>
+	<node>
+		<id><![CDATA[1006]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Каталония барный]]></product_name>
+		<color><![CDATA[лак
+орех
+венге
+черные
+по ралу]]></color>
+		<external_length><![CDATA[70]]></external_length>
+		<external_height><![CDATA[70]]></external_height>
+		<external_width><![CDATA[50]]></external_width>
+		<price><![CDATA[14500]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hairlegs><![CDATA[Стандартные
+Золотые
+Хромированные]]></hairlegs>
+		<undefined10><![CDATA[]]></undefined10>
+		<undefined11><![CDATA[]]></undefined11>
+	</node>
+	<node>
+		<id><![CDATA[1007]]></id>
+		<category><![CDATA[Стулья]]></category>
+		<product_name><![CDATA[Варешка]]></product_name>
+		<color><![CDATA[лак
+орех
+венге
+черные
+по ралу]]></color>
+		<external_length><![CDATA[75]]></external_length>
+		<external_height><![CDATA[85]]></external_height>
+		<external_width><![CDATA[40]]></external_width>
+		<price><![CDATA[9200]]></price>
+		<discount_price><![CDATA[]]></discount_price>
+		<hairlegs><![CDATA[Стандартные
+Золотые
+Хромированные]]></hairlegs>
+		<undefined10><![CDATA[без стежки
+с стежка]]></undefined10>
+		<undefined11><![CDATA[]]></undefined11>
+	</node>
+</data>

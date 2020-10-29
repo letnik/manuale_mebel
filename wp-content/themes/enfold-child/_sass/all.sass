@@ -1,6 +1,7 @@
 @import 'parts/variables'
 @import 'parts/display'
 @import 'parts/layout'
+@import 'parts/hardcore'
 // @import 'fonts'
 
 
@@ -364,9 +365,23 @@ html.html_header_sidebar
         .button-mini-delimiter
           display: none
 
+.html_header_sidebar 
+  .av-sidebar-social-container 
+    position: fixed
+    left: 0
+    bottom: 0
+    background: #fff
+    z-index: 555
+    max-width: 300px
 
-                
-
-
+#breadcrumbs
+  padding: 10px
+  background: inherit
+  span 
+    a
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 12px !important
 
             
