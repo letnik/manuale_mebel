@@ -1,6 +1,6 @@
 <?php
 //style
-       
+
 //Set builder mode to debug
 function builder_set_debug()
 {
@@ -11,7 +11,7 @@ add_action('avia_builder_mode', 'builder_set_debug');
 
 add_filter('show_admin_bar', '__return_false');
 
-function sl_add_scripts() 
+function sl_add_scripts()
 {
     //Custom JS
     wp_enqueue_script('all', get_stylesheet_directory_uri() . '/js/all.js', array('jquery'), null, true );
@@ -166,3 +166,4 @@ function truemisha_products_per_page( $per_page ) {
 	return $per_page;
  
 }
+
