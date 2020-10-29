@@ -43,14 +43,18 @@ function my_after_shop_loop_item_title(){
     $custom_attribute .= '<div class="product-size-value">13</div>';
     $custom_attribute .= '</div>';
     $custom_attribute .= '</div>';
+
     $custom_attribute .= '</div>';
+    
     $custom_attribute .= '</div>';
+    $custom_attribute .= '<div><a href="'.esc_url( $product->get_permalink( $product->id )).'" class="button product_type_simple add_to_cart_button">Подробнее</a></div>';
+
     $custom_attribute .= '</div>';
 
     echo  $custom_attribute;
 
 }
-add_action( 'woocommerce_after_shop_loop_item_title', 'my_after_shop_loop_item_title', 10 );
+add_action( 'woocommerce_after_shop_loop_item', 'my_after_shop_loop_item_title', 10 );
 
 
 
@@ -69,6 +73,7 @@ function my_shop_loop_item_title(){
     echo  $custom_category;
 
 }
+
 add_action( 'woocommerce_shop_loop_item_title', 'my_shop_loop_item_title', 1 );
 
 function my_shop_loop_item_title_price(){
@@ -140,12 +145,11 @@ function pancode_echo_sale_percent( $html ) {
 // END add percent in cataloc
 
 
-/* Add to cart */
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'tb_woo_custom_cart_button_text' );
+// /* Add to cart */
+// add_filter( 'woocommerce_product_single_add_to_cart_text', 'tb_woo_custom_cart_button_text' );
 
 
-add_filter( 'woocommerce_product_add_to_cart_text', 'tb_woo_custom_cart_button_text' );   
-function tb_woo_custom_cart_button_text() {
-        return __( 'Купить', 'woocommerce' );
-}
-
+// add_filter( 'woocommerce_product_add_to_cart_text', 'tb_woo_custom_cart_button_text' );   
+// function tb_woo_custom_cart_button_text() {
+//         return __( 'Купить', 'woocommerce' );
+// }
