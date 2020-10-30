@@ -1,0 +1,2103 @@
+# Copyright (C) 2020 Product Filter for WooCommerce
+# This file is distributed under the same license as the Product Filter for WooCommerce package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Filter for WooCommerce 7.3.3\n"
+"Report-Msgid-Bugs-To: https://help.xforwoocommerce.com\n"
+"POT-Creation-Date: 2020-07-08 14:20:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-07-08 14:20:49+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: af\n"
+
+#: includes/compatibility/pf-compatible-preset.php:262
+#: includes/pf-frontend.php:2640
+msgid "All Products"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:263
+#: includes/pf-frontend.php:2641
+msgid "In Stock"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:264
+#: includes/pf-frontend.php:2642
+msgid "Out Of Stock"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:276
+#: includes/pf-composer.php:13 includes/pf-frontend.php:2690
+#: includes/pf-settings.php:288 includes/pf-settings.php:983
+#: includes/pf-widget.php:146
+msgid "Default"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:277
+#: includes/pf-frontend.php:2691
+msgid "Review Count"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:278
+#: includes/pf-frontend.php:2692
+msgid "Popularity"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:279
+#: includes/pf-frontend.php:2693
+msgid "Average rating"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:280
+#: includes/pf-frontend.php:2694
+msgid "Newness"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:281
+#: includes/pf-frontend.php:2695
+msgid "Price: low to high"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:282
+#: includes/pf-frontend.php:2696
+msgid "Price: high to low"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:283
+#: includes/pf-frontend.php:2697
+msgid "Random Products"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:284
+#: includes/pf-frontend.php:2698
+msgid "Product Name"
+msgstr ""
+
+#: includes/compatibility/pf-compatible-preset.php:461
+#: includes/pf-settings.php:1530 includes/pf-settings.php:1571
+msgid "Products"
+msgstr ""
+
+#: includes/compatibility/pf-compatible.php:32 includes/pf-settings.php:1294
+#: includes/pf-settings.php:1570
+msgid "Filter"
+msgstr ""
+
+#: includes/pf-composer.php:49
+msgid "WooCommerce Product Filter"
+msgstr ""
+
+#: includes/pf-composer.php:52
+msgid "Content"
+msgstr ""
+
+#: includes/pf-composer.php:54
+msgid "All in one Product Filter for WooCommerce!"
+msgstr ""
+
+#: includes/pf-composer.php:60
+msgid "Show Filter"
+msgstr ""
+
+#: includes/pf-composer.php:73 includes/pf-settings.php:876
+msgid "Filter Preset"
+msgstr ""
+
+#: includes/pf-composer.php:83
+msgid "Show Categories"
+msgstr ""
+
+#: includes/pf-composer.php:96
+msgid "Category Columns"
+msgstr ""
+
+#: includes/pf-composer.php:106
+msgid "Show Products (Step Filter mode when set to NO)"
+msgstr ""
+
+#: includes/pf-composer.php:119
+msgid "Product Columns"
+msgstr ""
+
+#: includes/pf-composer.php:129
+msgid "Product Rows"
+msgstr ""
+
+#: includes/pf-composer.php:139 includes/pf-settings.php:1487
+#: includes/pf-settings.php:1531
+msgid "Pagination"
+msgstr ""
+
+#: includes/pf-composer.php:154
+msgid "Ajax"
+msgstr ""
+
+#: includes/pf-composer.php:167 includes/pf-frontend.php:3594
+#: includes/pf-settings.php:117 includes/pf-settings.php:1477
+#: includes/pf-settings.php:1603
+msgid "Order By"
+msgstr ""
+
+#: includes/pf-composer.php:177 includes/pf-settings.php:135
+msgid "Order"
+msgstr ""
+
+#: includes/pf-composer.php:187
+msgid "Min Price"
+msgstr ""
+
+#: includes/pf-composer.php:197
+msgid "Max Price"
+msgstr ""
+
+#: includes/pf-composer.php:207 includes/pf-settings.php:1427
+msgid "Product Category"
+msgstr ""
+
+#: includes/pf-composer.php:217
+msgid "Product Tag"
+msgstr ""
+
+#: includes/pf-composer.php:227
+msgid "Product Characteristics"
+msgstr ""
+
+#: includes/pf-composer.php:237
+msgid "Sale Products"
+msgstr ""
+
+#: includes/pf-composer.php:251
+msgid "Instock Products"
+msgstr ""
+
+#: includes/pf-composer.php:266
+msgid "HTTP Query"
+msgstr ""
+
+#: includes/pf-composer.php:276
+msgid "Custom Action"
+msgstr ""
+
+#: includes/pf-composer.php:286
+msgid "Show Loop Title"
+msgstr ""
+
+#: includes/pf-composer.php:299
+msgid "Show Loop Price"
+msgstr ""
+
+#: includes/pf-composer.php:312
+msgid "Show Loop Rating"
+msgstr ""
+
+#: includes/pf-composer.php:325
+msgid "Show Loop Add to Cart"
+msgstr ""
+
+#: includes/pf-composer.php:338
+msgid "Fallback CSS (If columns option is not working)"
+msgstr ""
+
+#: includes/pf-composer.php:364
+msgid "Disable Preset Overrides"
+msgstr ""
+
+#: includes/pf-composer.php:377
+msgid "Bottom Margin"
+msgstr ""
+
+#: includes/pf-composer.php:387
+msgid "Shortcode ID"
+msgstr ""
+
+#: includes/pf-composer.php:397 includes/pf-settings.php:1723
+#: includes/pf-widget.php:170
+msgid "Class"
+msgstr ""
+
+#: includes/pf-composer.php:428
+msgid "Product Filter - Activate"
+msgstr ""
+
+#: includes/pf-composer.php:441
+msgid "Product Filter - Ajax"
+msgstr ""
+
+#: includes/pf-composer.php:453
+msgid "Product Filter - Select Preset"
+msgstr ""
+
+#: includes/pf-composer.php:462
+msgid "Product Filter - Pagination"
+msgstr ""
+
+#: includes/pf-frontend.php:333
+msgid "Close filter"
+msgstr ""
+
+#: includes/pf-frontend.php:334
+msgid "Filter terms"
+msgstr ""
+
+#: includes/pf-frontend.php:335
+msgid "AJAX Error!"
+msgstr ""
+
+#: includes/pf-frontend.php:336 includes/pf-settings.php:149
+msgid "Show more"
+msgstr ""
+
+#: includes/pf-frontend.php:337
+msgid "Show less"
+msgstr ""
+
+#: includes/pf-frontend.php:338 includes/pf-frontend.php:2811
+msgid "No products found!"
+msgstr ""
+
+#: includes/pf-frontend.php:339
+msgid "Clear filters"
+msgstr ""
+
+#: includes/pf-frontend.php:340
+msgid "Show products"
+msgstr ""
+
+#: includes/pf-frontend.php:1971
+msgid "Filter selected"
+msgstr ""
+
+#: includes/pf-frontend.php:1981
+msgid "Show only products on sale"
+msgstr ""
+
+#: includes/pf-frontend.php:1991
+msgid "Show out of stock products"
+msgstr ""
+
+#: includes/pf-frontend.php:1994
+msgid "In stock only"
+msgstr ""
+
+#: includes/pf-frontend.php:2237
+msgid "trillion"
+msgstr ""
+
+#: includes/pf-frontend.php:2240
+msgid "billion"
+msgstr ""
+
+#: includes/pf-frontend.php:2243
+msgid "million"
+msgstr ""
+
+#: includes/pf-frontend.php:2246
+msgid "thousand"
+msgstr ""
+
+#: includes/pf-frontend.php:2543 includes/pf-frontend.php:3631
+#: includes/pf-settings.php:760 includes/pf-settings.php:1306
+#: includes/svx-settings/svx-settings.php:543
+msgid "Price"
+msgstr ""
+
+#: includes/pf-frontend.php:2576 includes/pf-settings.php:1872
+msgid "Categories"
+msgstr ""
+
+#: includes/pf-frontend.php:2579 includes/pf-settings.php:1875
+msgid "Tags"
+msgstr ""
+
+#: includes/pf-frontend.php:2582 includes/pf-settings.php:1878
+msgid "Characteristics"
+msgstr ""
+
+#: includes/pf-frontend.php:2815
+msgid "Found a single result"
+msgstr ""
+
+#: includes/pf-frontend.php:2818
+msgid "Showing the single result"
+msgstr ""
+
+#: includes/pf-frontend.php:2823 includes/pf-frontend.php:2831
+msgid "Found"
+msgstr ""
+
+#: includes/pf-frontend.php:2823 includes/pf-frontend.php:2826
+#: includes/pf-frontend.php:2831 includes/pf-frontend.php:2834
+msgid "results"
+msgstr ""
+
+#: includes/pf-frontend.php:2826
+msgid "Showing all"
+msgstr ""
+
+#: includes/pf-frontend.php:2834
+msgid "Showing"
+msgstr ""
+
+#: includes/pf-frontend.php:2834
+msgid "of"
+msgstr ""
+
+#: includes/pf-frontend.php:2863
+msgid "Filter products"
+msgstr ""
+
+#: includes/pf-frontend.php:3294
+msgid "Product keywords"
+msgstr ""
+
+#: includes/pf-frontend.php:3310 includes/pf-frontend.php:3457
+#: includes/pf-frontend.php:4317
+msgid "Error! No terms!"
+msgstr ""
+
+#: includes/pf-frontend.php:3547
+msgid "Search Products"
+msgstr ""
+
+#: includes/pf-frontend.php:3562
+msgid "Per Page"
+msgstr ""
+
+#: includes/pf-frontend.php:3575
+msgid "Availability"
+msgstr ""
+
+#: includes/pf-frontend.php:3612 includes/pf-settings.php:757
+#: includes/pf-settings.php:1302
+msgid "Vendor"
+msgstr ""
+
+#: includes/pf-frontend.php:3651 includes/pf-settings.php:1300
+msgid "Meta"
+msgstr ""
+
+#: includes/pf-frontend.php:4394 includes/pf-settings.php:315
+#: includes/pf-settings.php:1183 includes/svx-settings/svx-settings.php:374
+msgid "None"
+msgstr ""
+
+#. #-#-#-#-#  prdctfltr-en_UK.pot (Product Filter for WooCommerce 7.3.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: includes/pf-settings.php:17
+msgid "Product Filter for WooCommerce"
+msgstr ""
+
+#: includes/pf-settings.php:18
+msgid "Product Filters"
+msgstr ""
+
+#: includes/pf-settings.php:75
+msgid "Select Taxonomy"
+msgstr ""
+
+#: includes/pf-settings.php:77
+msgid "Select taxonomy for this filter"
+msgstr ""
+
+#: includes/pf-settings.php:87 includes/pf-settings.php:314
+#: includes/pf-settings.php:329
+msgid "Title"
+msgstr ""
+
+#: includes/pf-settings.php:89
+msgid "Use alternative title"
+msgstr ""
+
+#: includes/pf-settings.php:97
+msgid "Description"
+msgstr ""
+
+#: includes/pf-settings.php:99
+msgid "Enter filter description"
+msgstr ""
+
+#: includes/pf-settings.php:107
+msgid "Include/Exclude"
+msgstr ""
+
+#: includes/pf-settings.php:109
+msgid "Select terms to include/exclude"
+msgstr ""
+
+#: includes/pf-settings.php:119
+msgid "Select term order"
+msgstr ""
+
+#: includes/pf-settings.php:123
+msgid "None (Custom Menu Order)"
+msgstr ""
+
+#: includes/pf-settings.php:124 includes/pf-settings.php:1716
+#: includes/pf-widget.php:165
+msgid "ID"
+msgstr ""
+
+#: includes/pf-settings.php:125 includes/pf-settings.php:1358
+#: includes/pf-settings.php:1659 includes/pf-settings.php:1664
+#: includes/pf-settings.php:1803 includes/pf-settings.php:1808
+#: includes/svx-settings/svx-settings.php:457
+#: includes/svx-settings/svx-settings.php:522
+msgid "Name"
+msgstr ""
+
+#: includes/pf-settings.php:126
+msgid "Number"
+msgstr ""
+
+#: includes/pf-settings.php:127
+msgid "Slug"
+msgstr ""
+
+#: includes/pf-settings.php:128 includes/svx-settings/svx-settings.php:494
+msgid "Count"
+msgstr ""
+
+#: includes/pf-settings.php:137
+msgid "Select ascending/descending"
+msgstr ""
+
+#: includes/pf-settings.php:141
+msgid "ASC"
+msgstr ""
+
+#: includes/pf-settings.php:142
+msgid "DESC"
+msgstr ""
+
+#: includes/pf-settings.php:151
+msgid "Show more button on term"
+msgstr ""
+
+#: includes/pf-settings.php:159
+msgid "Hierarchy"
+msgstr ""
+
+#: includes/pf-settings.php:161
+msgid "Use hierarchy."
+msgstr ""
+
+#: includes/pf-settings.php:169
+msgid "Hierarchy Mode"
+msgstr ""
+
+#: includes/pf-settings.php:171
+msgid "Select hierarchy mode"
+msgstr ""
+
+#: includes/pf-settings.php:175
+msgid "Show all terms"
+msgstr ""
+
+#: includes/pf-settings.php:176
+msgid "Show current level terms (Drill filter)"
+msgstr ""
+
+#: includes/pf-settings.php:177
+msgid "Show current level terms with parent term support (Drill filter)"
+msgstr ""
+
+#: includes/pf-settings.php:178
+msgid "Show lower level hierarchy terms"
+msgstr ""
+
+#: includes/pf-settings.php:179
+msgid "Show lower level hierarchy terms with parent term support"
+msgstr ""
+
+#: includes/pf-settings.php:186
+msgid "Hierarchy Expand"
+msgstr ""
+
+#: includes/pf-settings.php:188
+msgid "Expand hierarchy tree on load"
+msgstr ""
+
+#: includes/pf-settings.php:196
+msgid "Multiselect"
+msgstr ""
+
+#: includes/pf-settings.php:198
+msgid "Use multiselect"
+msgstr ""
+
+#: includes/pf-settings.php:206
+msgid "Multiselect Relation"
+msgstr ""
+
+#: includes/pf-settings.php:208
+msgid "Select multiselect relation"
+msgstr ""
+
+#: includes/pf-settings.php:220
+msgid "Selection Reset"
+msgstr ""
+
+#: includes/pf-settings.php:222
+msgid "Reset filters on select"
+msgstr ""
+
+#: includes/pf-settings.php:230 includes/pf-settings.php:247
+#: includes/pf-settings.php:897
+msgid "Adoptive"
+msgstr ""
+
+#: includes/pf-settings.php:232 includes/pf-settings.php:249
+msgid "Select adoptive filtering"
+msgstr ""
+
+#: includes/pf-settings.php:236 includes/pf-settings.php:253
+msgid "Not active on this filter"
+msgstr ""
+
+#: includes/pf-settings.php:237 includes/pf-settings.php:254
+msgid "Terms will be hidden"
+msgstr ""
+
+#: includes/pf-settings.php:238
+msgid "Terms will be shown, but unclickable"
+msgstr ""
+
+#: includes/pf-settings.php:239
+msgid "Terms will be shown and clickable"
+msgstr ""
+
+#: includes/pf-settings.php:262
+msgid "Term Count"
+msgstr ""
+
+#: includes/pf-settings.php:264
+msgid "Show term count"
+msgstr ""
+
+#: includes/pf-settings.php:272
+msgid "Term Search"
+msgstr ""
+
+#: includes/pf-settings.php:274
+msgid "Show term search input"
+msgstr ""
+
+#: includes/pf-settings.php:282
+msgid "Term Display"
+msgstr ""
+
+#: includes/pf-settings.php:284
+msgid "Select terms display style"
+msgstr ""
+
+#: includes/pf-settings.php:289
+msgid "Inline"
+msgstr ""
+
+#: includes/pf-settings.php:290
+msgid "Split into two columns"
+msgstr ""
+
+#: includes/pf-settings.php:291
+msgid "Split into three columns"
+msgstr ""
+
+#: includes/pf-settings.php:298
+msgid "None Text"
+msgstr ""
+
+#: includes/pf-settings.php:300
+msgid "Change none text"
+msgstr ""
+
+#: includes/pf-settings.php:308 includes/pf-settings.php:323
+#: includes/pf-settings.php:1146
+msgid "Hide Elements"
+msgstr ""
+
+#: includes/pf-settings.php:310 includes/pf-settings.php:325
+#: includes/pf-settings.php:1148
+msgid "Select elements to hide"
+msgstr ""
+
+#: includes/pf-settings.php:337 includes/pf-settings.php:339
+#: includes/pf-settings.php:896 includes/pf-widget.php:135
+#: includes/svx-settings/svx-settings.php:405
+msgid "Style"
+msgstr ""
+
+#: includes/pf-settings.php:343 includes/pf-settings.php:949
+msgid "Flat"
+msgstr ""
+
+#: includes/pf-settings.php:344
+msgid "Modern"
+msgstr ""
+
+#: includes/pf-settings.php:345
+msgid "HTML5"
+msgstr ""
+
+#: includes/pf-settings.php:346
+msgid "White"
+msgstr ""
+
+#: includes/pf-settings.php:347
+msgid "Thin"
+msgstr ""
+
+#: includes/pf-settings.php:348
+msgid "Knob"
+msgstr ""
+
+#: includes/pf-settings.php:349
+msgid "Metal"
+msgstr ""
+
+#: includes/pf-settings.php:356
+msgid "Grid"
+msgstr ""
+
+#: includes/pf-settings.php:358
+msgid "Show grid"
+msgstr ""
+
+#: includes/pf-settings.php:366
+msgid "Start"
+msgstr ""
+
+#: includes/pf-settings.php:368
+msgid "Range start"
+msgstr ""
+
+#: includes/pf-settings.php:376
+msgid "End"
+msgstr ""
+
+#: includes/pf-settings.php:378
+msgid "Range end"
+msgstr ""
+
+#: includes/pf-settings.php:386
+msgid "Prefix"
+msgstr ""
+
+#: includes/pf-settings.php:388
+msgid "Terms prefix"
+msgstr ""
+
+#: includes/pf-settings.php:396
+msgid "Postfix"
+msgstr ""
+
+#: includes/pf-settings.php:398
+msgid "Terms postfix"
+msgstr ""
+
+#: includes/pf-settings.php:406
+msgid "Step"
+msgstr ""
+
+#: includes/pf-settings.php:408
+msgid "Step value"
+msgstr ""
+
+#: includes/pf-settings.php:416
+msgid "Grid density"
+msgstr ""
+
+#: includes/pf-settings.php:418
+msgid "Grid density value"
+msgstr ""
+
+#: includes/pf-settings.php:426
+msgid "Meta key"
+msgstr ""
+
+#: includes/pf-settings.php:428
+msgid "Enter meta key"
+msgstr ""
+
+#: includes/pf-settings.php:436
+msgid "Meta compare"
+msgstr ""
+
+#: includes/pf-settings.php:438
+msgid "Select meta compare"
+msgstr ""
+
+#: includes/pf-settings.php:462
+msgid "Numeric"
+msgstr ""
+
+#: includes/pf-settings.php:464
+msgid "Meta values are numeric"
+msgstr ""
+
+#: includes/pf-settings.php:472
+msgid "Meta type"
+msgstr ""
+
+#: includes/pf-settings.php:474
+msgid "Select meta type"
+msgstr ""
+
+#: includes/pf-settings.php:493
+msgid "Placeholder"
+msgstr ""
+
+#: includes/pf-settings.php:495
+msgid "Placeholder text"
+msgstr ""
+
+#: includes/pf-settings.php:503
+msgid "Label"
+msgstr ""
+
+#: includes/pf-settings.php:505
+msgid "Label text"
+msgstr ""
+
+#: includes/pf-settings.php:711
+msgid "Settings page for"
+msgstr ""
+
+#: includes/pf-settings.php:715
+msgid "Visit XforWooCommerce.com"
+msgstr ""
+
+#: includes/pf-settings.php:719
+msgid "Get help"
+msgstr ""
+
+#: includes/pf-settings.php:724
+msgid "Dashboard"
+msgstr ""
+
+#: includes/pf-settings.php:725
+msgid "Dashboard Overview"
+msgstr ""
+
+#: includes/pf-settings.php:728
+msgid "Filter Presets"
+msgstr ""
+
+#: includes/pf-settings.php:729
+msgid "Filter Presets Options"
+msgstr ""
+
+#: includes/pf-settings.php:732 includes/pf-settings.php:1709
+msgid "Presets Manager"
+msgstr ""
+
+#: includes/pf-settings.php:733
+msgid "Presets Manager Options"
+msgstr ""
+
+#: includes/pf-settings.php:736
+msgid "Shop Integration"
+msgstr ""
+
+#: includes/pf-settings.php:737
+msgid "Shop Integration Options"
+msgstr ""
+
+#: includes/pf-settings.php:740
+msgid "AJAX"
+msgstr ""
+
+#: includes/pf-settings.php:741
+msgid "AJAX Options"
+msgstr ""
+
+#: includes/pf-settings.php:744
+msgid "Advanced"
+msgstr ""
+
+#: includes/pf-settings.php:745
+msgid "Advanced Options"
+msgstr ""
+
+#: includes/pf-settings.php:748
+msgid "Analytics"
+msgstr ""
+
+#: includes/pf-settings.php:749 includes/pf-settings.php:1771
+#: includes/pf-settings.php:1774
+msgid "Filtering Analytics"
+msgstr ""
+
+#: includes/pf-settings.php:755 includes/pf-settings.php:1303
+msgid "Order by"
+msgstr ""
+
+#: includes/pf-settings.php:756 includes/pf-settings.php:1308
+msgid "Per page"
+msgstr ""
+
+#: includes/pf-settings.php:758 includes/pf-settings.php:1304 prdctfltr.php:258
+msgid "Search"
+msgstr ""
+
+#: includes/pf-settings.php:759 includes/pf-settings.php:1305
+msgid "Avalibility"
+msgstr ""
+
+#: includes/pf-settings.php:761
+msgid "Price range"
+msgstr ""
+
+#: includes/pf-settings.php:762
+msgid "Meta filter"
+msgstr ""
+
+#: includes/pf-settings.php:846
+msgid "Visit XforWooCommerce.com store, demos and knowledge base."
+msgstr ""
+
+#: includes/pf-settings.php:851
+msgid "Help Center"
+msgstr ""
+
+#: includes/pf-settings.php:852
+msgid "Need support? Visit the Help Center."
+msgstr ""
+
+#: includes/pf-settings.php:857
+msgid "Automatic Updates"
+msgstr ""
+
+#: includes/pf-settings.php:858
+msgid ""
+"Get automatic updates, by downloading and installing the Envato Market "
+"plugin."
+msgstr ""
+
+#: includes/pf-settings.php:866
+msgid "Plugin Options"
+msgstr ""
+
+#: includes/pf-settings.php:869
+msgid "Quick export/import, backup and restore, or just reset your optons here"
+msgstr ""
+
+#: includes/pf-settings.php:879
+msgid "Editing selected filter preset"
+msgstr ""
+
+#: includes/pf-settings.php:888
+msgid "Filter Options"
+msgstr ""
+
+#: includes/pf-settings.php:891
+msgid "Select options group for the current preset"
+msgstr ""
+
+#: includes/pf-settings.php:894 includes/pf-settings.php:1289
+msgid "Filters"
+msgstr ""
+
+#: includes/pf-settings.php:895
+msgid "General"
+msgstr ""
+
+#: includes/pf-settings.php:898
+msgid "Responsive"
+msgstr ""
+
+#: includes/pf-settings.php:906
+msgid "Filter on Click"
+msgstr ""
+
+#: includes/pf-settings.php:908
+msgid "Check this option to filter on click"
+msgstr ""
+
+#: includes/pf-settings.php:916
+msgid "Stepped Selection"
+msgstr ""
+
+#: includes/pf-settings.php:918
+msgid "Check this option to use stepped selection"
+msgstr ""
+
+#: includes/pf-settings.php:926
+msgid "Show Selected Terms In"
+msgstr ""
+
+#: includes/pf-settings.php:928
+msgid "Select areas where to show the selected terms"
+msgstr ""
+
+#: includes/pf-settings.php:932
+msgid "Top bar"
+msgstr ""
+
+#: includes/pf-settings.php:933
+msgid "Collector"
+msgstr ""
+
+#: includes/pf-settings.php:934
+msgid "Filter title"
+msgstr ""
+
+#: includes/pf-settings.php:935
+msgid "After filter title"
+msgstr ""
+
+#: includes/pf-settings.php:943
+msgid "Selected Terms Style"
+msgstr ""
+
+#: includes/pf-settings.php:945
+msgid "Select selected terms style"
+msgstr ""
+
+#: includes/pf-settings.php:950 includes/svx-settings/svx-settings.php:407
+msgid "Border"
+msgstr ""
+
+#: includes/pf-settings.php:957
+msgid "Reorder Selected"
+msgstr ""
+
+#: includes/pf-settings.php:959
+msgid "Check this option to bring selected terms to the top"
+msgstr ""
+
+#: includes/pf-settings.php:967
+msgid "Filter Form Action"
+msgstr ""
+
+#: includes/pf-settings.php:969
+msgid "Enter custom filter form action=\"\" parameter"
+msgstr ""
+
+#: includes/pf-settings.php:977
+msgid "Select Design"
+msgstr ""
+
+#: includes/pf-settings.php:979
+msgid "Select filter design style"
+msgstr ""
+
+#: includes/pf-settings.php:984
+msgid "Pop Up"
+msgstr ""
+
+#: includes/pf-settings.php:985
+msgid "Select Boxes"
+msgstr ""
+
+#: includes/pf-settings.php:986
+msgid "Fixed Sidebar Left"
+msgstr ""
+
+#: includes/pf-settings.php:987
+msgid "Fixed Sidebar Right"
+msgstr ""
+
+#: includes/pf-settings.php:988
+msgid "Fixed Sidebar Left With Overlay"
+msgstr ""
+
+#: includes/pf-settings.php:989
+msgid "Fixed Sidebar Right With Overlay"
+msgstr ""
+
+#: includes/pf-settings.php:990
+msgid "Full Screen Overlay"
+msgstr ""
+
+#: includes/pf-settings.php:997
+msgid "Always Visible"
+msgstr ""
+
+#: includes/pf-settings.php:999
+msgid "Disable slide in/out animation"
+msgstr ""
+
+#: includes/pf-settings.php:1007
+msgid "Row Display"
+msgstr ""
+
+#: includes/pf-settings.php:1009
+msgid "Select row display mode"
+msgstr ""
+
+#: includes/pf-settings.php:1013
+msgid "One row"
+msgstr ""
+
+#: includes/pf-settings.php:1014
+msgid "Multiple rows"
+msgstr ""
+
+#: includes/pf-settings.php:1015
+msgid "Masonry Filters"
+msgstr ""
+
+#: includes/pf-settings.php:1022
+msgid "Max Columns"
+msgstr ""
+
+#: includes/pf-settings.php:1024
+msgid "Set max filter columns"
+msgstr ""
+
+#: includes/pf-settings.php:1032
+msgid "Max Height"
+msgstr ""
+
+#: includes/pf-settings.php:1034
+msgid "Set max filter height"
+msgstr ""
+
+#: includes/pf-settings.php:1042
+msgid "JS Scroll Bars"
+msgstr ""
+
+#: includes/pf-settings.php:1044
+msgid "Enable JavaScript scroll bars for nicer display"
+msgstr ""
+
+#: includes/pf-settings.php:1052
+msgid "Checkbox Style"
+msgstr ""
+
+#: includes/pf-settings.php:1054
+msgid "Select term checkbox style"
+msgstr ""
+
+#: includes/pf-settings.php:1058 includes/pf-settings.php:1075
+msgid "Hide"
+msgstr ""
+
+#: includes/pf-settings.php:1059 includes/svx-settings/svx-settings.php:409
+msgid "Round"
+msgstr ""
+
+#: includes/pf-settings.php:1060
+msgid "Square"
+msgstr ""
+
+#: includes/pf-settings.php:1061 includes/svx-settings/svx-settings.php:386
+msgid "Checkbox"
+msgstr ""
+
+#: includes/pf-settings.php:1062
+msgid "System Checkboxes"
+msgstr ""
+
+#: includes/pf-settings.php:1069
+msgid "Hierarchy Style"
+msgstr ""
+
+#: includes/pf-settings.php:1071
+msgid "Select hierarchy style"
+msgstr ""
+
+#: includes/pf-settings.php:1076
+msgid "Circle"
+msgstr ""
+
+#: includes/pf-settings.php:1077
+msgid "Circle Solid"
+msgstr ""
+
+#: includes/pf-settings.php:1078
+msgid "Lined"
+msgstr ""
+
+#: includes/pf-settings.php:1079
+msgid "Arrows"
+msgstr ""
+
+#: includes/pf-settings.php:1086
+msgid "Filter Icon"
+msgstr ""
+
+#: includes/pf-settings.php:1088
+msgid ""
+"Enter icon class. Use icon class e.g. prdctfltr-filter or FontAwesome fa fa-"
+"shopping-cart or any other"
+msgstr ""
+
+#: includes/pf-settings.php:1096
+msgid "Filter Title Text"
+msgstr ""
+
+#: includes/pf-settings.php:1098
+msgid "Enter title text"
+msgstr ""
+
+#: includes/pf-settings.php:1106
+msgid "Filter Button Text"
+msgstr ""
+
+#: includes/pf-settings.php:1108
+msgid "Enter filter button text"
+msgstr ""
+
+#: includes/pf-settings.php:1116
+msgid "Button Position"
+msgstr ""
+
+#: includes/pf-settings.php:1118
+msgid "Select button position"
+msgstr ""
+
+#: includes/pf-settings.php:1122
+msgid "Bottom"
+msgstr ""
+
+#: includes/pf-settings.php:1123
+msgid "Top"
+msgstr ""
+
+#: includes/pf-settings.php:1124
+msgid "Both"
+msgstr ""
+
+#: includes/pf-settings.php:1131
+msgid "Content Align"
+msgstr ""
+
+#: includes/pf-settings.php:1133
+msgid "Set content align"
+msgstr ""
+
+#: includes/pf-settings.php:1137
+msgid "Left"
+msgstr ""
+
+#: includes/pf-settings.php:1138
+msgid "Center"
+msgstr ""
+
+#: includes/pf-settings.php:1139
+msgid "Right"
+msgstr ""
+
+#: includes/pf-settings.php:1152
+msgid "Filter icon"
+msgstr ""
+
+#: includes/pf-settings.php:1153
+msgid "The whole top bar"
+msgstr ""
+
+#: includes/pf-settings.php:1154
+msgid "Showing text in top bar"
+msgstr ""
+
+#: includes/pf-settings.php:1155
+msgid "Sale button"
+msgstr ""
+
+#: includes/pf-settings.php:1156
+msgid "Instock button"
+msgstr ""
+
+#: includes/pf-settings.php:1157
+msgid "Reset button"
+msgstr ""
+
+#: includes/pf-settings.php:1165
+msgid "Loader Animation"
+msgstr ""
+
+#: includes/pf-settings.php:1167
+msgid "Select loader animation"
+msgstr ""
+
+#: includes/pf-settings.php:1171 includes/pf-settings.php:1172
+#: includes/pf-settings.php:1173 includes/pf-settings.php:1174
+#: includes/pf-settings.php:1175 includes/pf-settings.php:1176
+msgid "Overlay #%s"
+msgstr ""
+
+#: includes/pf-settings.php:1177
+msgid "In Title #%s"
+msgstr ""
+
+#: includes/pf-settings.php:1178 includes/pf-settings.php:1179
+#: includes/pf-settings.php:1180 includes/pf-settings.php:1181
+#: includes/pf-settings.php:1182
+msgid "In title #%s"
+msgstr ""
+
+#: includes/pf-settings.php:1190
+msgid "Enable"
+msgstr ""
+
+#: includes/pf-settings.php:1192
+msgid "Check this option to use adoptive filtering in current preset"
+msgstr ""
+
+#: includes/pf-settings.php:1200
+msgid "Active On"
+msgstr ""
+
+#: includes/pf-settings.php:1202
+msgid "Select when to activate adoptive filtering"
+msgstr ""
+
+#: includes/pf-settings.php:1206
+msgid "Always active"
+msgstr ""
+
+#: includes/pf-settings.php:1207
+msgid "Active on permalinks and filters"
+msgstr ""
+
+#: includes/pf-settings.php:1208
+msgid "Active on filters"
+msgstr ""
+
+#: includes/pf-settings.php:1215
+msgid "Depend On"
+msgstr ""
+
+#: includes/pf-settings.php:1217
+msgid "Select taxonomy terms can depend on"
+msgstr ""
+
+#: includes/pf-settings.php:1226
+msgid "Product Count"
+msgstr ""
+
+#: includes/pf-settings.php:1228
+msgid "Select adoptive product count display"
+msgstr ""
+
+#: includes/pf-settings.php:1232
+msgid "Filtered count / Total"
+msgstr ""
+
+#: includes/pf-settings.php:1233
+msgid "Filtered count"
+msgstr ""
+
+#: includes/pf-settings.php:1234
+msgid "Total"
+msgstr ""
+
+#: includes/pf-settings.php:1241
+msgid "Reorder Terms"
+msgstr ""
+
+#: includes/pf-settings.php:1243
+msgid "Reorder remaining terms to the top"
+msgstr ""
+
+#: includes/pf-settings.php:1251
+msgid "Responsive Behaviour"
+msgstr ""
+
+#: includes/pf-settings.php:1253
+msgid "Set filter preset behaviour on defined resolution"
+msgstr ""
+
+#: includes/pf-settings.php:1257
+msgid "Do not do a thing"
+msgstr ""
+
+#: includes/pf-settings.php:1258
+msgid "Switch with filter preset"
+msgstr ""
+
+#: includes/pf-settings.php:1259
+msgid "Show on screen resolution smaller than"
+msgstr ""
+
+#: includes/pf-settings.php:1260
+msgid "Show on screen resolution larger than"
+msgstr ""
+
+#: includes/pf-settings.php:1268
+msgid "Responsive Resolution"
+msgstr ""
+
+#: includes/pf-settings.php:1270
+msgid ""
+"Set screen resolution in pixels that will trigger the responsive behaviour"
+msgstr ""
+
+#: includes/pf-settings.php:1278 includes/pf-settings.php:1700
+#: includes/pf-settings.php:1824 includes/pf-widget.php:144
+msgid "Preset"
+msgstr ""
+
+#: includes/pf-settings.php:1280 includes/pf-settings.php:1703
+#: includes/pf-settings.php:1827
+msgid "Set filter preset"
+msgstr ""
+
+#: includes/pf-settings.php:1292
+msgid "Add more filters to the current preset"
+msgstr ""
+
+#: includes/pf-settings.php:1298
+msgid "Taxonomy"
+msgstr ""
+
+#: includes/pf-settings.php:1299
+msgid "Taxonomy Range"
+msgstr ""
+
+#: includes/pf-settings.php:1301
+msgid "Meta Range"
+msgstr ""
+
+#: includes/pf-settings.php:1307
+msgid "Price Range"
+msgstr ""
+
+#: includes/pf-settings.php:1320
+msgid "Select Taxonomies"
+msgstr ""
+
+#: includes/pf-settings.php:1322
+msgid ""
+"Select supported taxonomies for Presets Manager (needs a Save and page "
+"refresh to take effect!)"
+msgstr ""
+
+#: includes/pf-settings.php:1333
+msgid "Switch Variable Images"
+msgstr ""
+
+#: includes/pf-settings.php:1335
+msgid "Check this option to switch variable images when filtering attributes"
+msgstr ""
+
+#: includes/pf-settings.php:1342
+msgid "Clear All"
+msgstr ""
+
+#: includes/pf-settings.php:1344
+msgid "Select taxonomies which Clear All button cannot clear"
+msgstr ""
+
+#: includes/pf-settings.php:1353
+msgid "Register Taxonomy"
+msgstr ""
+
+#: includes/pf-settings.php:1356
+msgid ""
+"Register custom product taxonomies (needs a Save and page refresh to take "
+"effect!)"
+msgstr ""
+
+#: includes/pf-settings.php:1363
+msgid "Plural name"
+msgstr ""
+
+#: includes/pf-settings.php:1366
+msgid "Enter plural taxonomy name"
+msgstr ""
+
+#: includes/pf-settings.php:1370
+msgid "Singular name"
+msgstr ""
+
+#: includes/pf-settings.php:1373
+msgid "Enter singular taxonomy name"
+msgstr ""
+
+#: includes/pf-settings.php:1377
+msgid "Use hierarchy"
+msgstr ""
+
+#: includes/pf-settings.php:1380
+msgid "Enable hierarchy for this taxonomy"
+msgstr ""
+
+#: includes/pf-settings.php:1387
+msgid "Hide Empty Terms"
+msgstr ""
+
+#: includes/pf-settings.php:1389
+msgid "Hide empty terms"
+msgstr ""
+
+#: includes/pf-settings.php:1396
+msgid "Use AJAX"
+msgstr ""
+
+#: includes/pf-settings.php:1398
+msgid "Check this option to use AJAX in Shop"
+msgstr ""
+
+#: includes/pf-settings.php:1406
+msgid "Automatic AJAX"
+msgstr ""
+
+#: includes/pf-settings.php:1408
+msgid "Check this option to use automatic AJAX installation."
+msgstr ""
+
+#: includes/pf-settings.php:1408
+msgid "Theme supported! AJAX is set for"
+msgstr ""
+
+#: includes/pf-settings.php:1408
+msgid "Theme not found in database. Using default settings."
+msgstr ""
+
+#: includes/pf-settings.php:1417
+msgid "Product Wrapper"
+msgstr ""
+
+#: includes/pf-settings.php:1419
+msgid "Enter product wrapper jQuery selector."
+msgstr ""
+
+#: includes/pf-settings.php:1429
+msgid "Enter product category jQuery selector."
+msgstr ""
+
+#: includes/pf-settings.php:1437
+msgid "Product"
+msgstr ""
+
+#: includes/pf-settings.php:1439
+msgid "Enter product jQuery selector."
+msgstr ""
+
+#: includes/pf-settings.php:1447
+msgid "Columns"
+msgstr ""
+
+#: includes/pf-settings.php:1449
+msgid "Fix columns problems"
+msgstr ""
+
+#: includes/pf-settings.php:1457
+msgid "Rows"
+msgstr ""
+
+#: includes/pf-settings.php:1459
+msgid "Fix rows problems"
+msgstr ""
+
+#: includes/pf-settings.php:1467
+msgid "Result Count"
+msgstr ""
+
+#: includes/pf-settings.php:1469
+msgid "Enter result count jQuery selector."
+msgstr ""
+
+#: includes/pf-settings.php:1479
+msgid "Enter order by jQuery selector."
+msgstr ""
+
+#: includes/pf-settings.php:1489
+msgid "Enter pagination jQuery selector."
+msgstr ""
+
+#: includes/pf-settings.php:1497
+msgid "Pagination Function"
+msgstr ""
+
+#: includes/pf-settings.php:1499
+msgid "Enter pagination function."
+msgstr ""
+
+#: includes/pf-settings.php:1507
+msgid "Pagination Type"
+msgstr ""
+
+#: includes/pf-settings.php:1509
+msgid "Select pagination type"
+msgstr ""
+
+#: includes/pf-settings.php:1513
+msgid "Default (Theme)"
+msgstr ""
+
+#: includes/pf-settings.php:1514
+msgid "Custom pagination (Product Filter)"
+msgstr ""
+
+#: includes/pf-settings.php:1515
+msgid "Load more (Product Filter)"
+msgstr ""
+
+#: includes/pf-settings.php:1516
+msgid "Infinite load (Product Filter)"
+msgstr ""
+
+#: includes/pf-settings.php:1523
+msgid "Failsafe"
+msgstr ""
+
+#: includes/pf-settings.php:1525
+msgid ""
+"Select which missing element will not trigger AJAX and will reload the page"
+msgstr ""
+
+#: includes/pf-settings.php:1529
+msgid "Products wrapper"
+msgstr ""
+
+#: includes/pf-settings.php:1538
+msgid "After AJAX JS"
+msgstr ""
+
+#: includes/pf-settings.php:1540
+msgid "Enter JavaScript or jQuery code to execute after AJAX"
+msgstr ""
+
+#: includes/pf-settings.php:1548
+msgid "Product Animation"
+msgstr ""
+
+#: includes/pf-settings.php:1550
+msgid "Select product animation after AJAX"
+msgstr ""
+
+#: includes/pf-settings.php:1554
+msgid "No animation"
+msgstr ""
+
+#: includes/pf-settings.php:1555
+msgid "Fade in products"
+msgstr ""
+
+#: includes/pf-settings.php:1556
+msgid "Fade in random products"
+msgstr ""
+
+#: includes/pf-settings.php:1563
+msgid "Scroll To"
+msgstr ""
+
+#: includes/pf-settings.php:1565
+msgid "Select scroll to after AJAX"
+msgstr ""
+
+#: includes/pf-settings.php:1569
+msgid "Disable scroll"
+msgstr ""
+
+#: includes/pf-settings.php:1572
+msgid "Page top"
+msgstr ""
+
+#: includes/pf-settings.php:1579
+msgid "Browser URL/Permalinks"
+msgstr ""
+
+#: includes/pf-settings.php:1581
+msgid "Select how to display browser URLs or permalinks on AJAX"
+msgstr ""
+
+#: includes/pf-settings.php:1585 includes/pf-settings.php:1636
+msgid "Use Product Filter redirects"
+msgstr ""
+
+#: includes/pf-settings.php:1586
+msgid "Only add query parameters"
+msgstr ""
+
+#: includes/pf-settings.php:1587
+msgid "Disable URL changes"
+msgstr ""
+
+#: includes/pf-settings.php:1594
+msgid "Disable Elements"
+msgstr ""
+
+#: includes/pf-settings.php:1596
+msgid "Select which elements will not be used with AJAX"
+msgstr ""
+
+#: includes/pf-settings.php:1600
+msgid "Shop title"
+msgstr ""
+
+#: includes/pf-settings.php:1601
+msgid "Shop description"
+msgstr ""
+
+#: includes/pf-settings.php:1602
+msgid "Result count"
+msgstr ""
+
+#: includes/pf-settings.php:1610
+msgid "Post Type"
+msgstr ""
+
+#: includes/pf-settings.php:1612
+msgid ""
+"Check this option to add the ?post_type=product parameter when filtering"
+msgstr ""
+
+#: includes/pf-settings.php:1620
+msgid "Stay on Permalink "
+msgstr ""
+
+#: includes/pf-settings.php:1622
+msgid "Check this option to force filtering on same permalink (URL)"
+msgstr ""
+
+#: includes/pf-settings.php:1630
+msgid "Permalink Structure"
+msgstr ""
+
+#: includes/pf-settings.php:1632
+msgid "Set permalinks structure"
+msgstr ""
+
+#: includes/pf-settings.php:1637
+msgid "Use .htaccess and native WordPress redirects"
+msgstr ""
+
+#: includes/pf-settings.php:1644
+msgid "Single Product"
+msgstr ""
+
+#: includes/pf-settings.php:1646
+msgid "Check this option to remove redirect when only one product is found"
+msgstr ""
+
+#: includes/pf-settings.php:1654
+msgid "Integration Hooks"
+msgstr ""
+
+#: includes/pf-settings.php:1657
+msgid "Add filter presets to hooks"
+msgstr ""
+
+#: includes/pf-settings.php:1667 includes/pf-settings.php:1811
+msgid "Enter name"
+msgstr ""
+
+#: includes/pf-settings.php:1671
+msgid "Common Hooks"
+msgstr ""
+
+#: includes/pf-settings.php:1674
+msgid "Select a common hook"
+msgstr ""
+
+#: includes/pf-settings.php:1676
+msgid "Use custom hook"
+msgstr ""
+
+#: includes/pf-settings.php:1686
+msgid "Custom Hook"
+msgstr ""
+
+#: includes/pf-settings.php:1689
+msgid "If you use custom hook, rather than common hooks, please enter it here"
+msgstr ""
+
+#: includes/pf-settings.php:1693
+msgid "Priority"
+msgstr ""
+
+#: includes/pf-settings.php:1696
+msgid "Set hook priority"
+msgstr ""
+
+#: includes/pf-settings.php:1712 includes/pf-widget.php:161
+msgid "Disable presets manager settings"
+msgstr ""
+
+#: includes/pf-settings.php:1719
+msgid "Enter filter element ID attribute"
+msgstr ""
+
+#: includes/pf-settings.php:1726
+msgid "Enter filter element class attribute"
+msgstr ""
+
+#: includes/pf-settings.php:1733
+msgid "Result Count Integration"
+msgstr ""
+
+#: includes/pf-settings.php:1735
+msgid "Replace WooCommerce result count element with a product filter"
+msgstr ""
+
+#: includes/pf-settings.php:1743
+msgid "Order By Integration"
+msgstr ""
+
+#: includes/pf-settings.php:1745
+msgid "Replace WooCommerce order by element with a product filter"
+msgstr ""
+
+#: includes/pf-settings.php:1753 includes/pf-settings.php:1756
+msgid "Widget Integration"
+msgstr ""
+
+#: includes/pf-settings.php:1756
+msgid ""
+"Looking for widget integration options? Product Filter widgets are added to "
+"sidebars in the WordPress Widgets screen."
+msgstr ""
+
+#: includes/pf-settings.php:1756
+msgid "Click here to navigate to WordPress Widgets"
+msgstr ""
+
+#: includes/pf-settings.php:1756
+msgid ""
+"If theme that you are using has limited sidebar options, try plugins such as"
+msgstr ""
+
+#: includes/pf-settings.php:1762
+msgid "Use Analytics"
+msgstr ""
+
+#: includes/pf-settings.php:1764
+msgid "Check this option to use filtering analytics"
+msgstr ""
+
+#: includes/pf-settings.php:1798
+msgid "Presets"
+msgstr ""
+
+#: includes/pf-settings.php:1801
+msgid "Add filter presets for"
+msgstr ""
+
+#: includes/pf-settings.php:1815
+msgid "Term"
+msgstr ""
+
+#: includes/pf-settings.php:1818
+msgid "Choose term, that when selected, will show the set filter preset"
+msgstr ""
+
+#: includes/pf-settings.php:1850
+msgid "Filtering analytics are empty!"
+msgstr ""
+
+#: includes/pf-settings.php:1920
+msgid "Click the button to reset filtering analytics."
+msgstr ""
+
+#: includes/pf-settings.php:1921
+msgid "Reset analytics"
+msgstr ""
+
+#: includes/pf-widget.php:15
+msgid "Product Filter widget version."
+msgstr ""
+
+#: includes/pf-widget.php:137
+msgid "Flat inline"
+msgstr ""
+
+#: includes/pf-widget.php:138
+msgid "Flat block"
+msgstr ""
+
+#: includes/pf-widget.php:139
+msgid "Flat select"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:140
+msgid "Plugin not registered!"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:142
+msgid ""
+"license is not registered. Please register! Click Register now button to "
+"start."
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:143
+msgid "Need help? Visit this link"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:143
+msgid "How to register?"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:145
+msgid "Register now"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:151
+msgid "Connecting to server"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:153
+msgid "OK"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:154
+msgid "Remove license"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:155
+#: includes/svx-settings/svx-settings.php:187
+msgid "License details"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:156
+msgid "Extend support"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:162
+msgid "Confirm key"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:163
+msgid "Get key"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:219
+#: includes/svx-settings/svx-settings.php:228
+msgid "Save"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:257
+msgid "Export"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:257
+msgid "Import"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:257
+msgid "Backup"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:257
+msgid "Restore"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:257
+msgid "Reset"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:265
+msgid "Add +"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:305
+msgid "Configure"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:313
+#: includes/svx-settings/svx-settings.php:334
+msgid "Add Item +"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:342
+msgid "Include/Exclude Manager"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:343
+msgid "Exclude"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:344
+msgid "Include"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:356
+msgid "Terms Manager"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:363
+msgid "Custom Order"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:372
+msgid "Type"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:375
+msgid "Plain Text"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:376
+msgid "Color"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:377
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:378
+msgid "Select Box"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:380
+#: includes/svx-settings/svx-settings.php:388
+msgid "System Select"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:381
+msgid "Live Select"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:385
+msgid "Input Field"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:387
+msgid "Textarea"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:408
+msgid "Background"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:413
+msgid "Normal"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:417
+msgid "Active"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:421
+msgid "Disabled"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:425
+msgid "Out of stock"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:432
+msgid "Show labels"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:439
+msgid "Swatch size"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:463
+msgid "Meta value"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:470
+#: includes/svx-settings/svx-settings.php:528
+msgid "Value"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:485
+msgid "Min"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:487
+msgid "Max"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:501
+#: includes/svx-settings/svx-settings.php:549
+msgid "Tooltip"
+msgstr ""
+
+#: includes/svx-settings/svx-settings.php:536
+msgid "Add Image +"
+msgstr ""
+
+#: prdctfltr.php:75
+msgid ""
+"This plugin requires WooCommerce. Download it from WooCommerce official "
+"website"
+msgstr ""
+
+#: prdctfltr.php:259
+msgid "Popular"
+msgstr ""
+
+#: prdctfltr.php:260
+msgid "All"
+msgstr ""
+
+#: prdctfltr.php:263
+msgid "Edit"
+msgstr ""
+
+#: prdctfltr.php:264
+msgid "Update"
+msgstr ""
+
+#: prdctfltr.php:265
+msgid "Add New"
+msgstr ""
+
+#: prdctfltr.php:266
+msgid "New"
+msgstr ""
+
+#: prdctfltr.php:266
+msgid "name"
+msgstr ""
+
+#: prdctfltr.php:267
+msgid "Separate"
+msgstr ""
+
+#: prdctfltr.php:267
+msgid "with commas"
+msgstr ""
+
+#: prdctfltr.php:268
+msgid "Add or remove"
+msgstr ""
+
+#: prdctfltr.php:269
+msgid "Choose from the most used"
+msgstr ""
+
+#: prdctfltr.php:270
+msgid "No"
+msgstr ""
+
+#: prdctfltr.php:270
+msgid "found"
+msgstr ""
+
+#: prdctfltr.php:270
+msgid "No Characteristics found"
+msgstr ""
+
+#: templates/getright.php:77
+msgid "Load More"
+msgstr ""
+
+#: templates/getright.php:82
+msgid "No More Products!"
+msgstr ""
+
+#: templates/getright.php:101
+msgid "Load more"
+msgstr ""
+
+#: templates/getright.php:106
+msgid "No products found"
+msgstr ""
+
+#. #-#-#-#-#  prdctfltr-en_UK.pot (Product Filter for WooCommerce 7.3.3)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  prdctfltr-en_UK.pot (Product Filter for WooCommerce 7.3.3)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://xforwoocommerce.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "XforWooCommerce Themes and Plugins! Visit https://xforwoocommerce.com"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "XforWooCommerce"
+msgstr ""

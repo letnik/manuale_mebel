@@ -233,8 +233,8 @@ html.html_header_sidebar
             color: #000
             
         
-#top
-  .container_wrap
+#top #main
+  .container_wrap 
     border: none
   div .main_color .button
     background: red
@@ -248,10 +248,13 @@ html.html_header_sidebar
         // width: 292px
         .button
           width: 100%
+          background: $button_color
+          text-align: center
+          color: #000
       &:hover
         box-shadow: 0 3px 16px 1px rgba(0, 0, 0, 0.5)
-        .product-attributes-wrap
-          opacity: 1
+      .product-attributes-wrap
+        padding: 7px 15px 15px 15px
       .tinvwl-loop-button-wrapper
         position: absolute
         top: 0
@@ -261,7 +264,8 @@ html.html_header_sidebar
         height: 25px
       a
         .inner_product_header
-          padding-right: 15px !important
+          padding-right: 15px 
+          padding-bottom: 8px 
           .inner_product_header_cell
             .category-name
               font-family: Open Sans
@@ -286,6 +290,44 @@ html.html_header_sidebar
         font-size: 12px
         line-height: 16px
         color: #060606
+      .onsale
+        background: url(../img/sale.svg) center right/contain no-repeat
+        color: white
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 11px
+        padding: 3px
+        border-radius: 0 5px 5px 0
+        line-height: 13px
+        display: flex
+        align-items: center
+        background-color: inherit
+        z-index: 3
+        width: 40px
+        height: 30px
+        top: 3px
+        .onsale_text
+          margin-left: auto
+          margin-right: 3px
+        &:before
+          content: ''
+          background-color: #fff
+          width: 5px
+          height: 5px
+          border-radius: 50%
+          position: absolute
+          left: 4px
+
+            
+
+        
+
+          
+        
+
+
+          
       .price
         padding: 9px auto 7px 0
         del 
@@ -340,12 +382,6 @@ html.html_header_sidebar
                 font-size: 12px
                 line-height: 16px
                 color: #000000
-
-
-
-        .onsale
-          display: none
-        // &:before доробити карточку sake
       .avia_cart_buttons 
         padding: 25px
         border: none
@@ -403,7 +439,43 @@ html.html_header_sidebar
   .woocommerce-product-gallery__image, #tab-title-description, #tab-title-additional_information
     a
       border: none 
-  #tab-description, #tab-additional_information
+  #tab-description, #tab-additional_information, .variations_form.cart
     border: none 
   
-              
+
+#top
+  .summary.entry-summary
+    form.variations_form.cart
+      padding: 0
+      .single_variation_wrap
+        margin: 0
+    .compare
+      opacity: .5
+      display: flex
+      align-items: center
+      &:before
+        font-family: fontello
+        content: '\E80F'
+        font-style: normal
+        font-weight: 400
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        font-size: 16px
+        margin-right: 5px
+
+.custom_wishlist_button
+  .tinvwl_add_to_wishlist-text
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+
+#main
+  footer 
+    .container
+      padding: 14px 50px 
+  
+
+
+
+    
