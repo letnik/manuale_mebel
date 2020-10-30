@@ -138,7 +138,8 @@ function pancode_echo_sale_percent( $html ) {
     $discount = round( 100 * ( $regular_max - $sale_min ) / $regular_max );
   }
 
-  return '<span class="onsale"><span>Акция</span><br>-&nbsp;' . esc_html( $discount ) . '%</span>';
+  return '<span class="onsale"><span class="onsale_text">Sale</span><span class="percent">-&nbsp;' . esc_html( $discount ) . '%</span></span>';
+  // return '<span class="onsale"><span>Акция</span><br>-&nbsp;' . esc_html( $discount ) . '%</span>';
 }
 
 
