@@ -20,14 +20,18 @@
 
 #breadcrumbs
   span
+    font-size: 12px
+    color: grey
     span
+      font-size: 12px
+      color: grey
       a, strong
         font-family: $ff-montserrat
-        font-size: 17px
+        font-size: 12px
         color: grey
       .breadcrumb_last
         font-family: $ff-montserrat
-        font-size: 15px
+        font-size: 12px
         color: grey
 
 #main 
@@ -251,8 +255,11 @@ html.html_header_sidebar
           background: $button_color
           text-align: center
           color: #000
+          &:hover
+            box-shadow: 0px 0 12px rgba(56,85,119,.2)
+            overflow: visible
       &:hover
-        box-shadow: 0 3px 16px 1px rgba(0, 0, 0, 0.5)
+        box-shadow: 0px 0 12px rgba(56,85,119,.2)
       .product-attributes-wrap
         padding: 7px 15px 15px 15px
       .tinvwl-loop-button-wrapper
@@ -319,15 +326,6 @@ html.html_header_sidebar
           position: absolute
           left: 4px
 
-            
-
-        
-
-          
-        
-
-
-          
       .price
         padding: 9px auto 7px 0
         del 
@@ -441,6 +439,14 @@ html.html_header_sidebar
       border: none 
   #tab-description, #tab-additional_information, .variations_form.cart
     border: none 
+
+
+
+  .additional_information_tab.active, .woocommerce-tabs .panel,.description_tab.active
+    background: #EFEFEF
+
+  
+    
   
 
 #top
@@ -451,8 +457,7 @@ html.html_header_sidebar
         margin: 0
     .compare
       opacity: .5
-      display: flex
-      align-items: center
+      display: inline-block
       &:before
         font-family: fontello
         content: '\E80F'
@@ -464,18 +469,44 @@ html.html_header_sidebar
         margin-right: 5px
 
 .custom_wishlist_button
+  opacity: .5
+  display: inline-block
   .tinvwl_add_to_wishlist-text
     font-family: Open Sans
     font-style: normal
     font-weight: normal
     font-size: 15px
 
+
+.tinv-wraper.tinv-wishlist
+  display: inline-block
+  margin-right: 15px
+
 #main
   footer 
     .container
       padding: 14px 50px 
+
+#footer
+  .container
+    .logo
+      padding: 8px 40px 40px 40px
+      a 
+        img 
+          filter: invert(100%)
+
+.product-categories li a
+  background: none
   
 
+.icon-home-custom
+  &:before
+    content: '\e821'
+    font-family: entypo-fontello
+    font-size: 15px
+    color: #808396
+    
+    
 
 
     
