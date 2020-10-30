@@ -167,4 +167,14 @@ function my_sdfsdfdsf(){
 add_action( 'woocommerce_after_add_to_cart_form', 'my_sdfsdfdsf', 10 );
 
 
+// add_theme_support( 'wc-product-gallery-slider' );
 
+
+// add_filter( 'woocommerce_single_product_carousel_options', 'truemisha_product_gallery_arrows' );
+ 
+// function truemisha_product_gallery_arrows( $options ) {
+ 
+//     $options[ 'animation' ] = fade;
+// 	return $options;
+ 
+// }
