@@ -248,10 +248,13 @@ html.html_header_sidebar
         // width: 292px
         .button
           width: 100%
+          background: $button_color
+          text-align: center
+          color: #000
       &:hover
         box-shadow: 0 3px 16px 1px rgba(0, 0, 0, 0.5)
-        .product-attributes-wrap
-          opacity: 1
+      .product-attributes-wrap
+        padding: 7px 15px 15px 15px
       .tinvwl-loop-button-wrapper
         position: absolute
         top: 0
@@ -261,7 +264,8 @@ html.html_header_sidebar
         height: 25px
       a
         .inner_product_header
-          padding-right: 15px !important
+          padding-right: 15px 
+          padding-bottom: 8px 
           .inner_product_header_cell
             .category-name
               font-family: Open Sans
@@ -302,9 +306,20 @@ html.html_header_sidebar
         z-index: 3
         width: 40px
         height: 30px
+        top: 3px
         .onsale_text
           margin-left: auto
           margin-right: 3px
+        &:before
+          content: ''
+          background-color: #fff
+          width: 5px
+          height: 5px
+          border-radius: 50%
+          position: absolute
+          left: 4px
+
+            
 
         
 
