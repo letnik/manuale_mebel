@@ -179,3 +179,15 @@ add_action( 'woocommerce_after_add_to_cart_form', 'my_sdfsdfdsf', 10 );
 // 	return $options;
  
 // }
+
+
+// забираєм артикул з карточки товару
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+// удаляем описание категории на странице категорий
+remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+// выводим описание категории под товарами
+add_action( 'woocommerce_after_shop_loop', 'woocommerce_taxonomy_archive_description', 100 );
+
+
+

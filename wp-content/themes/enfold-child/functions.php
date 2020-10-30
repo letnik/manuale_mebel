@@ -37,7 +37,7 @@ function callback_avia_logo() {
 }
 
 
-// top nav start
+// top nav startshor
 
 add_action( 'ava_after_main_container', 'add_top_menu' );
 
