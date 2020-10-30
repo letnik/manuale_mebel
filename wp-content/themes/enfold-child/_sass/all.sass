@@ -236,14 +236,22 @@ html.html_header_sidebar
 #top
   .container_wrap
     border: none
+  div .main_color .button
+    background: red
+    float: none
   .products
     .product
       .inner_product
         border: none
         position: relative
+        overflow: visible
         // width: 292px
+        .button
+          width: 100%
       &:hover
         box-shadow: 0 3px 16px 1px rgba(0, 0, 0, 0.5)
+        .product-attributes-wrap
+          opacity: 1
       .tinvwl-loop-button-wrapper
         position: absolute
         top: 0
@@ -271,67 +279,73 @@ html.html_header_sidebar
               color: #000000
               padding: 9px 0
               display: block
-        .attribut-title
-          font-family: Open Sans
-          font-style: normal
-          font-weight: normal
-          font-size: 12px
-          line-height: 16px
-          color: #060606
-        .price
-          padding: 9px auto 7px 0
-          del 
-            .woocommerce-Price-amount.amount
-              bdi 
+      .attribut-title
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 16px
+        color: #060606
+      .price
+        padding: 9px auto 7px 0
+        del 
+          .woocommerce-Price-amount.amount
+            bdi 
+              font-family: Open Sans
+              font-style: normal
+              font-weight: normal
+              font-size: 12px
+              line-height: 16px
+              color: $decoreted_text
+        .woocommerce-Price-amount.amount
+          bdi 
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 25px
+            color: #000000
+      .product-attributes-wrap
+        // opacity: 0
+        // position: absolute;
+        // bottom: 0;
+        // left: 0;
+        // padding: 10px 15px;
+        // transform: translateY(100%);
+        .product-attributes-list
+          .product-attributes-title
+            padding-bottom: 4px
+            span
+              font-family: Open Sans
+              font-style: normal
+              font-weight: normal
+              font-size: 12px
+              line-height: 16px
+              color: #060606
+          .product-size-table
+            padding-bottom: 15px
+            .product-size
+              padding-right: 25px
+              .product-size-title
                 font-family: Open Sans
                 font-style: normal
                 font-weight: normal
                 font-size: 12px
                 line-height: 16px
                 color: $decoreted_text
-          .woocommerce-Price-amount.amount
-            bdi 
-              font-family: Open Sans
-              font-style: normal
-              font-weight: normal
-              font-size: 18px
-              line-height: 25px
-              color: #000000
-        .product-attributes-wrap
-              padding: 7px 0 
-              .product-attributes-list
-                .product-attributes-title
-                  padding-bottom: 4px
-                  span
-                    font-family: Open Sans
-                    font-style: normal
-                    font-weight: normal
-                    font-size: 12px
-                    line-height: 16px
-                    color: #060606
-                .product-size-table
-                  padding-bottom: 15px
-                  .product-size
-                    padding-right: 25px
-                    .product-size-title
-                      font-family: Open Sans
-                      font-style: normal
-                      font-weight: normal
-                      font-size: 12px
-                      line-height: 16px
-                      color: $decoreted_text
-                    .product-size-value
-                      font-family: Open Sans
-                      font-style: normal
-                      font-weight: normal
-                      font-size: 12px
-                      line-height: 16px
-                      color: #000000
+              .product-size-value
+                font-family: Open Sans
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 16px
+                color: #000000
 
 
-            .onsale
-              display: none
-            // &:before доробити карточку sake
+
+        .onsale
+          display: none
+        // &:before доробити карточку sake
       .avia_cart_buttons 
         padding: 25px
         border: none
@@ -385,4 +399,11 @@ html.html_header_sidebar
       font-weight: normal
       font-size: 12px !important
 
-            
+#top
+  .woocommerce-product-gallery__image, #tab-title-description, #tab-title-additional_information
+    a
+      border: none 
+  #tab-description, #tab-additional_information
+    border: none 
+  
+               
