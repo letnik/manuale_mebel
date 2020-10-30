@@ -154,3 +154,18 @@ function pancode_echo_sale_percent( $html ) {
 // function tb_woo_custom_cart_button_text() {
 //         return __( 'Купить', 'woocommerce' );
 // }
+
+
+
+// переносимо вішліст
+
+function my_sdfsdfdsf(){
+    global $product;
+
+    echo do_shortcode('[ti_wishlists_addtowishlist]');
+ 
+}
+add_action( 'woocommerce_after_add_to_cart_form', 'my_sdfsdfdsf', 10 );
+
+
+
