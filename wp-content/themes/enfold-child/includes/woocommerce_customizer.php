@@ -50,6 +50,7 @@ function my_after_shop_loop_item_title(){
     $custom_attribute .= '<div><a href="'.esc_url( $product->get_permalink( $product->id )).'" class="button product_type_simple add_to_cart_button">Подробнее</a></div>';
 
     $custom_attribute .= '</div>';
+    $custom_attribute .= '<div class="product-box-shasow"></div>';
 
     echo  $custom_attribute;
 
@@ -179,3 +180,21 @@ add_action( 'woocommerce_after_add_to_cart_form', 'my_sdfsdfdsf', 10 );
 // 	return $options;
  
 // }
+
+
+// забираєм артикул з карточки товару
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+// удаляем описание категории на странице категорий
+remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+// выводим описание категории под товарами
+add_action( 'woocommerce_after_shop_loop', 'woocommerce_taxonomy_archive_description', 100 );
+
+
+// переносим опис
+add_action('init', 'avf_move_product_output');
+function avf_move_product_output() {
+    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 1 );
+    add_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 5 );
+}
