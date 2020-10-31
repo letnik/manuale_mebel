@@ -167,3 +167,35 @@ function truemisha_products_per_page( $per_page ) {
  
 }
 
+// убираем краткое описание
+function wplife_filter_woocommerce_short_description( $post_post_excerpt ) {
+  return ""; 
+};
+add_filter( 'woocommerce_short_description', 'wplife_filter_woocommerce_short_description', 10, 1 );
+
+
+
+// add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+ 
+// function woo_remove_product_tabs( $tabs ) {
+ 
+// unset( $tabs['description'] ); // Убираем вкладку "Описание"
+// unset( $tabs['reviews'] ); // Убираем вкладку "Отзывы"
+// unset( $tabs['additional_information'] ); // Убираем вкладку "Свойства"
+ 
+// return $tabs;
+ 
+// }
+
+// add_action( 'woocommerce_short_description', 'woocommerce_output_product_data_tabs', 33 );
+
+
+
+
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+ function jk_related_products_args( $args ) {
+ 
+$args['posts_per_page'] = 6; // количество "Похожих товаров"
+ $args['columns'] = 3; // количество колонок
+ return $args;
+}
