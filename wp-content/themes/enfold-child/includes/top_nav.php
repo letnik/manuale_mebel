@@ -71,10 +71,14 @@
         </div>
    </div>
 </div>
-<div class="container">
-<?php
-if ( function_exists('yoast_breadcrumb') ) {
-  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-}
-?>
+
+<div class="container_breadcrumps">
+    <div class="container">
+    <?php
+    if ( function_exists('yoast_breadcrumb') ) {
+    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+    }
+    ?>
+    </div>
 </div>
+

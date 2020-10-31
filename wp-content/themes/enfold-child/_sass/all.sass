@@ -203,6 +203,10 @@ html.html_header_sidebar
         align-items: center
         justify-content: center
         color: #000
+        display: none
+    a.wishlist-counter-with-products
+      .wishlist_products_counter_number
+        display: flex
   .header-cart
     .cart_dropdown 
       position: relative
@@ -264,11 +268,25 @@ html.html_header_sidebar
         padding: 7px 15px 15px 15px
       .tinvwl-loop-button-wrapper
         position: absolute
-        top: 0
-        right: 16px
+        top: -1px
+        right: 6px
         z-index: 12
-        width: 25px
-        height: 25px
+        // width: 25px
+        // height: 25px
+        a 
+          &::before
+            background:#fff
+            border-radius: 50%
+            opacity: .5
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 3px
+        a.tinvwl-product-in-list
+          color: $button_color
+          &::before
+            background: #888
+            opacity: 1
       a
         .inner_product_header
           padding-right: 15px 
@@ -347,11 +365,11 @@ html.html_header_sidebar
             color: #000000
       .product-attributes-wrap
         // opacity: 0
-        // position: absolute;
-        // bottom: 0;
-        // left: 0;
-        // padding: 10px 15px;
-        // transform: translateY(100%);
+        // position: absolute
+        // bottom: 0
+        // left: 0
+        // padding: 10px 15px
+        // transform: translateY(100%)
         .product-attributes-list
           .product-attributes-title
             padding-bottom: 4px
@@ -506,7 +524,41 @@ html.html_header_sidebar
     font-size: 15px
     color: #808396
     
+
+.widget_shopping_cart_content
+  background: #fff
     
+#top .main_color 
+  .avia-color-theme-color-highlight
+    background: $button_color
+  .zoom_w
+    img 
+      border: none
+      padding: 1px
+  .slick-vertical .slick-slide
+    img
+      border: none
+      padding: 1px
+
+#top
+  #ivpa-content .ivpa_attribute
+    .ivpa-terms
+      span 
+        padding: 6px 13px
+        line-height: 13px
+        font-size: 13px
+        border-color: #555
+        color: #666
+        margin-right: 8px
+    span.ivpa_clicked
+      background: #555
+      color: #fff
+      border-width: 1px
+      font-weight: 500
+
+
+.container_breadcrumps
+  border-bottom: 1px solid grey
 
 
     
