@@ -191,11 +191,19 @@ add_filter( 'woocommerce_short_description', 'wplife_filter_woocommerce_short_de
 
 
 
-
-add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
- function jk_related_products_args( $args ) {
  
-$args['posts_per_page'] = 6; // количество "Похожих товаров"
- $args['columns'] = 3; // количество колонок
- return $args;
+add_action( 'init', 'enfold_customization_change_related_products' );
+function enfold_customization_change_related_products() {
+	global $avia_config;
+	$avia_config['shop_single_column'] = 5;
+	$avia_config['shop_single_column_items'] = 5;
+}
+
+//  убираем quantity inputs
+function woocommerce_quantity_input( $args = array(), $product = null, $echo = true ) {
+ 
+	if ( is_null( $product ) )  {
+		return $html;
+	}
+ 
 }
