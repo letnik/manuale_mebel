@@ -191,6 +191,13 @@ add_filter( 'woocommerce_short_description', 'wplife_filter_woocommerce_short_de
 
 
 
+ 
+add_action( 'init', 'enfold_customization_change_related_products' );
+function enfold_customization_change_related_products() {
+	global $avia_config;
+	$avia_config['shop_single_column'] = 5;
+	$avia_config['shop_single_column_items'] = 5;
+}
 
 add_filter('woocommerce_get_image_size_thumbnail','add_thumbnail_size',1,10);
 function add_thumbnail_size($size){
@@ -217,5 +224,15 @@ function truemisha_rel_products_args( $args ) {
 	$args[ 'posts_per_page' ] = 5; // сколько штук отображать
 	$args[ 'columns' ] = 5; // сколько штук в одном ряду
 	return $args;
+}
+
+
+//  убираем quantity inputs
+function woocommerce_quantity_input( $args = array(), $product = null, $echo = true ) {
+ 
+	if ( is_null( $product ) )  {
+		return $html;
+	}
+ 
 }
 
