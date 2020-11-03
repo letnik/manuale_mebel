@@ -192,10 +192,30 @@ add_filter( 'woocommerce_short_description', 'wplife_filter_woocommerce_short_de
 
 
 
-add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
- function jk_related_products_args( $args ) {
- 
-$args['posts_per_page'] = 6; // количество "Похожих товаров"
- $args['columns'] = 3; // количество колонок
- return $args;
+add_filter('woocommerce_get_image_size_thumbnail','add_thumbnail_size',1,10);
+function add_thumbnail_size($size){
+
+    $size['width'] = 300;
+    $size['height'] = 300;
+    $size['crop']   = 0; //0 - не обрезаем, 1 - обрезка
+    return $size;
 }
+
+
+add_filter('woocommerce_get_image_size_single','add_single_size',1,10);
+function add_single_size($size){
+
+    $size['width'] = 950;
+    $size['height'] = 400;
+    $size['crop']   = 0;
+    return $size;
+}
+
+add_filter( 'woocommerce_output_related_products_args', 'truemisha_rel_products_args', 25 );
+ 
+function truemisha_rel_products_args( $args ) {
+	$args[ 'posts_per_page' ] = 5; // сколько штук отображать
+	$args[ 'columns' ] = 5; // сколько штук в одном ряду
+	return $args;
+}
+

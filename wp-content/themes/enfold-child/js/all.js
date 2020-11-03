@@ -4,6 +4,5 @@ jQuery(document).ready(function() {
         inner_product_h = inner_product_a + 20;
         inner_product.find('.product-box-shasow').css( "height", "calc(100% + " + inner_product_h +  "px)");  
         return;
-
 });
 
