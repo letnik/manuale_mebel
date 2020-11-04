@@ -4,10 +4,10 @@
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
 wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
+# !wp-content/mu-plugins/
+# !wp-content/plugins/
 !wp-content/themes/
-!wp-content/uploads/
+# !wp-content/uploads/
 !wp-content/languages/
 # ignore these plugins
 wp-content/plugins/hello.php
@@ -19,6 +19,7 @@ _tmp/_oss/
 wp-content/themes/twenty*/
 wp-content/themes/enfold/
 _tmp_my/
+_tmp/
 wp-admin
 
 # ignore node dependency directories
@@ -28,8 +29,6 @@ node_modules/
 *.log
 *.sql
 *.sqlite
-
-
 
 /index.php
 /license.txt
