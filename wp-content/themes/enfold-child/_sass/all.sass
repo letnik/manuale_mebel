@@ -9,6 +9,12 @@
 @import 'parts/header'
 
 
+
+
+#top #wrap_all .avia-slideshow-button, #top .avia-button
+  border-radius: 3px
+
+
 #top .home_page_ts .avia-slideshow 
   min-height: 450px
   max-height: 450px
@@ -54,8 +60,8 @@
     display: inline-block
   .sl_subtitle 
     font-size: 35px
-    line-height: 43px
-    padding: 18px 69px 19px 35px
+    line-height: 35px
+    padding: 15px 69px 16px 35px
     background: #A1B8C5
     display: inline-block
 
@@ -112,10 +118,10 @@
 
 html.html_header_sidebar
   .logo
-    border-bottom: none
+    // border-bottom: none
   #header 
     .av-main-nav
-      padding: 0
+      // padding: 0
 
 
 .top-nav
@@ -305,8 +311,10 @@ html.html_header_sidebar
               font-size: 15px
               line-height: 20px
               color: #000000
-              padding: 9px 0
               display: block
+              padding-top: 9px
+              padding-bottom: 9px
+              padding-right: 16%
       .attribut-title
         font-family: Open Sans
         font-style: normal
@@ -558,7 +566,7 @@ html.html_header_sidebar
 
 
 .container_breadcrumps
-  border-bottom: 1px solid grey
+  border-bottom: 1px solid #C4C4C4
 
 
     
@@ -615,10 +623,30 @@ div .products .product
 
 
 
-#top .single-product-main-image
-  width: 64%
-  padding-bottom: 10px
-  margin-RIGHT: 70px
+#top 
+  .single-product-main-image
+    width: 64%
+    padding-bottom: 10px
+    margin-right: 3%
+    .woocommerce-product-gallery
+      .wpgs-thumb
+        .slick-list
+          width: 100%
+          max-width: 400px
+          margin: 0 auto
+
+          .slick-track
+            display: flex
+            align-items: center
+            .thumbnail_image, .thumbnail_image.slick-current, .slick-active
+              border: none !important
+              box-shadow: none
+              img 
+                border: none
+
+
+  .single-product-summary
+    width: 33%
 
 #top #ivpa-content .ivpa_title
   margin-top: 10px
@@ -739,7 +767,124 @@ div .products .product
   margin-bottom: 20px
 
 #top
-  .avia-content-slider
-    .avia-content-slider-inner
-      overflow: visable
+  .avia-content-slider-inner
+    overflow: visable
+    display: flex
+
+
+/* logo_1 */
+/* html.html_header_sidebar .logo
+  padding: 9px 10px 9px !important
+
+// html.html_header_sidebar .logo a
+  // max-width: 140px !important
+//  */
+/* logo_2 */
+
+html.html_header_sidebar .logo
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 23px 10px 24px
+  border-bottom: 1px solid #C4C4C4
+
+
+html.html_header_sidebar .logo a
+  max-width: 200px
+
+#top .dp_sale_products_wrapper
+
+#top .dp_sale_products_wrapper .products
+  display: flex
+
+
+#top .dp_sale_products_wrapper .products .product:nth-child(4)
+  margin-right: 1% !important
+
+#top .dp_sale_products_wrapper .products .product:nth-child(5)
+  margin-right: 0 !important
+
+
+#top div .flex_column
+  overflow: hidden
+  .product
+    overflow: hidden
+
+#top div .flex_column:hover
+  z-index: 2
+  overflow: visible
+  .product
+    overflow: visible
+  
+
+#top .home .container_breadcrumps
+  display: none
+
+#top .avia-content-slider
+  overflow: visible
+#top div#wrap_all .dp_border .avia-button.avia-color-dark 
+  /* border-width: 1px */
+  /* border-color: #333 */
+  text-transform: uppercase
+  font-family: 'montserrat', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif
+  font-size: 16px
+  -webkit-transition: all .2s
+  -moz-transition: all .2s
+  -ms-transition: all .2s
+  -o-transition: all .2s
+  transition: all .2s
+
+#top div#wrap_all .dp_border .avia-button.avia-color-dark:hover 
+  /* border-color: #FED839 */
+
+#top div .products .dp_border  .product
+  width: 19%
+  
+#top #footer
+  z-index: 0
+
+#top
+  .avia-slideshow-arrows 
+    a:before
+      background: rgba(0,0,0,0.5)
+      border-radius: 4px   
+      font-size: 20px 
+
+#top
+  .home_page_ts
+    .avia-slideshow-arrows
+      display: none
+    .avia-slideshow-dots
+      display: flex
+      justify-content: center
+      margin-top: auto
+      height: auto
+      margin-bottom: 15px
+      z-index: 199
+      a 
+        position: relative !important
+        display: block
+        background: #A1B8C5
+        width: 23px
+        height: 4px
+        bottom: auto
+        top: auto
+        left: auto
+        right: auto
+        padding: 0
+        margin: 3px
+        border: none
+        border-radius: 50px
+      a.active 
+        width: 50px
+        background: #81A3B5
+        
+  
+        
+
+
+
+  .av-control-minimal .avia-slideshow-dots a
+    opacity: 1 !important
+
 
