@@ -6,7 +6,7 @@
 wp-content/*
 # !wp-content/mu-plugins/
 # !wp-content/plugins/
-!wp-content/themes/
+wp-content/themes/
 # !wp-content/uploads/
 !wp-content/languages/
 # ignore these plugins
@@ -48,5 +48,6 @@ node_modules/
 /wp-trackback.php
 /xmlrpc.php
 /wp-config.php
-wp-content/themes/enfold-child/css/all.css
+/wp-content/themes/enfold-child/css/*
+wp-content/themes/enfold-child/css/*
 
