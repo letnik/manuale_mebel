@@ -82,14 +82,54 @@ add_action('wp_head', 'popup_inline');
 
 add_shortcode( 'dp_phone_1', 'show_phone_1' );
 function show_phone_1() {
-
     $phone_1 = get_field('sd_phone_1', 'options');
-
     $output = '<a href="tel:'.sl_tel($phone_1).'">'.$phone_1.'</a>';
-
     return $output;
 }
 
+add_shortcode( 'dp_phone_2', 'show_phone_2' );
+function show_phone_2() {
+    $phone_2 = get_field('sd_phone_2', 'options');
+    $output = '<a href="tel:'.sl_tel($phone_2).'">'.$phone_2.'</a>';
+    return $output;
+}
+
+add_shortcode( 'dp_country', 'show_country' );
+function show_country() {
+    $output = get_field('sd_country', 'options');
+    return $output;
+}
+
+add_shortcode( 'dp_city', 'show_city' );
+function show_city() {
+    $output = get_field('sd_city', 'options');
+    return $output;
+}
+
+add_shortcode( 'dp_street', 'show_street' );
+function show_street() {
+    $output = get_field('sd_street', 'options');
+    return $output;
+}
+
+add_shortcode( 'dp_street_bild', 'show_street_bild' );
+function show_street_bild() {
+    $output = get_field('sd_street_bild', 'options');
+    return $output;
+}
+
+add_shortcode( 'dp_street_numb', 'show_street_numb' );
+function show_street_numb() {
+    $output = get_field('sd_street_numb', 'options');
+    return $output;
+}
+
+add_shortcode( 'dp_mail', 'show_mail' );
+function show_mail() {
+    $mail = get_field('sd_mail', 'options');
+    $output = '<a href="mailto:'.$mail.'">'.$mail.'</a>';
+    return $output;
+}
 
 
 // Дозволяєм завантаження усіх файлів
@@ -236,5 +276,12 @@ function woocommerce_quantity_input( $args = array(), $product = null, $echo = t
  
 }
 
-
+function second_logo() {
+    $my_url = get_home_url(); 
+    $logo = '<div class="logo footer-logo second-logo"><a href="link-url" target="_blank">' ;
+    $logo .= '<img src="' . $my_url . '/wp-content/themes/enfold-child/img/logo-white.svg"/>';
+    $logo .= '</a></div>';
+    return $logo;
+    }
+add_shortcode('dp_footer_fogo', 'second_logo');
 

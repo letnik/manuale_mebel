@@ -533,7 +533,7 @@ html.html_header_sidebar
       padding: 8px 40px 40px 40px
       a 
         img 
-          filter: invert(100%)
+          // filter: invert(100%)
 
 .product-categories li a
   background: none
@@ -804,8 +804,9 @@ html.html_header_sidebar .logo
   justify-content: center
   align-items: center
   padding: 23px 10px 24px
+  // border-bottom: none
+html.html_header_sidebar header .logo
   border-bottom: 1px solid #C4C4C4
-
 
 html.html_header_sidebar .logo a
   max-width: 200px
@@ -815,6 +816,7 @@ html.html_header_sidebar .logo a
 #top .dp_sale_products_wrapper .products
   display: flex
   flex-wrap: wrap
+  justify-content: space-between
   li 
     width: 18%
     &:nth-child(5n+5)
