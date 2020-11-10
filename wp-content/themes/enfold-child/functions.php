@@ -276,7 +276,6 @@ function woocommerce_quantity_input( $args = array(), $product = null, $echo = t
  
 }
 
- 
 function second_logo() {
     $my_url = get_home_url(); 
     $logo = '<div class="logo footer-logo second-logo"><a href="link-url" target="_blank">' ;
@@ -285,3 +284,4 @@ function second_logo() {
     return $logo;
     }
 add_shortcode('dp_footer_fogo', 'second_logo');
+
