@@ -285,3 +285,4 @@ function second_logo() {
     }
 add_shortcode('dp_footer_fogo', 'second_logo');
 
+
