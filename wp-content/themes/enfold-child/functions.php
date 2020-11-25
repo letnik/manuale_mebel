@@ -300,9 +300,3 @@ function custom_script(){
   <?php
   }
   add_action('wp_footer', 'custom_script');
-
-
-
-
-
-  
