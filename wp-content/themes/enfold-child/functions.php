@@ -285,3 +285,24 @@ function second_logo() {
     }
 add_shortcode('dp_footer_fogo', 'second_logo');
 
+
+function custom_script(){
+    ?>
+    <script>
+    (function($){
+        $(window).load(function(){
+            $( 'footer' ).each(function() {
+                $( this ).children('.container').append('<a href="<?php echo get_page_link( 3 ); ?>"><?php echo get_the_title(3) ; ?></a>');
+            });
+        });
+    })(jQuery);
+  </script>
+  <?php
+  }
+  add_action('wp_footer', 'custom_script');
+
+
+
+
+
+  

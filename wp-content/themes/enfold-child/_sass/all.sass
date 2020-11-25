@@ -25,20 +25,25 @@
   align-items: center
 
 #breadcrumbs
+  padding: 10px 0 11px
+  background: inherit
+  margin: 0
   span
     font-size: 12px
     color: grey
-    span
+    a
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 12px !important
+    a, strong
+      font-family: $ff-montserrat
       font-size: 12px
       color: grey
-      a, strong
-        font-family: $ff-montserrat
-        font-size: 12px
-        color: grey
-      .breadcrumb_last
-        font-family: $ff-montserrat
-        font-size: 12px
-        color: grey
+    .breadcrumb_last
+      font-family: $ff-montserrat
+      font-size: 12px
+      color: grey
 
 #main 
   padding-top: 63px
@@ -459,16 +464,6 @@ html.html_header_sidebar
     z-index: 555
     max-width: 300px
 
-#breadcrumbs
-  padding: 10px
-  background: inherit
-  margin: 0
-  span 
-    a
-      font-family: Open Sans
-      font-style: normal
-      font-weight: normal
-      font-size: 12px !important
 
 #top
   .woocommerce-product-gallery__image, #tab-title-description, #tab-title-additional_information
@@ -525,7 +520,11 @@ html.html_header_sidebar
 #main
   footer 
     .container
-      padding: 14px 50px 
+      padding: 13px 50px 
+      display: flex
+      justify-content: space-around
+      &::after
+        display: none
 
 #footer
   .container
