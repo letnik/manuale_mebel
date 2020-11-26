@@ -13,7 +13,7 @@ wp-content/*
 wp-content/plugins/hello.php
 wp-content/plugins/akismet
 wp-content/plugins/index.php
-wp-content/uploads/
+wp-content/uploads/*
 _tmp/_oss/
 # !wp-content/backupwordpress*
 # ignore specific themes
