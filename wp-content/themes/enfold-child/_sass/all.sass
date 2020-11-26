@@ -595,7 +595,7 @@ html.html_header_sidebar
   background: #fff
 
 #top #main .products .product:hover
-  z-index: 1
+  z-index: 1011
 
 #top #main .products .product:hover .product-attributes-wrap 
   opacity: 1
@@ -994,6 +994,7 @@ img.zoomImg
 
 @media screen and ( max-width: 1439px )
 
+  // футер
   #footer.footer_color
     .container
       .logo
@@ -1007,7 +1008,7 @@ img.zoomImg
         .textwidget 
           p 
             font-size: 12px
-
+  // стрілки до слайдерів
   #top
     .avia-slideshow-arrows
       a
@@ -1016,9 +1017,7 @@ img.zoomImg
         &::before
           font-size: 14px
           line-height: 40px
-
-
-
+  // навігація
   #top
     .top-nav
       .container
@@ -1064,8 +1063,7 @@ img.zoomImg
                 span
                   &::before
                     font-size: 20px
-
-  
+  // текст в першому слайдері на головній
   #top  
     .avia-caption-title.slider_title_hp
       line-height: 0em 
@@ -1077,8 +1075,7 @@ img.zoomImg
         font-size: 24px
         padding: 8px 39px 11px 50px
         line-height: 30px
-
-
+  // кнопки в першому слайдері на головній
   #top 
     #wrap_all
       .slideshow_caption
@@ -1091,7 +1088,7 @@ img.zoomImg
             margin-top: 15px
             &.avia-slideshow-button-2
               margin-left: 20px 
-
+  // заголовки і карточки товарів головна
   #top
     #main
       .av-special-heading-tag
@@ -1104,7 +1101,8 @@ img.zoomImg
           &:nth-child(5)
             display: none
           .thumbnail_container
-            height: 155px
+            height: 155px 
+            padding: 13px
           .inner_product_header
             padding: 10px
             .woocommerce-loop-product__title
@@ -1119,7 +1117,62 @@ img.zoomImg
                 margin: 6px 3px auto auto
             .price
               bdi
-                font-size: 15px
+                font-size: 15px !important
+  // сердечки лайк в карточках
+  #top
+    #main
+      .product
+        .tinv-wraper.tinv-wishlist
+          margin-right: 0px
+          // top: 5px
+          // right: 16px
+          .tinvwl_add_to_wishlist_button
+            margin-top: 9px
+  // нижня частина карточки на ховері
+  #top
+    #main
+      .products
+        .product
+          .product-attributes-wrap
+            padding: 10px
+            .button 
+              padding: 6px
+              font-size: 12px
+            .product-attributes-list
+              .product-size-table, .product-attributes-item
+                .product-size
+                  padding-right: 0px
+                  margin-right: auto
+                  .product-size-title, .product-size-value
+                    width: 30%
+                    font-size: 10px
+                    line-height: 14px
+  // сторінка категорії товарів кількість карточок в ряд
+  #top
+    #main
+      .container
+        .template-shop
+          .products.columns-4
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            .product
+              float: none
+              width: 32%
+
+  // правий сайдбар
+  #top
+    .inner_sidebar 
+      margin-left: 16px
+      .prdctfltr_product_cat
+        .prdctfltr_search_terms
+          margin-bottom: 5px
+      .widgettitle
+        font-size: 15px
+
+
+
+
 
 
 
