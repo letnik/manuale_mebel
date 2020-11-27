@@ -15,10 +15,10 @@
   border-radius: 3px
 
 
-#top .home_page_ts .avia-slideshow 
+#top .home_page_ts .avia-slideshow
   min-height: 450px
+  height: 35vw
   max-height: 450px
-  // height: 450px !important
 
 #avia-menu .menu-item .avia-menu-text 
   display: flex !important
@@ -695,6 +695,7 @@ div .products .product
   background: #FFD523
   margin: 0
   padding: 20px 30px 10px 30px
+  
 
 #top.product-template-default #main .template-shop .price
   background: #FFD523
@@ -994,6 +995,8 @@ img.zoomImg
 
 @media screen and ( max-width: 1439px )
 
+  #main 
+    padding-top: 55px
   // футер
   #footer.footer_color
     .container
@@ -1089,7 +1092,7 @@ img.zoomImg
             &.avia-slideshow-button-2
               margin-left: 20px 
   // заголовки і карточки товарів головна
-  #top
+  #top.home
     #main
       .av-special-heading-tag
         font-size: 26px !important
@@ -1169,34 +1172,91 @@ img.zoomImg
           margin-bottom: 5px
       .widgettitle
         font-size: 15px
-
-
-
-
-
-
-
-
-
-
-
-
-              
-   
-
-
+  // розгорнута сторінка товару 
+  #top
+    div.product
+      .single-product-main-image
+        width: 59%
+        margin-right: auto
+      .single-product-summary
+        width: 39%
+      .product_title
+        margin: 0
+        padding: 20px 30px 10px 30px
+        font-size: 22px
+      .ivpa-register
+        margin: 18px 0
+        .ivpa-opt
+          margin-bottom: 7px
+          
+  // висота слайдера на головній
+  #top
+    .home_page_ts
+      .avia-slideshow
+        min-height: auto
+        height: 33.3vw
+        max-height: 450px
 
 @media screen and ( max-width: 1023px )
 
+  #main 
+    padding-top: 46px
 
+  // розгорнута сторінка товару 
+  #top
+    .product-template-default div.product
+      flex-wrap: nowrap
+      flex-direction: column
+    div.product
+      .single-product-main-image
+        width: 100vw
+        margin-right: auto
+      .single-product-summary
+        width: 100%
+        margin-bottom: 15px
+      .product_title
+        margin: 0
+        padding: 20px 30px 10px 30px
+        font-size: 22px
+      .ivpa-register
+        margin: 18px 0
+        .ivpa-opt
+          margin-bottom: 7px
+
+  // навігація верхня
   #top
     .top-nav
       .container
-        justify-content: center
+        justify-content: flex-end
         #access-1
           display: none
         #access-2
-          
+
+  // висота слайдера на головній
+  #top
+    .home_page_ts
+      .avia-slideshow
+        min-height: auto
+        height: 32vw
+        max-height: 450px
+
+    // схожі товари на сторінці товару
+  
+  // схожі товари на сторінці товару
+  #top
+    #av_section_1
+      .related.products
+        .products.columns-5
+          .product
+            width: 32.3%
+            &:nth-child(4)
+              display: none
+            &:nth-child(5)
+              display: none        
+
+
+
+
 
 @media screen and ( max-width: 989px )
 
@@ -1205,7 +1265,160 @@ img.zoomImg
   .html_header_sidebar #header .av-main-nav>li a .avia-menu-text .menu-image-title-after.menu-image-title
     padding-left: 10%
 
+
+  // бокове головне меню
   #top
     .top-nav
       width: calc(100% - 27%)
       margin-left:  27%
+
+  .html_header_sidebar .av-sidebar-social-container
+    max-width: 27%
+
+  // висота слайдера на головній
+  #top
+    .home_page_ts
+      .avia-slideshow
+        min-height: auto
+        height: 33vw
+        max-height: 450px
+
+  // текст в першому слайдері на головній
+  #top  
+    .avia-caption-title.slider_title_hp
+      line-height: 0em 
+      .sl_title
+        font-size: 20px
+        padding: 8px 26px 8px 50px
+        line-height: 30px
+      .sl_subtitle
+        font-size: 16px
+        padding: 8px 29px 8px 50px
+        line-height: 20px
+  // кнопки в першому слайдері на головній
+  #top 
+    #wrap_all
+      .slideshow_caption
+        width: auto
+        .slideshow_align_caption
+          .avia-slideshow-button, .avia-button
+            min-width: auto
+            font-size: 9px
+            padding: 9px
+            margin-left: 50px
+            margin-top: 15px
+            &.avia-slideshow-button-2
+              margin-left: 13px 
+  // футер
+  #footer.footer_color
+    .container
+      .logo
+        padding: 0
+        margin-top: 4px
+      .flex_column
+        width: 100%
+        margin: 0 auto
+      .widget
+        .widgettitle
+          font-size: 12px
+        .product-categories li a
+          padding: 0px 
+        .textwidget 
+          p 
+            font-size: 12px
+  // заголовки і карточки товарів головна
+  #top.home
+    #main
+      .av-special-heading-tag
+        font-size: 26px !important
+      .products
+        .product
+          width: 32%
+          &:nth-child(3)
+            margin-right: 0 !important
+          &:nth-child(4)
+            display: none
+          &:nth-child(5)
+            display: none
+          .thumbnail_container
+            height: 155px 
+            padding: 13px
+          .inner_product_header
+            padding: 10px
+            .woocommerce-loop-product__title
+              font-size: 10px
+              padding-top: 6px
+              padding-bottom: 7px
+            span.onsale
+              width: 35px
+              height: 25px
+              .onsale_text
+                font-size: 9px
+                margin: 6px 3px auto auto
+            .price
+              bdi
+                font-size: 15px !important
+ 
+
+  // сторінка категорії товарів кількість карточок в ряд
+  #top
+    #main
+      .container
+        .template-shop
+          width: 70%
+          // .entry-content-wrapper
+          //   padding-right: 25px
+          .products.columns-4
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            .product
+              float: none
+              width: 47%
+  // правий сайдбар
+  #top
+    .sidebar_right
+      width: auto
+      .inner_sidebar 
+        margin-left: 16px
+        .prdctfltr_product_cat
+          .prdctfltr_search_terms
+            margin-bottom: 5px
+        .widgettitle
+          font-size: 15px
+
+  // розгорнута сторінка товару 
+  #top
+    .product-template-default div.product
+      flex-wrap: nowrap
+      flex-direction: column
+    div.product
+      .single-product-main-image
+        width: 100vw
+        margin-right: auto
+      .single-product-summary
+        width: 100%
+        margin-bottom: 15px
+      .product_title
+        margin: 0
+        padding: 20px 30px 10px 30px
+        font-size: 22px
+      .ivpa-register
+        margin: 18px 0
+        .ivpa-opt
+          margin-bottom: 7px
+
+
+
+
+
+
+  // блог на головній
+  #top.home
+    #main
+      .template-blog
+        .standard-content
+          .fallback-post-type-icon
+            font-size: 16px
+          .post-title.entry-title
+            font-size: 14px
