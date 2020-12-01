@@ -1083,9 +1083,12 @@ img.zoomImg
     #wrap_all
       .slideshow_caption
         width: auto
+        .slideshow_inner_caption
+          display: flex
+          align-items: center
         .slideshow_align_caption
           .avia-slideshow-button, .avia-button
-            font-size: 12px
+            font-size: 14px
             padding: 10px
             margin-left: 50px
             margin-top: 15px
@@ -1242,6 +1245,15 @@ img.zoomImg
 
     // схожі товари на сторінці товару
   
+  // сторінка акцій сітка товарів
+  #top .dp_sale_products_wrapper .products
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    li 
+      width: 24%
+      &:nth-child(4n+4)
+        margin-right: 0  
   // схожі товари на сторінці товару
   #top
     #av_section_1
@@ -1280,7 +1292,7 @@ img.zoomImg
     .home_page_ts
       .avia-slideshow
         min-height: auto
-        height: 33vw
+        height: 70vw
         max-height: 450px
 
   // текст в першому слайдері на головній
@@ -1300,11 +1312,14 @@ img.zoomImg
     #wrap_all
       .slideshow_caption
         width: auto
+        .slideshow_inner_caption
+          display: flex
+          align-items: center
         .slideshow_align_caption
           .avia-slideshow-button, .avia-button
             min-width: auto
-            font-size: 9px
-            padding: 9px
+            font-size: 14px
+            padding: 10px
             margin-left: 50px
             margin-top: 15px
             &.avia-slideshow-button-2
@@ -1362,19 +1377,18 @@ img.zoomImg
 
   // сторінка категорії товарів кількість карточок в ряд
   #top
-    #main
-      .container
-        .template-shop
-          width: 70%
-          // .entry-content-wrapper
-          //   padding-right: 25px
-          .products.columns-4
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-between
-            .product
-              float: none
-              width: 47%
+    .container
+      .av-content-small.units
+        width: 70%
+        // .entry-content-wrapper
+        //   padding-right: 25px
+        .products.columns-4
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
+          .product
+            float: none
+            width: 47%
   // правий сайдбар
   #top
     .sidebar_right
@@ -1408,10 +1422,15 @@ img.zoomImg
         .ivpa-opt
           margin-bottom: 7px
 
-
-
-
-
+  // сторінка акцій сітка товарів
+  #top .dp_sale_products_wrapper .products
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    li 
+      width: 32%
+      &:nth-child(3n+3)
+        margin-right: 0  
 
   // блог на головній
   #top.home 
@@ -1423,4 +1442,163 @@ img.zoomImg
           .post-title.entry-title
             font-size: 14px
 
-            
+    // сторінка категорії товарів кількість карточок в ряд
+  #top
+    #main
+      .container
+        .template-shop
+          .products.columns-4
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            .thumbnail_container
+              height: 140px
+            .product
+              float: none
+              width: 47%
+
+@media only screen and (max-width: 767px)
+
+  .responsive #top .products .product:nth-child(odd)
+    clear: none
+
+  // выдключення навыгацыъ в шапцы
+  #top  
+    .top-nav
+      display: none
+
+
+  // кнопки в першому слайдері на головній
+  #top 
+    #wrap_all
+      .slideshow_caption
+        width: auto
+        .slideshow_inner_caption
+          display: flex
+          align-items: center
+        .slideshow_align_caption
+          .avia-slideshow-button, .avia-button
+            min-width: auto
+            font-size: 14px
+            padding: 10px
+            margin-left: 0
+            margin-top: 15px
+            &.avia-slideshow-button-2
+              margin-left: 13px 
+
+  // сторінка категорії товарів кількість карточок в ряд
+  #top
+    .container
+      .av-content-small.units
+        width: 100%
+        // .entry-content-wrapper
+        //   padding-right: 25px
+        .products.columns-4
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
+          .product
+            float: none
+            width: 47%
+
+  
+    // схожі товари на сторінці товару
+  #top
+    #av_section_1
+      .related.products
+        .products.columns-5
+          display: flex
+          justify-content: space-between
+          .product
+            width: 48%
+            &:nth-child(3)
+              display: none
+            &:nth-child(4)
+              display: none
+            &:nth-child(5)
+              display: none      
+
+
+  // сторінка акцій сітка товарів
+  #top .dp_sale_products_wrapper .products
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    li 
+      width: 18%
+      &:nth-child(5n+5)
+        margin-right: 0  
+
+  // текст в першому слайдері на головній
+  #top  
+    .avia-caption-title.slider_title_hp
+      line-height: 0em 
+      .sl_title
+        font-size: 18px
+        padding: 8px 26px 
+        line-height: 22px
+      .sl_subtitle
+        font-size: 16px
+        padding: 8px 22px
+        line-height: 16px
+  // кнопки в першому слайдері на головній
+  #top 
+    #wrap_all
+      .slideshow_caption
+        width: auto
+        .slideshow_inner_caption
+          display: flex
+          align-items: center
+        .slideshow_align_caption
+          display: flex
+          flex-direction: column
+          .avia-slideshow-button, .avia-button
+            min-width: auto
+            max-width: 170px
+            font-size: 14px
+            padding: 10px
+            margin-left: 0
+            margin-top: 3px
+            &.avia-slideshow-button-2
+              margin-left: 0px 
+  // хедер
+  #top  
+    .av-logo-container
+      .inner-container
+        .logo
+          height: auto !important
+          float: none
+          padding: 10px
+          border: none
+          width: 34%
+        nav.main_menu
+          top: -12px !important
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iframe_pac
+  margin: 0 -16px
