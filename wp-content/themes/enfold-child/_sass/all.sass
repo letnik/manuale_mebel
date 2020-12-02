@@ -443,6 +443,7 @@ html.html_header_sidebar
       width: 40px
       height: 30px
       top: 3px
+      right: 0
       .onsale_text
         margin-left: auto
         margin-right: 3px
@@ -704,7 +705,7 @@ div .products .product
   padding: 5px 30px 20px
 
 #top.product-template-default #main .template-shop .product .onsale
-  top: 18px
+  top: -40px
   width: 55px
   height: 40px
   right: -10px
@@ -990,6 +991,18 @@ html.html_header_sidebar .logo a
 
 img.zoomImg
   display: none !important
+#top
+  #av-layout-grid-1
+    .avia_ajax_form 
+      .button
+        background: #FFD523
+        font-family: 'montserrat', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif
+        font-size: 12px
+        padding: 10px
+        border: none
+        border-radius: 3px
+        color: black
+
 
 
 
@@ -1266,10 +1279,6 @@ img.zoomImg
             &:nth-child(5)
               display: none        
 
-
-
-
-
 @media screen and ( max-width: 989px )
 
   .html_header_sidebar #header .av-main-nav>li a
@@ -1373,8 +1382,6 @@ img.zoomImg
             .price
               bdi
                 font-size: 15px !important
- 
-
   // сторінка категорії товарів кількість карточок в ряд
   #top
     .container
@@ -1392,7 +1399,7 @@ img.zoomImg
   // правий сайдбар
   #top
     .sidebar_right
-      width: auto
+      width: 100%
       .inner_sidebar 
         margin-left: 16px
         .prdctfltr_product_cat
@@ -1574,6 +1581,79 @@ img.zoomImg
         nav.main_menu
           top: -12px !important
   
+@media only screen and (max-width: 600px)
+
+  // заголовки і карточки товарів головна
+  #top.home
+    #main
+      .av-special-heading-tag
+        font-size: 26px !important
+      .products
+        .product
+          width: 48%
+          &:nth-child(2)
+            margin-right: 0 !important
+          &:nth-child(3)
+            display: none
+          &:nth-child(4)
+            display: none
+          &:nth-child(5)
+            display: none
+          .thumbnail_container
+            height: 155px 
+            padding: 13px
+          .inner_product_header
+            padding: 10px
+            .woocommerce-loop-product__title
+              font-size: 10px
+              padding-top: 6px
+              padding-bottom: 7px
+            span.onsale
+              width: 35px
+              height: 25px
+              .onsale_text
+                font-size: 9px
+                margin: 6px 3px auto auto
+            .price
+              bdi
+                font-size: 15px !important
+
+  // сторінка категорії товарів кількість карточок в ряд
+  #top
+    .container
+      .av-content-small.units
+        width: 100%
+        // .entry-content-wrapper
+        //   padding-right: 25px
+        .products.columns-4
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
+          .product
+            float: none
+            width: 47%
+
+  
+  // схожі товари на сторінці товару
+  #top
+    #av_section_1
+      .related.products
+        .products.columns-5
+          display: flex
+          justify-content: space-between
+          .product
+            width: 100%
+            &:nth-child(2)
+              display: none
+            &:nth-child(3)
+              display: none
+            &:nth-child(4)
+              display: none
+            &:nth-child(5)
+              display: none      
+
+
+
 
 
 
