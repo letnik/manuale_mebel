@@ -46,7 +46,7 @@
       color: grey
 
 #main 
-  padding-top: 63px
+  padding-top: 72px
 
 .slideshow_caption
   padding-left: 0
@@ -1003,13 +1003,38 @@ img.zoomImg
         border-radius: 3px
         color: black
 
+.html_header_sidebar 
+  .logo 
+    img
+      height: 69px
 
+#main 
+  padding-top: 69px
 
+.sidebar_right   
+  .textwidget.custom-html-widget
+    display: none
+    .button
+      
+
+.custom-shipping-method-desc
+  margin-bottom: 30px
+  display: inline-block
+  a
+    font-weight: bold
+    text-decoration: underline
+    color: #000
 
 @media screen and ( max-width: 1439px )
 
-  #main 
-    padding-top: 55px
+  // схожі товари на сторінці товару
+  #top 
+    .product_column_5 
+      .products 
+        .product 
+          width: 24%
+          &:nth-child(5)
+            display: none     
   // футер
   #footer.footer_color
     .container
@@ -1033,6 +1058,7 @@ img.zoomImg
         &::before
           font-size: 14px
           line-height: 40px
+
   // навігація
   #top
     .top-nav
@@ -1079,6 +1105,9 @@ img.zoomImg
                 span
                   &::before
                     font-size: 20px
+  // хлібні крихти
+  #breadcrumbs
+    padding: 13px 0 11px
   // текст в першому слайдері на головній
   #top  
     .avia-caption-title.slider_title_hp
@@ -1213,10 +1242,23 @@ img.zoomImg
         height: 33.3vw
         max-height: 450px
 
-@media screen and ( max-width: 1023px )
+  .html_header_sidebar 
+    .logo 
+      img
+        height: 60px
 
   #main 
-    padding-top: 46px
+    padding-top: 57px
+
+@media screen and ( max-width: 1023px )
+
+  .html_header_sidebar 
+    .logo 
+      img
+        height: 57px
+
+  #main 
+    padding-top: 54px
 
   // розгорнута сторінка товару 
   #top
@@ -1286,6 +1328,14 @@ img.zoomImg
   .html_header_sidebar #header .av-main-nav>li a .avia-menu-text .menu-image-title-after.menu-image-title
     padding-left: 10%
 
+  .html_header_sidebar 
+    .logo 
+      padding: 24px 24px 23px!important
+      img
+        height: 49px
+    
+  #main
+    padding-top: 46px
 
   // бокове головне меню
   #top
@@ -1466,6 +1516,21 @@ img.zoomImg
 
 @media only screen and (max-width: 767px)
 
+  #top
+    #main
+      .sidebar.sidebar_right
+        width: 100%
+        display: block !important
+        border-left: none
+        .prdctfltr-widget
+          display: none
+        .textwidget.custom-html-widget
+          display: block
+          .button
+            
+        
+
+
   .responsive #top .products .product:nth-child(odd)
     clear: none
 
@@ -1579,10 +1644,24 @@ img.zoomImg
           border: none
           width: 34%
         nav.main_menu
-          top: -12px !important
+          top: 6px !important
   
 @media only screen and (max-width: 600px)
 
+  #top  
+    .av-logo-container
+      .inner-container
+        .logo
+          height: auto !important
+          float: none
+          padding: 12px !important
+          border: none
+          width: 160px
+          a 
+            height: 50px
+            width: 100%
+        nav.main_menu
+          top: -5px !important
   // заголовки і карточки товарів головна
   #top.home
     #main
