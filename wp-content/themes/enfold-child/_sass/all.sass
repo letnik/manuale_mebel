@@ -178,8 +178,8 @@ html.html_header_sidebar
     a
       font-family: Open Sans
       font-style: normal
-      font-weight: 400
-      font-size: 17px
+      font-weight: 600
+      font-size: 15px
       line-height: 19px
       color: #000
   .header-accaunt 
@@ -209,7 +209,7 @@ html.html_header_sidebar
         content: '\e800'
       .wishlist_products_counter_number
         position: absolute
-        top: -21px
+        top: -18px
         left: 20px
         background: yellow
         line-height: 0
@@ -237,6 +237,7 @@ html.html_header_sidebar
       li 
         a
           position: relative
+          color: #000
           span[data-av_iconfont*=fontello]
             &:before 
               font-family: fontello  !important
@@ -245,7 +246,7 @@ html.html_header_sidebar
               content: '\e80d'
           .av-cart-counter.av-active-counter
             position: absolute
-            top: 11px
+            top: 14px
             left: 25px
             background: yellow
             line-height: 0
@@ -306,8 +307,8 @@ html.html_header_sidebar
         a.tinvwl-product-in-list
           color: $button_color
           &::before
-            background: #888
             opacity: 1
+            text-shadow: 0px 0px 2px #000
       a
         .inner_product_header
           padding-right: 15px 
@@ -817,7 +818,7 @@ html.html_header_sidebar .logo a
 #top .dp_sale_products_wrapper .products
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
+  // justify-content: space-between
   li 
     width: 18%
     &:nth-child(5n+5)
@@ -1021,15 +1022,16 @@ img.zoomImg
       padding: 10px
       color: black
 
-      
+.menu-item.current-menu-item img.hovered-image 
+    opacity: 1
 
-.custom-shipping-method-desc
-  margin-bottom: 30px
-  display: inline-block
-  a
-    font-weight: bold
-    text-decoration: underline
-    color: #000
+.avia_ajax_form.av-form-labels-visible 
+  fieldset
+    display: flex
+    flex-direction: column
+    .form_element
+      margin-left: 0
+
 
 #top.page-id-29
   article.post-entry-29
@@ -1037,6 +1039,21 @@ img.zoomImg
       width: 100%
       max-width: 550px
       margin: 0 auto
+
+
+.html_header_sidebar 
+  #footer
+    .widget  
+      ul 
+        li
+          border: none
+    .logo
+      border: none
+
+
+#top
+  footer#socket
+    height: 52px
 
 
 
@@ -1083,7 +1100,7 @@ img.zoomImg
             .menu-item
               a 
                 padding: 18px 6px !important
-                font-size: 12px
+                font-size: 13px
         #access-2
           align-items: center
           .header-cart .cart_dropdown li a .av-cart-counter.av-active-counter
@@ -1745,6 +1762,7 @@ img.zoomImg
             &:nth-child(5)
               display: none      
 
+  
 
 
 
