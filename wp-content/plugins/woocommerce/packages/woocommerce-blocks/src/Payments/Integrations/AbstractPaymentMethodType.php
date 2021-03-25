@@ -1,13 +1,5 @@
 <?php
-/**
- * Abstract payment method type class.
- *
- * @package WooCommerce/Blocks
- */
-
 namespace Automattic\WooCommerce\Blocks\Payments\Integrations;
-
-defined( 'ABSPATH' ) || exit;
 
 use Automattic\WooCommerce\Blocks\Payments\PaymentMethodTypeInterface;
 
@@ -76,6 +68,15 @@ abstract class AbstractPaymentMethodType implements PaymentMethodTypeInterface {
 	 */
 	public function get_payment_method_script_handles_for_admin() {
 		return $this->get_payment_method_script_handles();
+	}
+
+	/**
+	 * Returns an array of supported features.
+	 *
+	 * @return string[]
+	 */
+	public function get_supported_features() {
+		return [ 'products' ];
 	}
 
 	/**

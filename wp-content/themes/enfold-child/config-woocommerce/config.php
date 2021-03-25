@@ -1052,7 +1052,7 @@ function avia_woocommerce_overview_banner_image()
 				
 				if(!empty($attachment_id) && empty($style))
 				{
-					$image = wp_get_attachment_image( $attachment_id, $image_size, false, array('class'=>'category_thumb'));
+					$image = wp_get_attachment_image( $attachment_id, full, false, array('class'=>'category_thumb'));
 					if($image) echo "<div class='page-thumb'>{$image}</div>";
 				}
 				

@@ -1,13 +1,5 @@
 <?php
-/**
- * Payment method type interface.
- *
- * @package WooCommerce/Blocks
- */
-
 namespace Automattic\WooCommerce\Blocks\Payments;
-
-defined( 'ABSPATH' ) || exit;
 
 interface PaymentMethodTypeInterface {
 	/**
@@ -53,4 +45,11 @@ interface PaymentMethodTypeInterface {
 	 * @return array
 	 */
 	public function get_payment_method_data();
+
+	/**
+	 * Get array of supported features.
+	 *
+	 * @return string[]
+	 */
+	public function get_supported_features();
 }

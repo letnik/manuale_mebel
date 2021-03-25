@@ -1,20 +1,13 @@
 <?php
-/**
- * Products route.
- *
- * @internal This API is used internally by Blocks--it is still in flux and may be subject to revisions.
- * @package WooCommerce/Blocks
- */
-
 namespace Automattic\WooCommerce\Blocks\StoreApi\Routes;
-
-defined( 'ABSPATH' ) || exit;
 
 use Automattic\WooCommerce\Blocks\StoreApi\Utilities\Pagination;
 use Automattic\WooCommerce\Blocks\StoreApi\Utilities\ProductQuery;
 
 /**
  * Products class.
+ *
+ * @internal This API is used internally by Blocks--it is still in flux and may be subject to revisions.
  */
 class Products extends AbstractRoute {
 	/**
@@ -51,6 +44,8 @@ class Products extends AbstractRoute {
 	 * @return \WP_REST_Response
 	 */
 	protected function get_route_response( \WP_REST_Request $request ) {
+		// we load so that we have the same session, this is done so that Add to Cart can function.
+		$this->maybe_load_cart();
 		$response      = new \WP_REST_Response();
 		$product_query = new ProductQuery();
 

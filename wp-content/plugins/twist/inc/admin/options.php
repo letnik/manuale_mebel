@@ -1,13 +1,13 @@
 <?php
 // Check that the class exists before trying to use it
 
-if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
+if (class_exists('CSF') && class_exists('Codeixer_Plugin_Core')) {
 
     //
     // Set a unique slug-like ID
     $prefix = 'wpgs_form';
 
-    CSF::createOptions( $prefix, array(
+    CSF::createOptions($prefix, array(
         'menu_title' => 'Product Gallery',
         'menu_slug' => 'cix-gallery-settings',
         'menu_type' => 'submenu',
@@ -20,11 +20,11 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
         'footer_credit'           => ' ',
         
     
-    ) );
+    ));
 
     //
     // Create a section
-    CSF::createSection( $prefix, array(
+    CSF::createSection($prefix, array(
         'title' => 'General Options',
         'icon'   => 'fas fa-sliders-h',
         'fields' => array(
@@ -65,14 +65,15 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'id'    => 'slider_adaptiveHeight',
                 'type'  => 'switcher',
                 'title' => __('Slide Adaptive Height', 'wpgs-td'),
+                'default' => true,
                 'desc'  => __('Resize the Gallery Section Height to Match the Image Height', 'wpgs-td'),
             ),
-            array(
-                'id'    => 'slider_rtl',
-                'type'  => 'switcher',
-                'title' => __('RTL Mode', 'wpgs-td'),
-                'desc'  => __('Slider RTL Mode ', 'wpgs-td'),
-            ),
+            // array(
+            //     'id'    => 'slider_rtl',
+            //     'type'  => 'switcher',
+            //     'title' => __('RTL Mode', 'wpgs-td'),
+            //     'desc'  => __('Slider RTL Mode ', 'wpgs-td'),
+            // ),
             array(
             'id'    => 'slider_dragging',
             'type'  => 'switcher',
@@ -130,7 +131,7 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'options'   => array(
                     'icon-right-bold' => WPGS_ROOT_URL .'/assets/img/icon-right-bold.png',
                     'icon-right-dir' => WPGS_ROOT_URL .'/assets/img/icon-right-dir.png',
-                    'icon-right-open-big' => WPGS_ROOT_URL .'/assets/img/icon-right-open-big.png',                  
+                    'icon-right-open-big' => WPGS_ROOT_URL .'/assets/img/icon-right-open-big.png',
                     'icon-right' => WPGS_ROOT_URL .'/assets/img/icon-right.png',
                 ),
                 'default'   => 'icon-right'
@@ -163,11 +164,11 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
             
 
         ),
-    ) );
+    ));
 
     //
     // Create a section
-    CSF::createSection( $prefix, array(
+    CSF::createSection($prefix, array(
         'title' => 'Lightbox Options',
         'icon'   => 'fas fa-expand',
         'fields' => array(
@@ -179,12 +180,25 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'desc' => esc_html__('Lightbox Feature on Product Image ', 'wpgs-td'),
                 'title' => __('Image Lightbox', 'wpgs-td'),
             ),
+            
             array(
-                'id'    => 'thumbnails_lightbox',
+                'id'          => 'lightbox_thumb_axis',
+                'type'        => 'select',
+                'title'       => __('Lightbox Thumbnails Position', 'wpgs-td'),
+                'placeholder' => 'Select an option',
+                'options'     => array(
+                    'x' => __('Vertical', 'wpgs-td'),
+                    'y' => __('Horizontal', 'wpgs-td'),
+                ),
+                'default'     => 'y',
+                'desc'  => __('Select Lightbox Thumbnails Position.', 'wpgs-td'),
+                
+            ),
+            array(
+                'id'    => 'lightbox_thumb_autoStart',
                 'type'  => 'switcher',
-                'title' => __('LightBox For Thumbnails', 'wpgs-td'),
-                'desc'  => __('Open Lightbox When click Thumbnails', 'wpgs-td'),
-                'dependency' => array( 'lightbox_picker', '==', 'true' ),
+                'title' => 'Lightbox Thumbnail Autostart',
+                
             ),
             array(
                 'id'          => 'lightbox_oc_effect',
@@ -195,12 +209,12 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'dependency' => array( 'lightbox_picker', '==', 'true' ),
                 'options'     => array(
                     'fade' => __('Fade', 'wpgs-td'),
-                    'slide' => __('Slide', 'wpgs-td'),                                        
-                    'rotate' => __('Rotate', 'wpgs-td'),                                        
-                    'circular' => __('Circular', 'wpgs-td'),                                        
-                    'tube' => __('Tube', 'wpgs-td'),                                        
-                    'zoom-in-out' => __('Zoom In Out', 'wpgs-td'),                                        
-                    '' => __('None', 'wpgs-td'), 
+                    'slide' => __('Slide', 'wpgs-td'),
+                    'rotate' => __('Rotate', 'wpgs-td'),
+                    'circular' => __('Circular', 'wpgs-td'),
+                    'tube' => __('Tube', 'wpgs-td'),
+                    'zoom-in-out' => __('Zoom In Out', 'wpgs-td'),
+                    '' => __('None', 'wpgs-td'),
                 ),
                 'default'     => 'fade'
             ),
@@ -213,12 +227,12 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'dependency' => array( 'lightbox_picker', '==', 'true' ),
                 'options'     => array(
                     'fade' => __('Fade', 'wpgs-td'),
-                    'slide' => __('Slide', 'wpgs-td'),                                        
-                    'rotate' => __('Rotate', 'wpgs-td'),                                        
-                    'circular' => __('Circular', 'wpgs-td'),                                        
-                    'tube' => __('Tube', 'wpgs-td'),                                        
-                    'zoom-in-out' => __('Zoom In Out', 'wpgs-td'),                                        
-                    '' => __('None', 'wpgs-td'), 
+                    'slide' => __('Slide', 'wpgs-td'),
+                    'rotate' => __('Rotate', 'wpgs-td'),
+                    'circular' => __('Circular', 'wpgs-td'),
+                    'tube' => __('Tube', 'wpgs-td'),
+                    'zoom-in-out' => __('Zoom In Out', 'wpgs-td'),
+                    '' => __('None', 'wpgs-td'),
                 ),
                 'default'     => 'fade'
             ),
@@ -296,9 +310,9 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
             ),
 
         ),
-    ) );
+    ));
     // Create a section
-    CSF::createSection( $prefix, array(
+    CSF::createSection($prefix, array(
         'title' => 'Zoom Options',
         'icon' => 'fas fa-search-plus',
         'fields' => array(
@@ -312,17 +326,26 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'desc'  => __('Enable Zoom Feature for Product Image.', 'wpgs-td'),
                 
             ),
+            array(
+                'id'    => 'image_zoom_mobile',
+                'type'  => 'switcher',
+                'default' => true,
+                'title' => __('Mobile Zoom', 'wpgs-td'),
+                'desc'  => __('Enable Zoom for Mobile Devices.', 'wpgs-td'),
+                'dependency' => array( 'image_zoom', '==', 'true' ),
+                
+            ),
 
         ),
-    ) );
+    ));
     // Create a top-tab
-    CSF::createSection( $prefix, array(
+    CSF::createSection($prefix, array(
         'id'    => 'thumbnail_tab', // Set a unique slug-like ID
         'title' => 'Thumbnails Options',
         'icon' => 'fas fa-image',
-    ) );
+    ));
     // Create a section
-    CSF::createSection( $prefix, array(
+    CSF::createSection($prefix, array(
         'parent' => 'thumbnail_tab', // The slug id of the parent section
         'title'  => 'Desktop',
         'fields' => array(
@@ -343,10 +366,17 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'options'     => array(
                     'bottom' => __('Bottom', 'wpgs-td'),
                     'left' => __('Left', 'wpgs-td'),
-                    'right' => __('Right', 'wpgs-td'), 
+                    'right' => __('Right', 'wpgs-td'),
                 ),
                 'default'     => 'bottom',
                 'desc'  => __('Select Thumbnails Position.', 'wpgs-td'),
+                'dependency' => array( 'thumbnails', '==', 'true' ),
+            ),
+            array(
+                'id'    => 'thumbnails_lightbox',
+                'type'  => 'switcher',
+                'title' => __('LightBox For Thumbnails', 'wpgs-td'),
+                'desc'  => __('Open Lightbox When click Thumbnails', 'wpgs-td'),
                 'dependency' => array( 'thumbnails', '==', 'true' ),
             ),
             array(
@@ -423,8 +453,8 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
             ),
 
         ),
-    ) );
-    CSF::createSection( $prefix, array(
+    ));
+    CSF::createSection($prefix, array(
         'parent' => 'thumbnail_tab', // The slug id of the parent section
         'title'  => 'Tablet',
         'fields' => array(
@@ -440,7 +470,7 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'options'     => array(
                     'bottom' => __('Bottom', 'wpgs-td'),
                     'left' => __('Left', 'wpgs-td'),
-                    'right' => __('Right', 'wpgs-td'), 
+                    'right' => __('Right', 'wpgs-td'),
                 ),
                 'default'     => 'bottom',
                 'desc'  => __('Select Thumbnails Position.', 'wpgs-td'),
@@ -474,8 +504,8 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
             
 
         ),
-    ) );
-    CSF::createSection( $prefix, array(
+    ));
+    CSF::createSection($prefix, array(
         'parent' => 'thumbnail_tab', // The slug id of the parent section
         'title'  => 'Smartphone',
         'fields' => array(
@@ -491,7 +521,7 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'options'     => array(
                     'bottom' => __('Bottom', 'wpgs-td'),
                     'left' => __('Left', 'wpgs-td'),
-                    'right' => __('Right', 'wpgs-td'), 
+                    'right' => __('Right', 'wpgs-td'),
                 ),
                 'default'     => 'bottom',
                 'desc'  => __('Select Thumbnails Position.', 'wpgs-td'),
@@ -525,9 +555,9 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
             
 
         ),
-    ) );
+    ));
     // Create a section
-    CSF::createSection( $prefix, array(
+    CSF::createSection($prefix, array(
         'title' => 'Advanced Options',
         'icon'   => 'fas fa-cog',
         'fields' => array(
@@ -585,7 +615,7 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
                 'default'        => array(
                     'i_width'     => 100,
                     'i_height'    => 100,
-                    'i_crop' => '',
+                    'i_crop' => '1',
                 ),
                 'fields' => array(
                     array(
@@ -627,10 +657,19 @@ if ( class_exists( 'CSF' ) && class_exists( 'Codeixer_Plugin_Core' ) ) {
               
                 'sanitize' => false,
             ),
-
-
+  
         ),
-    ) );
-   
+    ));
 
+    CSF::createSection($prefix, array(
+    'title'  => 'Backup Settings',
+    'icon'   => 'fas fa-sync',
+    'fields' => array(
+
+        array(
+            'type' => 'backup',
+        ),
+
+    )
+  ));
 }
