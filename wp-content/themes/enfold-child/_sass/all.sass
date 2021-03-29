@@ -267,6 +267,7 @@ html.html_header_sidebar
 #top #main
   .container_wrap 
     border: none
+
   div .main_color .button
     background: red
     float: none
@@ -477,7 +478,7 @@ html.html_header_sidebar
 
 
   .additional_information_tab.active, .woocommerce-tabs .panel,.description_tab.active
-    background: #EFEFEF
+    background: #F8F8F8
 
   
     
@@ -558,6 +559,8 @@ html.html_header_sidebar
     img 
       border: none
       padding: 1px
+      max-height: 560px
+      object-fit: contain
   .slick-vertical .slick-slide
     img
       border: none
@@ -657,9 +660,11 @@ div .products .product
           .slick-track
             display: flex
             align-items: center
+            max-height: 170px
             .thumbnail_image, .thumbnail_image.slick-current, .slick-active
               border: none !important
               box-shadow: none
+              height: auto
               img 
                 border: none
 
@@ -704,9 +709,11 @@ div .products .product
   display: block
   margin: 0
   padding: 5px 30px 20px
+  .woocommerce-Price-amount
+    font-size: 17px
 
 #top.product-template-default #main .template-shop .product .onsale
-  top: -40px
+  top: 55px
   width: 55px
   height: 40px
   right: -10px
@@ -1010,7 +1017,7 @@ img.zoomImg
       height: 69px
 
 #main 
-  padding-top: 69px
+  padding-top: 63px
 
 .sidebar_right   
   .textwidget.custom-html-widget
