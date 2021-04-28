@@ -83,6 +83,9 @@ class Notice {
 			'class'  => [],
 			'target'  => [],
 		],
+		'img' => [
+			'src' => [],
+		],
 		'em'     => [],
 		'strong' => [],
 		'br'     => [],

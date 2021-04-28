@@ -82,15 +82,3 @@
     </div>
 </div>
 
-
-
-<?php
-function my_archive_description(){
-
-    global $product;
-
-    single_cat_title('');
-
-}
-add_action( 'woocommerce_archive_description', 'my_archive_description', 10 );
-

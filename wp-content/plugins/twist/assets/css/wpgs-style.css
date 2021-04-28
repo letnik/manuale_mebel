@@ -206,6 +206,7 @@ left:0;
   transition: all 0.2s ease-in;
   position: absolute;
   width: 100%;
+  left:0;
   height: 100%;
   
   z-index: 999;
@@ -260,3 +261,9 @@ left:0;
     width: 100% !important;
 }
 .zoom_w { width: 100%; }
+.fancybox-container{
+  z-index:9999999;
+}
+.woocommerce div.product div.images .woocommerce-product-gallery__image a {
+    z-index: 999;
+}
