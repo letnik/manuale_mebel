@@ -286,3 +286,67 @@ function second_logo() {
 add_shortcode('dp_footer_fogo', 'second_logo');
 
 
+add_action( 'woocommerce_review_order_before_shipping', 'action_function_name_9574' );
+
+function action_function_name_9574( $checkout ){
+	echo '<div class="custom-shipping-method-desc"><p>Обратите внимание, что стоимость доставки не включена в общую стоимость.</p><br><p>Узнать больше информации об условиях доставки, а также узнать стоимость и сроки доставки можно на странице <a href="http://dot-browser.space/dostavka-i-oplata/" target="_blank">"Доставка и оплата"</a></p></div>';
+}
+
+
+
+add_filter( 'woocommerce_cart_shipping_total', 'woocommerce_cart_shipping_total_filter_callback', 11, 2 );
+function woocommerce_cart_shipping_total_filter_callback( $total, $cart )
+{
+    // HERE set the percentage
+    $percentage = 50;
+
+    $shipping = '<div class="woocommerce-shipping-totals-desc"><a href="http://dot-browser.space/dostavka-i-oplata/" target="_blank"><b>рассчитать</b></a></div>';
+
+    return $shipping;
+}
+
+
+
+
+
+// is good
+// Function that skip cart redirecting to checkout
+function skip_cart_page_redirection_to_checkout() {
+
+    // If is cart page, redirect checkout.
+    if( is_cart() )
+        wp_redirect( WC()->cart->get_checkout_url() );
+}
+add_action('template_redirect', 'skip_cart_page_redirection_to_checkout');
+
+
+// add_action('template_redirect','check_if_logged_in');
+//     function check_if_logged_in()
+//     {
+//         $pageid = get_option( 'woocommerce_checkout_page_id' );
+//         if(!is_user_logged_in() && is_page($pageid))
+//         {
+//             $url = add_query_arg(
+//                 'redirect_to',
+//                 get_permalink($pagid),
+//                 site_url('/my-account/') // your my acount url
+//             );
+//             wp_redirect($url);
+//             exit;
+//         }
+//         if(is_user_logged_in())
+//         {
+//         if(is_page(get_option( 'woocommerce_myaccount_page_id' )))
+//         {
+            
+//             $redirect = $_GET['redirect_to'];
+//             if (isset($redirect)) {
+//             echo '<script>window.location.href = "'.$redirect.'";</script>';
+//             }
+//             }
+//         }
+//     }
+
+
+
+
