@@ -305,8 +305,6 @@ function woocommerce_cart_shipping_total_filter_callback( $total, $cart )
     return $shipping;
 }
 
-
-
 // is good
 // Function that skip cart redirecting to checkout
 function skip_cart_page_redirection_to_checkout() {
@@ -344,6 +342,7 @@ add_action('template_redirect', 'skip_cart_page_redirection_to_checkout');
 //             }
 //         }
 //     }
+
 
 
 // add_action( 'woocommerce_init', 'force_non_logged_user_wc_session' );
