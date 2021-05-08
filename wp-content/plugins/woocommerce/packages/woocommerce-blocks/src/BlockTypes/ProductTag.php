@@ -1,5 +1,13 @@
 <?php
+/**
+ * Product tag block.
+ *
+ * @package WooCommerce/Blocks
+ */
+
 namespace Automattic\WooCommerce\Blocks\BlockTypes;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * ProductTag class.

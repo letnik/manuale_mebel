@@ -117,14 +117,14 @@ export function itemIsPendingDelete( cartItemKey, isPendingDelete = true ) {
 }
 
 /**
- * Returns an action object used to track when customer data is being updated (billing and/or shipping).
+ * Returns an action object used to track what shipping address are we updating to.
  *
- * @param {boolean} isResolving if we're updating customer data or not.
+ * @param {boolean} isResolving if we're loading shipping address or not.
  * @return {Object} Object for action.
  */
-export function updatingCustomerData( isResolving ) {
+export function shippingRatesAreResolving( isResolving ) {
 	return {
-		type: types.UPDATING_CUSTOMER_DATA,
+		type: types.UPDATING_SHIPPING_ADDRESS,
 		isResolving,
 	};
 }
@@ -332,16 +332,15 @@ export function* changeCartItemQuantity( cartItemKey, quantity ) {
  * Selects a shipping rate.
  *
  * @param {string} rateId the id of the rate being selected.
- * @param {number|string} [packageId] the key of the packages that we will select within.
+ * @param {number} [packageId] the key of the packages that we will select within.
  */
 export function* selectShippingRate( rateId, packageId = 0 ) {
 	try {
 		yield shippingRatesBeingSelected( true );
 		const { response } = yield apiFetchWithHeaders( {
-			path: `/wc/store/cart/select-shipping-rate`,
+			path: `/wc/store/cart/select-shipping-rate/${ packageId }`,
 			method: 'POST',
 			data: {
-				package_id: packageId,
 				rate_id: rateId,
 			},
 			cache: 'no-store',
@@ -365,25 +364,25 @@ export function* selectShippingRate( rateId, packageId = 0 ) {
 }
 
 /**
- * Updates the shipping and/or billing address for the customer and returns an updated cart.
+ * Applies a coupon code and either invalidates caches, or receives an error if
+the coupon cannot be applied.
  *
- * @param {Object} customerData Address data to be updated; can contain both billing_address and shipping_address.
+ * @param {Object} address shipping address to be updated
  */
-export function* updateCustomerData( customerData ) {
-	yield updatingCustomerData( true );
-
+export function* updateShippingAddress( address ) {
+	yield shippingRatesAreResolving( true );
 	try {
 		const { response } = yield apiFetchWithHeaders( {
-			path: '/wc/store/cart/update-customer',
+			path: '/wc/store/cart/update-shipping',
 			method: 'POST',
-			data: customerData,
+			data: address,
 			cache: 'no-store',
 		} );
 
 		yield receiveCart( response );
 	} catch ( error ) {
 		yield receiveError( error );
-		yield updatingCustomerData( false );
+		yield shippingRatesAreResolving( false );
 
 		// If updated cart state was returned, also update that.
 		if ( error.data?.cart ) {
@@ -393,7 +392,6 @@ export function* updateCustomerData( customerData ) {
 		// rethrow error.
 		throw error;
 	}
-
-	yield updatingCustomerData( false );
+	yield shippingRatesAreResolving( false );
 	return true;
 }

@@ -1,10 +1,16 @@
 <?php
+/**
+ * Atomic blocks.
+ *
+ * @package WooCommerce/Blocks
+ */
+
 namespace Automattic\WooCommerce\Blocks\BlockTypes;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * AtomicBlock class.
- *
- * @internal
  */
 class AtomicBlock extends AbstractBlock {
 	/**

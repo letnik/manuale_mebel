@@ -6,7 +6,7 @@ import {
 	emitEvent,
 	emitEventWithAbort,
 	emitterCallback,
-} from '../../shared/event-emit';
+} from '../event-emit';
 
 const EMIT_TYPES = {
 	PAYMENT_PROCESSING: 'payment_processing',

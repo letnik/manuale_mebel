@@ -308,7 +308,7 @@ class WC_Frontend_Scripts {
 	}
 
 	/**
-	 * Register all WC styles.
+	 * Register all WC sty;es.
 	 */
 	private static function register_styles() {
 		$version = Constants::get_constant( 'WC_VERSION' );

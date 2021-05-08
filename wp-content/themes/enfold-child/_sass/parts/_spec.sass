@@ -1,0 +1,351 @@
+@import 'parts/variables'
+  
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  box-sizing: border-box
+  outline: none
+  &:focus, &:active
+    outline: none
+body
+  font-size: 15px
+  margin: 0
+  padding: 0
+  font-family: $ff-montserrat
+
+h1, h2, h3, h4, p
+  font-family: $ff-montserrat
+  margin: 0
+  padding: 0
+  font-weight: normal
+
+h1
+  font-size: 50px
+
+h2
+  font-size: 35px
+
+h3
+  font-size: 35px
+
+ul, li
+  list-style: none
+  margin: 0
+  padding: 0
+
+a, a:hover, a:focus, a:active
+  text-decoration: none !important
+  color: #222
+
+p 
+  margin: 15px 0
+  font-family: $ff-montserrat
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 25px
+  color: $text-black
+
+img
+  max-width: 100%
+  height: auto
+
+input 
+  -webkit-appearance: none
+  border-radius: 0 
+
+
+section, footer
+  padding: 20px 0
+
+
+
+
+.avia_transform .avia-icon-list.av-iconlist-big.avia-iconlist-animate .avia_start_animation .iconlist-timeline
+  display: none !important
+
+
+.custome_triangle
+  > h2
+    font-weight: bold
+    font-size: 27px
+    line-height: 34px
+    color: $text-black
+
+    &::before
+      content: '\e807'
+      font-family: Fontello
+      font-size: 42px
+      color: $accent
+      margin-right: -20px
+
+
+.sticker-map-container
+  display: flex
+  flex-direction: column
+
+
+// .sticker-map, .sticker-tabs
+//   position: -webkit-sticky
+//   position: sticky
+//   top: 0
+//   height: 100vh
+
+#top
+  .avia-icon-list 
+    .iconlist_icon
+      height: auto
+      width: auto
+      line-height: 0
+
+
+#header_main > .container
+  height: auto !important
+  line-height: normal !important
+  > .inner-container
+    display: flex 
+    > .logo 
+      order: 1
+      position: relative
+      max-width: 30%
+      height: auto !important
+      max-height: 100% !important
+      display: flex
+      align-items: center
+      background: $accent2
+      overflow: visible
+      padding: 10px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        height: 100%
+        width: 52px
+        left: -50px
+        bottom: 0
+        background: $accent2
+        overflow-x: hidden
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        height: 100%
+        width: 19%
+        right: -18%
+        top: 0
+        background: $accent2
+        clip-path: polygon(0 0,100% 0,3% 100%,0 100%)
+        // z-index: 9
+
+
+    > .main_menu 
+      order: 3
+      display: flex !important
+      align-items: center
+      height: 100%  !important
+      ul.av-main-nav:first-child > li a
+        height: auto !important
+        line-height: 18px !important
+      &::before
+        content: ''
+        display: none
+        background: #fff
+        width: 30px
+        height: 24px
+        position: absolute
+        bottom: -22px
+        left: 0
+        clip-path: polygon(0 0,100% 0,7% 100%,0 100%)
+        // z-index: -9
+
+
+    > .sup-menu 
+      width: 70%
+      order: 2
+      .faq
+        display: none !important
+
+    > .btn-wrap
+      display: none
+
+
+// .sup-menu
+//   &-wrap
+
+//   .contact
+//     &-list
+      
+//     &-item
+//       font-size: 15px
+//       line-height: 22px
+//     &-link
+//   .faq
+//     font-size: 15px
+//     line-height: 22px
+
+
+
+
+// map
+
+
+// html.responsive, .responsive body, #wrap_all
+//   overflow:  visible !important
+#top .custome_btn_default.btn_padding_top
+  padding-top: 50px !important
+
+@media screen and ( min-width: 440px )
+
+  .custome_triangle
+    > h2
+      font-size: 30px
+      line-height: 38px
+
+
+
+
+@media screen and ( min-width: 576px )
+    
+  .custome_triangle
+    > h2
+      font-size: 35px
+      line-height: 48px
+      color: $text-black
+
+      &::before
+        content: '\e807'
+        font-family: Fontello
+        font-size: 61px
+        color: $accent
+        margin-right: -30px
+
+@media screen and ( min-width: 990px )
+
+  .sticker-map-container
+    display: grid
+    grid-template-columns: 50% 50%
+
+
+  .sticker-map, .sticker-tabs
+    position: -webkit-sticky
+    position: sticky
+    top: 0
+    height: 100vh
+
+
+  #header_main > .container
+    height: auto !important
+    line-height: normal !important
+
+    > .inner-container
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+
+      > .logo 
+        grid-area: 1/1/3/3
+        position: relative
+        display: block
+        max-width: 100%
+        height: calc(100% + 24px) !important
+        max-height: none !important
+        display: flex
+        align-items: center
+        background: $accent2
+        overflow: visible
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          height: 100%
+          width: 52px
+          left: -50px
+          bottom: 0
+          background: $accent2
+          overflow-x: hidden
+        &::after
+          content: ''
+          display: block
+          position: absolute
+          height: 100%
+          width: 19%
+          right: -18%
+          top: 0
+          background: $accent2
+          clip-path: polygon(0 0,100% 0,3% 100%,0 100%)
+          // z-index: 9
+
+
+      > .main_menu 
+        grid-area: 2/3/3/10
+        position: relative
+        z-index: 0
+        height: 75%
+        ul.av-main-nav:first-child > li a
+          height: auto !important
+          line-height: 18px !important
+        &::before
+          content: ''
+          display: block
+          background: #fff
+          width: 30px
+          height: 24px
+          position: absolute
+          bottom: -22px
+          left: 0
+          clip-path: polygon(0 0,100% 0,7% 100%,0 100%)
+          // z-index: -9
+
+
+      > .sup-menu 
+        grid-area: 1 / 3 / 2 / 13
+        width: auto
+        height: 66px;
+        margin-left: 30px;
+        .faq
+          display: block
+
+      > .btn-wrap
+        display: grid
+        grid-area: 2 / 10 / 3 / 13
+        .btn_wrap_inner 
+          height: 100%
+          display: flex
+          justify-content: flex-end
+          align-items: center
+          button
+            border: none
+            padding: 12px 48px
+            background: $accent
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 23px;
+            color: $text-black
+            &:hover
+              background: darken($accent, 10%)
+              transition: $transition
+
+
+
+
+
+
+
+// @media screen and ( min-width: 1311px )
+
+
+body
+  --marginA: calc(100vw - 1310px)
+  --marginB: calc(var(--marginA) / 2)
+
+  --lefterA: calc(-100vw + 1310px)
+  --lefterB: calc(var(--lefterA) / 2)
+
+
+
+
+

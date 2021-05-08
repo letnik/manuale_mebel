@@ -19,9 +19,7 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
       'title'          => '',
       'data_type'      => 'serialize',
       'priority'       => 'default',
-      'show_reset'     => false,
       'show_restore'   => false,
-      'nav'            => 'normal',
       'theme'          => 'dark',
       'class'          => '',
       'defaults'       => array(),
@@ -77,7 +75,7 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
     // add comment metabox
     public function add_comment_meta_box( $post_type ) {
 
-      add_meta_box( $this->unique, $this->args['title'], array( &$this, 'add_comment_meta_box_content' ), 'comment', 'normal', $this->args['priority'], $this->args );
+      add_meta_box( $this->unique, wp_kses_post( $this->args['title'] ), array( &$this, 'add_comment_meta_box_content' ), 'comment', 'normal', $this->args['priority'], $this->args );
 
     }
 
@@ -123,7 +121,6 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
       $errors   = ( is_object ( $comment ) ) ? get_comment_meta( $comment->comment_ID, '_csf_errors_'. $this->unique, true ) : array();
       $errors   = ( ! empty( $errors ) ) ? $errors : array();
       $theme    = ( $this->args['theme'] ) ? ' csf-theme-'. $this->args['theme'] : '';
-      $nav_type = ( $this->args['nav'] === 'inline' ) ? 'inline' : 'normal';
 
       if ( is_object( $comment ) && ! empty( $errors ) ) {
         delete_comment_meta( $comment->comment_ID, '_csf_errors_'. $this->unique );
@@ -137,7 +134,7 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
 
           if ( $has_nav ) {
 
-            echo '<div class="csf-nav csf-nav-'. esc_attr( $nav_type ) .' csf-nav-metabox">';
+            echo '<div class="csf-nav csf-nav-metabox">';
 
               echo '<ul>';
 
@@ -148,7 +145,7 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
                 $tab_icon  = ( ! empty( $section['icon'] ) ) ? '<i class="csf-tab-icon '. esc_attr( $section['icon'] ) .'"></i>' : '';
                 $tab_error = ( ! empty( $errors['sections'][$tab_key] ) ) ? '<i class="csf-label-error csf-error">!</i>' : '';
 
-                echo '<li><a href="#">'. $tab_icon . $section['title'] . $tab_error .'</a></li>';
+                echo '<li><a href="#">'. wp_kses_post( $tab_icon . $section['title'] . $tab_error ) .'</a></li>';
 
                 $tab_key++;
 
@@ -173,9 +170,9 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
               $section_title  = ( ! empty( $section['title'] ) ) ? $section['title'] : '';
               $section_icon   = ( ! empty( $section['icon'] ) ) ? '<i class="csf-section-icon '. esc_attr( $section['icon'] ) .'"></i>' : '';
 
-              echo '<div class="csf-section hidden'. esc_attr( $section_onload . $section_class ) .'">';
+              echo '<div class="csf-section'. esc_attr( $section_onload . $section_class ) .'">';
 
-              echo ( $section_title || $section_icon ) ? '<div class="csf-section-title"><h3>'. $section_icon . $section_title .'</h3></div>' : '';
+              echo ( $section_title || $section_icon ) ? '<div class="csf-section-title"><h3>'. wp_kses_post( $section_icon . $section_title ) .'</h3></div>' : '';
 
               if ( ! empty( $section['fields'] ) ) {
 
@@ -195,7 +192,7 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
 
               } else {
 
-                echo '<div class="csf-no-option">'. esc_html__( 'No data available.', 'csf' ) .'</div>';
+                echo '<div class="csf-no-option">'. esc_html__( 'No option provided by developer.', 'csf' ) .'</div>';
 
               }
 
@@ -207,13 +204,13 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
 
             echo '</div>';
 
-            if ( ! empty( $this->args['show_restore'] ) || ! empty( $this->args['show_reset'] ) ) {
+            if ( ! empty( $this->args['show_restore'] ) ) {
 
-              echo '<div class="csf-sections-reset">';
+              echo '<div class="csf-sections-restore">';
               echo '<label>';
-              echo '<input type="checkbox" name="'. esc_attr( $this->unique ) .'[_reset]" />';
-              echo '<span class="button csf-button-reset">'. esc_html__( 'Reset', 'csf' ) .'</span>';
-              echo '<span class="button csf-button-cancel">'. sprintf( '<small>( %s )</small> %s', esc_html__( 'update post', 'csf' ), esc_html__( 'Cancel', 'csf' ) ) .'</span>';
+              echo '<input type="checkbox" name="'. esc_attr( $this->unique ) .'[_restore]" />';
+              echo '<span class="button csf-button-restore">'. esc_html__( 'Restore', 'csf' ) .'</span>';
+              echo '<span class="button csf-button-cancel">'. sprintf( '<small>( %s )</small> %s', esc_html__( 'update post for restore ', 'csf' ), esc_html__( 'Cancel', 'csf' ) ) .'</span>';
               echo '</label>';
               echo '</div>';
 
@@ -221,7 +218,7 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
 
           echo '</div>';
 
-          echo ( $has_nav && $nav_type === 'normal' ) ? '<div class="csf-nav-background"></div>' : '';
+          echo ( $has_nav ) ? '<div class="csf-nav-background"></div>' : '';
 
           echo '<div class="clear"></div>';
 
@@ -311,7 +308,7 @@ if ( ! class_exists( 'CSF_Comment_Metabox' ) ) {
 
       do_action( "csf_{$this->unique}_save_before", $data, $comment_id, $this );
 
-      if ( empty( $data ) || ! empty( $request['_reset'] ) ) {
+      if ( empty( $data ) || ! empty( $request['_restore'] ) ) {
 
         if ( $this->args['data_type'] !== 'serialize' ) {
           foreach ( $data as $key => $value ) {

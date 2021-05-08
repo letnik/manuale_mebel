@@ -1,5 +1,13 @@
 <?php
+/**
+ * All products block.
+ *
+ * @package WooCommerce\Blocks
+ */
+
 namespace Automattic\WooCommerce\Blocks\BlockTypes;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * AllProducts class.

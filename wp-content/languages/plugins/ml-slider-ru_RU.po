@@ -1,0 +1,483 @@
+# Translation of Plugins - Responsive Slider by MetaSlider &#8211; Slider and Carousel Plugin for WordPress - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Responsive Slider by MetaSlider &#8211; Slider and Carousel Plugin for WordPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-24 07:08:43+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Responsive Slider by MetaSlider &#8211; Slider and Carousel Plugin for WordPress - Stable (latest release)\n"
+
+#. Description of the plugin
+msgid "Easy to use slideshow plugin. Create SEO optimised responsive slideshows with Nivo Slider, Flex Slider, Coin Slider and Responsive Slides."
+msgstr "Простой в использовании слайд-шоу плагин. Создавайте СЕО-оптимизированные адаптивные слайд-шоу с Nivo Slider, Flex Slider, Coin Slider и Responsive Slides."
+
+#: ml-slider.php:1536
+msgid "Opacity"
+msgstr "Прозрачность"
+
+#: ml-slider.php:1549
+msgid "Caption speed"
+msgstr "Скорость описания"
+
+#: ml-slider.php:1551
+msgid "Set the fade in speed of the caption"
+msgstr "Установить скорость растворения описания"
+
+#: ml-slider.php:1558
+msgid "Developer options"
+msgstr "Опции для разработчиков"
+
+#: ml-slider.php:1563
+msgid "CSS classes"
+msgstr "CSS классы"
+
+#: ml-slider.php:1565
+msgid "Specify any custom CSS Classes you would like to be added to the slider wrapper"
+msgstr "Укажите любые пользовательские CSS классы, которые вы хотите добавить к контейнеру слайдера"
+
+#: ml-slider.php:1571
+msgid "Print CSS"
+msgstr "Выводить CSS"
+
+#: ml-slider.php:1574
+msgid "Uncheck this is you would like to include your own CSS"
+msgstr "Снимите галочку, если Вы хотите использовать свой собственный CSS"
+
+#: ml-slider.php:1579
+msgid "Print JS"
+msgstr "Выводить JS"
+
+#: ml-slider.php:1582
+msgid "Uncheck this is you would like to include your own Javascript"
+msgstr "Снимите галочку, если Вы хотите использовать свой собственный Javascript"
+
+#: ml-slider.php:1587
+msgid "No conflict mode"
+msgstr "Бесконфликтный режим"
+
+#: ml-slider.php:1590
+msgid "Delay adding the flexslider class to the slideshow"
+msgstr "Задержка при добавлении класса flexslider в слайдшоу"
+
+#: ml-slider.php:1650
+msgid "Select slideshow to insert into post"
+msgstr "Выберите слайд-шоу для вставки в запись"
+
+#: ml-slider.php:1683
+msgid "Choose slideshow"
+msgstr "Выберите слайдшоу"
+
+#: ml-slider.php:1688
+msgid "Insert slideshow"
+msgstr "Вставить слайдшоу"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.metaslider.com"
+msgstr "https://www.metaslider.com"
+
+#: inc/metaslider.widget.class.php:106
+msgid "Title:"
+msgstr "Название:"
+
+#: inc/metaslider.widget.class.php:109
+msgid "Select Slider:"
+msgstr "Выберите слайдер:"
+
+#: ml-slider.php:1690 inc/metaslider.widget.class.php:119
+#: admin/assets/dist/js/app.js:2
+msgid "No slideshows found"
+msgstr "Не найдено ни одного слайд-шоу"
+
+#: admin/Pages.php:70 admin/assets/dist/js/app.js:2
+msgid "Caption"
+msgstr "Описание"
+
+#: admin/Pages.php:71
+msgid "New Window"
+msgstr "Открывать в новом окне"
+
+#: admin/Pages.php:69 admin/views/slides/tabs/general.php:27
+msgid "URL"
+msgstr "Ссылка (URL)"
+
+#: inc/slide/metaslide.image.class.php:258
+msgid "Image Slide"
+msgstr "Слайд"
+
+#: inc/slide/metaslide.image.class.php:349
+msgid "General"
+msgstr "Основное"
+
+#: inc/slide/metaslide.image.class.php:353
+msgid "SEO"
+msgstr "CEO"
+
+#: admin/views/slides/tabs/seo.php:3
+msgid "Image Title Text"
+msgstr "Title изображния"
+
+#: admin/views/slides/tabs/seo.php:13
+msgid "Image Alt Text"
+msgstr "Alt изображения"
+
+#: ml-slider.php:1846
+msgid "Documentation"
+msgstr "Документация"
+
+#: admin/Pages.php:86
+msgid "Caution: This setting is for advanced developers only. If you're unsure, leave it checked."
+msgstr "Внимание: данная настройка только для опытных пользователей. Если вы не уверены, оставьте её отмеченной."
+
+#: ml-slider.php:503
+msgid "Image"
+msgstr "Изображение"
+
+#: admin/views/pages/parts/toolbar.php:37
+msgid "Add Slide"
+msgstr "Добавить слайд"
+
+#: admin/views/pages/settings.php:48
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/views/pages/parts/toolbar.php:122 admin/assets/dist/js/app.js:2
+msgid "Save"
+msgstr "Сохранить"
+
+#: ml-slider.php:1218 ml-slider.php:1464
+msgid "Width"
+msgstr "Ширина"
+
+#: ml-slider.php:1220 admin/assets/js/gutenberg/components/block-edit.js:61
+#: admin/assets/js/gutenberg/components/block-edit.js:86
+msgid "Slideshow width"
+msgstr "Ширина слайд-шоу"
+
+#: ml-slider.php:1221 ml-slider.php:1234 ml-slider.php:1383
+msgid "px"
+msgstr "пикселей"
+
+#: ml-slider.php:1231 ml-slider.php:1477
+msgid "Height"
+msgstr "Высота"
+
+#: ml-slider.php:1233
+msgid "Slideshow height"
+msgstr "Высота слайд-шоу"
+
+#: ml-slider.php:1240
+msgid "Effect"
+msgstr "Эффект"
+
+#: ml-slider.php:1242
+msgid "Slide transition effect"
+msgstr "Эффект смены слайдов"
+
+#: ml-slider.php:1244 ml-slider.php:1396
+msgid "Random"
+msgstr "Случайно"
+
+#: ml-slider.php:1245
+msgid "Swirl"
+msgstr "Кручение"
+
+#: ml-slider.php:1246
+msgid "Rain"
+msgstr "Дождь"
+
+#: ml-slider.php:1247
+msgid "Straight"
+msgstr "Классический"
+
+#: ml-slider.php:1248
+msgid "Slide Down"
+msgstr "Скольжение вниз"
+
+#: ml-slider.php:1249
+msgid "Slice Up"
+msgstr "Сдвиг"
+
+#: ml-slider.php:1250
+msgid "Slide Up Left"
+msgstr "Скольжение вверх влево"
+
+#: ml-slider.php:1251
+msgid "Slice Up Down"
+msgstr "Сдвиг вниз"
+
+#: ml-slider.php:1252
+msgid "Slide Up Down Left"
+msgstr "Сдвиг влево вниз"
+
+#: ml-slider.php:1253
+msgid "Fold"
+msgstr "Жалюзи"
+
+#: ml-slider.php:1254
+msgid "Fade"
+msgstr "Растворение"
+
+#: ml-slider.php:1255
+msgid "Slide In Right"
+msgstr "Скольжение вправо"
+
+#: ml-slider.php:1256
+msgid "Slide In Left"
+msgstr "Скольжение влево"
+
+#: ml-slider.php:1257
+msgid "Box Random"
+msgstr "Случайные квадраты"
+
+#: ml-slider.php:1258
+msgid "Box Rain"
+msgstr "Мозаика"
+
+#: ml-slider.php:1259
+msgid "Box Rain Reverse"
+msgstr "Обратная мозаика"
+
+#: ml-slider.php:1260
+msgid "Box Rain Grow Reverse"
+msgstr "Возрастающая мозаика"
+
+#: ml-slider.php:1261
+msgid "Slide"
+msgstr "Скольжение"
+
+#: ml-slider.php:1267
+msgid "Arrows"
+msgstr "Стрелочки"
+
+#: ml-slider.php:1270
+msgid "Show the previous/next arrows"
+msgstr "Показывать стрелки вперед/назад"
+
+#: ml-slider.php:1275
+msgid "Navigation"
+msgstr "Навигация"
+
+#: ml-slider.php:1278
+msgid "Show the slide navigation bullets"
+msgstr "Показывать метки навигации"
+
+#: ml-slider.php:1280
+msgid "Hidden"
+msgstr "Не показывать"
+
+#: ml-slider.php:1281
+msgid "Dots"
+msgstr "Точки"
+
+#: ml-slider.php:1321
+msgid "Advanced Settings"
+msgstr "Расширенные настройки"
+
+#: ml-slider.php:1333
+msgid "Stretch the slideshow output to fill it's parent container"
+msgstr "Растягивает слайд-шоу на всю ширину родительского элемента"
+
+#: ml-slider.php:1338
+msgid "Center align"
+msgstr "Выравнять по центру"
+
+#: ml-slider.php:1341
+msgid "Center align the slideshow"
+msgstr "Центрирует слайд-шоу"
+
+#: ml-slider.php:1346
+msgid "Auto play"
+msgstr "Воспроизводить автоматически"
+
+#: ml-slider.php:1349
+msgid "Transition between slides automatically"
+msgstr "Задержка между сменой слайдов определяется автоматически"
+
+#: ml-slider.php:1363
+msgid "Smart Crop ensures your responsive slides are cropped to a ratio that results in a consistent slideshow size"
+msgstr "Слайды будут обрезаны с определённым соотношением, чтобы размер слайд-шоу не изменялся"
+
+#: ml-slider.php:1368
+msgid "Carousel mode"
+msgstr "Режим карусели"
+
+#: ml-slider.php:1371
+msgid "Display multiple slides at once. Slideshow output will be 100% wide."
+msgstr "Показывать несколько слайдов одновременно. Слайд-шоу будет иметь ширину 100%."
+
+#: ml-slider.php:1379
+msgid "Carousel margin"
+msgstr "Отступ карусели"
+
+#: ml-slider.php:1382
+msgid "Pixel margin between slides in carousel."
+msgstr "Отступ (в пикселях) между слайдами в карусели"
+
+#: ml-slider.php:1399
+msgid "Randomise the order of the slides"
+msgstr "Случайный порядок салйдов"
+
+#: ml-slider.php:1404
+msgid "Hover pause"
+msgstr "Пауза при наведении мыши"
+
+#: ml-slider.php:1407
+msgid "Pause the slideshow when hovering over slider, then resume when no longer hovering."
+msgstr "Останавливает слайд-шоу при наведении на него мышки и снова возобновляет, когда мышка убрана."
+
+#: ml-slider.php:1412
+msgid "Reverse"
+msgstr "В обратном порядке"
+
+#: ml-slider.php:1415
+msgid "Reverse the animation direction"
+msgstr "Изменить порядок слайдов на обратный"
+
+#: ml-slider.php:1425
+msgid "Slide delay"
+msgstr "Время показа слайда"
+
+#: ml-slider.php:1427
+msgid "How long to display each slide, in milliseconds"
+msgstr "Как долго будет показан каждый слайд (в миллисекундах)"
+
+#: ml-slider.php:1438
+msgid "Animation speed"
+msgstr "Скорость анимации"
+
+#: ml-slider.php:1440
+msgid "Set the speed of animations, in milliseconds"
+msgstr "Устанавливает скорость анимации (в миллисекундах)"
+
+#: ml-slider.php:1451 ml-slider.php:1453
+msgid "Number of slices"
+msgstr "Количество секций"
+
+#: ml-slider.php:1464 ml-slider.php:1466 ml-slider.php:1477 ml-slider.php:1479
+msgid "Number of squares"
+msgstr "Количество квадратов"
+
+#: ml-slider.php:1485
+msgid "Slide direction"
+msgstr "Направление воспроизведения"
+
+#: ml-slider.php:1487
+msgid "Select the sliding direction"
+msgstr "Выбор направления воспроизведения"
+
+#: ml-slider.php:1490
+msgid "Horizontal"
+msgstr "Горизонтально"
+
+#: ml-slider.php:1491
+msgid "Vertical"
+msgstr "Вертикально"
+
+#: ml-slider.php:1497
+msgid "Easing"
+msgstr "Сглаживание"
+
+#: ml-slider.php:1499
+msgid "Animation easing effect"
+msgstr "Анимированный эффект сглаживания"
+
+#: ml-slider.php:1506
+msgid "Previous text"
+msgstr "Текст \"назад\""
+
+#: ml-slider.php:1508
+msgid "Set the text for the 'previous' direction item"
+msgstr "Установить текст для метки \"назад\" (предыдущий слайд)"
+
+#: ml-slider.php:1514
+msgid "Next text"
+msgstr "Текст \"вперед\""
+
+#: ml-slider.php:1516
+msgid "Set the text for the 'next' direction item"
+msgstr "Установить текст для метки \"вперед\" (следующий слайд)"
+
+#: ml-slider.php:1527
+msgid "Square delay"
+msgstr "Задержка между квадратами"
+
+#: ml-slider.php:1529
+msgid "Delay between squares in ms"
+msgstr "Задержка между квадратами (в миллисекундах)"
+
+#: admin/views/slides/tabs/crop.php:3
+msgid "Crop Position"
+msgstr "Обрезать"
+
+#: admin/views/slides/tabs/crop.php:7
+msgid "Top Left"
+msgstr "Сверху Слева"
+
+#: admin/views/slides/tabs/crop.php:8
+msgid "Top Center"
+msgstr "Сверху Центр"
+
+#: admin/views/slides/tabs/crop.php:9
+msgid "Top Right"
+msgstr "Сверху Справа"
+
+#: admin/views/slides/tabs/crop.php:10
+msgid "Center Left"
+msgstr "Центр Слева"
+
+#: admin/views/slides/tabs/crop.php:11
+msgid "Center Center"
+msgstr "По центру"
+
+#: admin/views/slides/tabs/crop.php:12
+msgid "Center Right"
+msgstr "Центр Справа"
+
+#: admin/views/slides/tabs/crop.php:13
+msgid "Bottom Left"
+msgstr "Снизу Слева"
+
+#: admin/views/slides/tabs/crop.php:14
+msgid "Bottom Center"
+msgstr "Снизу Центр"
+
+#: admin/views/slides/tabs/crop.php:15
+msgid "Bottom Right"
+msgstr "Снизу Справа"
+
+#: inc/slide/metaslide.image.class.php:370
+msgid "Crop"
+msgstr "Обрезать"
+
+#: admin/Pages.php:80
+msgid "Select replacement image"
+msgstr "Выбрать изображение"
+
+#: ml-slider.php:1354
+msgid "Image Crop"
+msgstr "Обрезка изображений"
+
+#: ml-slider.php:1359
+msgid "Standard"
+msgstr "Обычная"
+
+#: ml-slider.php:1360
+msgid "Disabled"
+msgstr "Отключено"
+
+#: inc/slide/metaslide.image.class.php:87
+msgid "Failed to add slide. Slide is not an image."
+msgstr "Ошибка добавления в слайдер. Слайд не является изображением."
+
+#: ml-slider.php:1361
+msgid "Disabled (Smart Pad)"
+msgstr "無効化済み (Smart Pad)"
+
+#: ml-slider.php:1358
+msgid "Smart Crop"
+msgstr "Умная обрезка"

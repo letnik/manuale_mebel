@@ -11,12 +11,7 @@ import {
 	useCallback,
 } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-import {
-	useCheckoutNotices,
-	useStoreNotices,
-	useEmitResponse,
-	usePrevious,
-} from '@woocommerce/base-hooks';
+import { useStoreNotices, useEmitResponse } from '@woocommerce/base-hooks';
 
 /**
  * Internal dependencies
@@ -31,7 +26,7 @@ import {
 	emitEventWithAbort,
 	reducer as emitReducer,
 } from './event-emit';
-import { useValidationContext } from '../../shared/validation';
+import { useValidationContext } from '../validation';
 
 /**
  * @typedef {import('@woocommerce/type-defs/checkout').CheckoutDispatchActions} CheckoutDispatchActions
@@ -48,7 +43,6 @@ const CheckoutContext = createContext( {
 	hasError: false,
 	redirectUrl: '',
 	orderId: 0,
-	orderNotes: '',
 	customerId: 0,
 	onSubmit: () => void null,
 	onCheckoutAfterProcessingWithSuccess: ( callback ) => void callback,
@@ -61,14 +55,10 @@ const CheckoutContext = createContext( {
 		setAfterProcessing: ( response ) => void response,
 		incrementCalculating: () => void null,
 		decrementCalculating: () => void null,
-		setCustomerId: ( id ) => void id,
 		setOrderId: ( id ) => void id,
-		setOrderNotes: ( orderNotes ) => void orderNotes,
 	},
 	hasOrder: false,
 	isCart: false,
-	shouldCreateAccount: false,
-	setShouldCreateAccount: ( value ) => void value,
 } );
 
 /**
@@ -85,8 +75,11 @@ export const useCheckoutContext = () => {
  *
  * @param {Object}  props                     Incoming props for the provider.
  * @param {Object}  props.children            The children being wrapped.
- * @param {string}  props.redirectUrl         Initialize what the checkout will redirect to after successful submit.
- * @param {boolean} props.isCart              If context provider is being used in cart context.
+ * @param {string}  props.redirectUrl         Initialize what the checkout will
+ *                                            redirect to after successful
+ *                                            submit.
+ * @param {boolean} props.isCart              If context provider is being used
+ *                                            in cart context.
  */
 export const CheckoutStateProvider = ( {
 	children,
@@ -106,13 +99,7 @@ export const CheckoutStateProvider = ( {
 		isSuccessResponse,
 		isErrorResponse,
 		isFailResponse,
-		shouldRetry,
 	} = useEmitResponse();
-	const {
-		checkoutNotices,
-		paymentNotices,
-		expressPaymentNotices,
-	} = useCheckoutNotices();
 
 	// set observers on ref so it's always current.
 	useEffect( () => {
@@ -148,12 +135,8 @@ export const CheckoutStateProvider = ( {
 				void dispatch( actions.incrementCalculating() ),
 			decrementCalculating: () =>
 				void dispatch( actions.decrementCalculating() ),
-			setCustomerId: ( id ) =>
-				void dispatch( actions.setCustomerId( id ) ),
 			setOrderId: ( orderId ) =>
 				void dispatch( actions.setOrderId( orderId ) ),
-			setOrderNotes: ( orderNotes ) =>
-				void dispatch( actions.setOrderNotes( orderNotes ) ),
 			setAfterProcessing: ( response ) => {
 				// capture general error message if this is an error response.
 				if (
@@ -222,16 +205,7 @@ export const CheckoutStateProvider = ( {
 		dispatch,
 	] );
 
-	const previousStatus = usePrevious( checkoutState.status );
-	const previousHasError = usePrevious( checkoutState.hasError );
-
 	useEffect( () => {
-		if (
-			checkoutState.status === previousStatus &&
-			checkoutState.hasError === previousHasError
-		) {
-			return;
-		}
 		if ( checkoutState.status === STATUS.AFTER_PROCESSING ) {
 			const data = {
 				redirectUrl: checkoutState.redirectUrl,
@@ -253,43 +227,32 @@ export const CheckoutStateProvider = ( {
 						isFailResponse( response )
 					) {
 						if ( response.message ) {
-							const errorOptions = {
-								id: response?.messageContext,
-								context: response?.messageContext,
-							};
+							const errorOptions = response.messageContext
+								? { context: response.messageContext }
+								: undefined;
 							addErrorNotice( response.message, errorOptions );
 						}
 						// irrecoverable error so set complete
-						if ( ! shouldRetry( response ) ) {
+						if (
+							typeof response.retry !== 'undefined' &&
+							response.retry !== true
+						) {
 							dispatch( actions.setComplete( response ) );
 						} else {
 							dispatch( actions.setIdle() );
 						}
 					} else {
-						const hasErrorNotices =
-							checkoutNotices.some(
-								( notice ) => notice.status === 'error'
-							) ||
-							expressPaymentNotices.some(
-								( notice ) => notice.status === 'error'
-							) ||
-							paymentNotices.some(
-								( notice ) => notice.status === 'error'
+						// no error handling in place by anything so let's fall
+						// back to default
+						const message =
+							data.processingResponse?.message ||
+							__(
+								'Something went wrong. Please contact us to get assistance.',
+								'woocommerce'
 							);
-						if ( ! hasErrorNotices ) {
-							// no error handling in place by anything so let's fall
-							// back to default
-							const message =
-								data.processingResponse?.message ||
-								__(
-									'Something went wrong. Please contact us to get assistance.',
-									'woocommerce'
-								);
-							addErrorNotice( message, {
-								id: 'checkout',
-							} );
-						}
-
+						addErrorNotice( message, {
+							id: 'checkout',
+						} );
 						dispatch( actions.setIdle() );
 					}
 				} );
@@ -311,11 +274,11 @@ export const CheckoutStateProvider = ( {
 								: undefined;
 							addErrorNotice( response.message, errorOptions );
 						}
-						if ( ! shouldRetry( response ) ) {
+						if ( ! response.retry ) {
 							dispatch( actions.setComplete( response ) );
 						} else {
 							// this will set an error which will end up
-							// triggering the onCheckoutAfterProcessingWithError emitter.
+							// triggering the onCheckoutAfterProcessingWithErrors emitter.
 							// and then setting checkout to IDLE state.
 							dispatch( actions.setHasError( true ) );
 						}
@@ -335,17 +298,11 @@ export const CheckoutStateProvider = ( {
 		checkoutState.customerId,
 		checkoutState.customerNote,
 		checkoutState.processingResponse,
-		previousStatus,
-		previousHasError,
 		dispatchActions,
 		addErrorNotice,
 		isErrorResponse,
 		isFailResponse,
 		isSuccessResponse,
-		shouldRetry,
-		checkoutNotices,
-		expressPaymentNotices,
-		paymentNotices,
 	] );
 
 	const onSubmit = useCallback( () => {
@@ -373,10 +330,6 @@ export const CheckoutStateProvider = ( {
 		orderId: checkoutState.orderId,
 		hasOrder: !! checkoutState.orderId,
 		customerId: checkoutState.customerId,
-		orderNotes: checkoutState.orderNotes,
-		shouldCreateAccount: checkoutState.shouldCreateAccount,
-		setShouldCreateAccount: ( value ) =>
-			dispatch( actions.setShouldCreateAccount( value ) ),
 	};
 	return (
 		<CheckoutContext.Provider value={ checkoutData }>

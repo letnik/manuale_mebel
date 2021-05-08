@@ -9,27 +9,6 @@ import { useEditorContext } from '@woocommerce/base-context';
 import { decodeEntities } from '@wordpress/html-entities';
 import { mapValues } from 'lodash';
 
-const defaultShippingAddress = {
-	first_name: '',
-	last_name: '',
-	company: '',
-	address_1: '',
-	address_2: '',
-	city: '',
-	state: '',
-	postcode: '',
-	country: '',
-};
-
-const defaultBillingAddress = {
-	...defaultShippingAddress,
-	email: '',
-	phone: '',
-};
-
-const decodeAddress = ( address ) =>
-	mapValues( address, ( value ) => decodeEntities( value ) );
-
 /**
  * @constant
  * @type  {StoreCart} Object containing cart data.
@@ -37,7 +16,6 @@ const decodeAddress = ( address ) =>
 export const defaultCartData = {
 	cartCoupons: [],
 	cartItems: [],
-	cartFees: [],
 	cartItemsCount: 0,
 	cartItemsWeight: 0,
 	cartNeedsPayment: true,
@@ -46,12 +24,20 @@ export const defaultCartData = {
 	cartTotals: {},
 	cartIsLoading: true,
 	cartErrors: [],
-	billingAddress: defaultBillingAddress,
-	shippingAddress: defaultShippingAddress,
+	shippingAddress: {
+		first_name: '',
+		last_name: '',
+		company: '',
+		address_1: '',
+		address_2: '',
+		city: '',
+		state: '',
+		postcode: '',
+		country: '',
+	},
 	shippingRates: [],
 	shippingRatesLoading: false,
-	cartHasCalculatedShipping: false,
-	paymentRequirements: [],
+	hasShippingAddress: false,
 	receiveCart: () => {},
 };
 
@@ -82,7 +68,6 @@ export const useStoreCart = ( options = { shouldSelect: true } ) => {
 				return {
 					cartCoupons: previewCart.coupons,
 					cartItems: previewCart.items,
-					cartFees: previewCart.fees,
 					cartItemsCount: previewCart.items_count,
 					cartItemsWeight: previewCart.items_weight,
 					cartNeedsPayment: previewCart.needs_payment,
@@ -91,14 +76,20 @@ export const useStoreCart = ( options = { shouldSelect: true } ) => {
 					cartTotals: previewCart.totals,
 					cartIsLoading: false,
 					cartErrors: [],
-					billingAddress: defaultBillingAddress,
-					shippingAddress: defaultShippingAddress,
-					extensions: {},
+					shippingAddress: {
+						first_name: '',
+						last_name: '',
+						company: '',
+						address_1: '',
+						address_2: '',
+						city: '',
+						state: '',
+						postcode: '',
+						country: '',
+					},
 					shippingRates: previewCart.shipping_rates,
 					shippingRatesLoading: false,
-					cartHasCalculatedShipping:
-						previewCart.has_calculated_shipping,
-					paymentRequirements: previewCart.paymentRequirements,
+					hasShippingAddress: false,
 					receiveCart:
 						typeof previewCart?.receiveCart === 'function'
 							? previewCart.receiveCart
@@ -113,16 +104,16 @@ export const useStoreCart = ( options = { shouldSelect: true } ) => {
 			const cartIsLoading = ! store.hasFinishedResolution(
 				'getCartData'
 			);
-			const shippingRatesLoading = store.isCustomerDataUpdating();
+			const shippingRatesLoading = store.areShippingRatesLoading();
 			const { receiveCart } = dispatch( storeKey );
-			const billingAddress = decodeAddress( cartData.billingAddress );
-			const shippingAddress = cartData.needsShipping
-				? decodeAddress( cartData.shippingAddress )
-				: billingAddress;
+			const shippingAddress = mapValues(
+				cartData.shippingAddress,
+				( value ) => decodeEntities( value )
+			);
+
 			return {
 				cartCoupons: cartData.coupons,
 				cartItems: cartData.items || [],
-				cartFees: cartData.fees || [],
 				cartItemsCount: cartData.itemsCount,
 				cartItemsWeight: cartData.itemsWeight,
 				cartNeedsPayment: cartData.needsPayment,
@@ -131,13 +122,10 @@ export const useStoreCart = ( options = { shouldSelect: true } ) => {
 				cartTotals,
 				cartIsLoading,
 				cartErrors,
-				billingAddress,
 				shippingAddress,
-				extensions: cartData.extensions || {},
 				shippingRates: cartData.shippingRates || [],
 				shippingRatesLoading,
-				cartHasCalculatedShipping: cartData.hasCalculatedShipping,
-				paymentRequirements: cartData.paymentRequirements || [],
+				hasShippingAddress: !! shippingAddress.country,
 				receiveCart,
 			};
 		},

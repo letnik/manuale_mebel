@@ -4,6 +4,7 @@
 import { useSelect, useDispatch } from '@wordpress/data';
 import { useState, useEffect } from '@wordpress/element';
 import { CART_STORE_KEY as storeKey } from '@woocommerce/block-data';
+import { usePrevious } from '@woocommerce/base-hooks';
 import { useDebounce } from 'use-debounce';
 import { useCheckoutContext } from '@woocommerce/base-context';
 import { triggerFragmentRefresh } from '@woocommerce/base-utils';
@@ -12,7 +13,6 @@ import { triggerFragmentRefresh } from '@woocommerce/base-utils';
  * Internal dependencies
  */
 import { useStoreCart } from './use-store-cart';
-import { usePrevious } from '../use-previous';
 
 /**
  * @typedef {import('@woocommerce/type-defs/hooks').StoreCartItemQuantity} StoreCartItemQuantity
@@ -23,7 +23,7 @@ import { usePrevious } from '../use-previous';
  * This is a custom hook for loading the Store API /cart/ endpoint and
  * actions for removing or changing item quantity.
  *
- * @see https://github.com/woocommerce/woocommerce-gutenberg-products-block/tree/trunk/src/RestApi/StoreApi
+ * @see https://github.com/woocommerce/woocommerce-gutenberg-products-block/tree/main/src/RestApi/StoreApi
  *
  * @param {CartItem} cartItem      The cartItem to get quantity info from and
  *                                 will have quantity updated on.
@@ -55,7 +55,6 @@ export const useStoreCartItemQuantity = ( cartItem ) => {
 		},
 		[ cartItemKey ]
 	);
-	const previousIsPendingQuantity = usePrevious( isPendingQuantity );
 
 	const isPendingDelete = useSelect(
 		( select ) => {
@@ -68,7 +67,6 @@ export const useStoreCartItemQuantity = ( cartItem ) => {
 		},
 		[ cartItemKey ]
 	);
-	const previousIsPendingDelete = usePrevious( isPendingDelete );
 
 	const removeItem = () => {
 		return cartItemKey
@@ -80,46 +78,34 @@ export const useStoreCartItemQuantity = ( cartItem ) => {
 
 	// Observe debounced quantity value, fire action to update server on change.
 	useEffect( () => {
-		if (
-			cartItemKey &&
-			Number.isFinite( previousDebouncedQuantity ) &&
-			previousDebouncedQuantity !== debouncedQuantity
-		) {
+		// Don't run it if quantity didn't change but it was set for the first time.
+		if ( cartItemKey && Number.isFinite( previousDebouncedQuantity ) ) {
 			changeCartItemQuantity( cartItemKey, debouncedQuantity ).then(
 				triggerFragmentRefresh
 			);
 		}
-	}, [
-		cartItemKey,
-		changeCartItemQuantity,
-		debouncedQuantity,
-		previousDebouncedQuantity,
-	] );
+	}, [ debouncedQuantity, cartItemKey ] );
 
 	useEffect( () => {
-		if ( previousIsPendingQuantity !== isPendingQuantity ) {
-			if ( isPendingQuantity ) {
-				dispatchActions.incrementCalculating();
-			} else {
-				dispatchActions.decrementCalculating();
-			}
+		if ( isPendingQuantity ) {
+			dispatchActions.incrementCalculating();
+		} else {
+			dispatchActions.decrementCalculating();
 		}
-	}, [ dispatchActions, isPendingQuantity, previousIsPendingQuantity ] );
+	}, [ isPendingQuantity ] );
 
 	useEffect( () => {
-		if ( previousIsPendingDelete !== isPendingDelete ) {
-			if ( isPendingDelete ) {
-				dispatchActions.incrementCalculating();
-			} else {
-				dispatchActions.decrementCalculating();
-			}
+		if ( isPendingDelete ) {
+			dispatchActions.incrementCalculating();
+		} else if ( ! isPendingDelete && cartErrors.length ) {
+			dispatchActions.decrementCalculating();
 		}
 		return () => {
 			if ( isPendingDelete ) {
 				dispatchActions.decrementCalculating();
 			}
 		};
-	}, [ dispatchActions, isPendingDelete, previousIsPendingDelete ] );
+	}, [ isPendingDelete ] );
 
 	return {
 		isPendingDelete,

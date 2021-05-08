@@ -13,6 +13,7 @@ import {
 } from '@wordpress/element';
 import { getSetting } from '@woocommerce/settings';
 import { useStoreNotices, useEmitResponse } from '@woocommerce/base-hooks';
+import { useEditorContext } from '@woocommerce/base-context';
 
 /**
  * Internal dependencies
@@ -36,17 +37,16 @@ import {
 	usePaymentMethods,
 	useExpressPaymentMethods,
 } from './use-payment-method-registration';
-import { useCustomerDataContext } from '../customer';
+import { useBillingDataContext } from '../billing';
 import { useCheckoutContext } from '../checkout-state';
 import { useShippingDataContext } from '../shipping';
-import { useEditorContext } from '../../editor';
 import {
 	EMIT_TYPES,
 	emitterSubscribers,
 	emitEventWithAbort,
 	reducer as emitReducer,
 } from './event-emit';
-import { useValidationContext } from '../../shared/validation';
+import { useValidationContext } from '../validation';
 
 /**
  * @typedef {import('@woocommerce/type-defs/contexts').PaymentMethodDataContext} PaymentMethodDataContext
@@ -78,35 +78,6 @@ export const usePaymentMethodDataContext = () => {
 };
 
 /**
- * Gets the payment methods saved for the current user after filtering out
- * disabled ones.
- *
- * @param {Object} availablePaymentMethods List of available payment methods.
- * @return {Object} Object containing the payment methods saved for a specific
- *                  user which are available.
- */
-const getCustomerPaymentMethods = ( availablePaymentMethods = {} ) => {
-	const customerPaymentMethods = getSetting( 'customerPaymentMethods', {} );
-	const paymentMethodKeys = Object.keys( customerPaymentMethods );
-	const enabledCustomerPaymentMethods = {};
-	paymentMethodKeys.forEach( ( type ) => {
-		const methods = customerPaymentMethods[ type ].filter(
-			( { method: { gateway } } ) => {
-				const isAvailable = gateway in availablePaymentMethods;
-				return (
-					isAvailable &&
-					availablePaymentMethods[ gateway ].supports?.showSavedCards
-				);
-			}
-		);
-		if ( methods.length ) {
-			enabledCustomerPaymentMethods[ type ] = methods;
-		}
-	} );
-	return enabledCustomerPaymentMethods;
-};
-
-/**
  * PaymentMethodDataProvider is automatically included in the
  * CheckoutDataProvider.
  *
@@ -118,7 +89,7 @@ const getCustomerPaymentMethods = ( availablePaymentMethods = {} ) => {
  *                                           provider.
  */
 export const PaymentMethodDataProvider = ( { children } ) => {
-	const { setBillingData } = useCustomerDataContext();
+	const { setBillingData } = useBillingDataContext();
 	const {
 		isProcessing: checkoutIsProcessing,
 		isIdle: checkoutIsIdle,
@@ -131,15 +102,15 @@ export const PaymentMethodDataProvider = ( { children } ) => {
 		isFailResponse,
 		noticeContexts,
 	} = useEmitResponse();
-	// The active payment method - e.g. Stripe CC or BACS.
 	const [ activePaymentMethod, setActive ] = useState( '' );
-	// If a previously saved payment method is active, the token for that method.
-	// For example, a for a Stripe CC card saved to user account.
-	const [ activeSavedToken, setActiveSavedToken ] = useState( '' );
 	const [ observers, subscriber ] = useReducer( emitReducer, {} );
 	const currentObservers = useRef( observers );
 
 	const { isEditor, previewData } = useEditorContext();
+	const customerPaymentMethods =
+		isEditor && previewData?.previewSavedPaymentMethods
+			? previewData?.previewSavedPaymentMethods
+			: getSetting( 'customerPaymentMethods', {} );
 	const [ paymentData, dispatch ] = useReducer(
 		reducer,
 		DEFAULT_PAYMENT_DATA
@@ -179,39 +150,21 @@ export const PaymentMethodDataProvider = ( { children } ) => {
 		[ dispatch ]
 	);
 
-	const customerPaymentMethods = useMemo( () => {
-		if ( isEditor && previewData.previewSavedPaymentMethods ) {
-			return previewData.previewSavedPaymentMethods;
-		}
-		if (
-			! paymentMethodsInitialized ||
-			Object.keys( paymentData.paymentMethods ).length === 0
-		) {
-			return {};
-		}
-		return getCustomerPaymentMethods( paymentData.paymentMethods );
-	}, [
-		isEditor,
-		previewData.previewSavedPaymentMethods,
-		paymentMethodsInitialized,
-		paymentData.paymentMethods,
-	] );
-
 	const setExpressPaymentError = useCallback(
 		( message ) => {
 			if ( message ) {
 				addErrorNotice( message, {
+					context: 'wc/express-payment-area',
 					id: 'wc-express-payment-error',
-					context: noticeContexts.EXPRESS_PAYMENTS,
 				} );
 			} else {
 				removeNotice(
 					'wc-express-payment-error',
-					noticeContexts.EXPRESS_PAYMENTS
+					'wc/express-payment-area'
 				);
 			}
 		},
-		[ addErrorNotice, noticeContexts.EXPRESS_PAYMENTS, removeNotice ]
+		[ addErrorNotice, removeNotice ]
 	);
 	// ensure observers are always current.
 	useEffect( () => {
@@ -343,34 +296,25 @@ export const PaymentMethodDataProvider = ( { children } ) => {
 	// Set active (selected) payment method as needed.
 	useEffect( () => {
 		const paymentMethodKeys = Object.keys( paymentData.paymentMethods );
-		const allPaymentMethodKeys = [
-			...paymentMethodKeys,
-			...Object.keys( paymentData.expressPaymentMethods ),
-		];
 		if ( ! paymentMethodsInitialized || ! paymentMethodKeys.length ) {
 			return;
 		}
 
-		setActive( ( currentActivePaymentMethod ) => {
-			// If there's no active payment method, or the active payment method has
-			// been removed (e.g. COD vs shipping methods), set one as active.
-			// Note: It's possible that the active payment method might be an
-			// express payment method. So registered express payment methods are
-			// included in the check here.
-			if (
-				! currentActivePaymentMethod ||
-				! allPaymentMethodKeys.includes( currentActivePaymentMethod )
-			) {
-				dispatch( statusOnly( PRISTINE ) );
-				return Object.keys( paymentData.paymentMethods )[ 0 ];
-			}
-			return currentActivePaymentMethod;
-		} );
+		// If there's no active payment method, or the active payment method has
+		// been removed (e.g. COD vs shipping methods), set one as active.
+		if (
+			! activePaymentMethod ||
+			! paymentMethodKeys.includes( activePaymentMethod )
+		) {
+			setActivePaymentMethod(
+				Object.keys( paymentData.paymentMethods )[ 0 ]
+			);
+		}
 	}, [
+		activePaymentMethod,
 		paymentMethodsInitialized,
 		paymentData.paymentMethods,
-		paymentData.expressPaymentMethods,
-		setActive,
+		setActivePaymentMethod,
 	] );
 
 	// emit events.
@@ -449,8 +393,6 @@ export const PaymentMethodDataProvider = ( { children } ) => {
 		errorMessage: paymentData.errorMessage,
 		activePaymentMethod,
 		setActivePaymentMethod,
-		activeSavedToken,
-		setActiveSavedToken,
 		onPaymentProcessing,
 		customerPaymentMethods,
 		paymentMethods: paymentData.paymentMethods,
