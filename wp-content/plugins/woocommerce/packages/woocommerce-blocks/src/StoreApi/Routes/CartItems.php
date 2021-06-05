@@ -1,14 +1,21 @@
 <?php
+/**
+ * Cart items route.
+ *
+ * @internal This API is used internally by Blocks--it is still in flux and may be subject to revisions.
+ * @package WooCommerce/Blocks
+ */
+
 namespace Automattic\WooCommerce\Blocks\StoreApi\Routes;
+
+defined( 'ABSPATH' ) || exit;
 
 use Automattic\WooCommerce\Blocks\StoreApi\Utilities\CartController;
 
 /**
  * CartItems class.
- *
- * @internal This API is used internally by Blocks--it is still in flux and may be subject to revisions.
  */
-class CartItems extends AbstractCartRoute {
+class CartItems extends AbstractRoute {
 	/**
 	 * Get the path of this REST route.
 	 *

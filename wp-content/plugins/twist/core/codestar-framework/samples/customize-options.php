@@ -91,9 +91,72 @@ CSF::createSection( $prefix, array(
 // Create a section
 //
 CSF::createSection( $prefix, array(
+  'id'       => 'nested_panel',
+  'title'    => 'CSF - Nested Panels',
+  'priority' => 2,
+) );
+
+//
+// Create a section
+//
+CSF::createSection( $prefix, array(
+  'parent'   => 'nested_panel',
+  'title'    => 'Nested Panel 1',
+  'priority' => 3,
+  'fields'   => array(
+
+    array(
+      'id'    => 'opt-nested-text',
+      'type'  => 'text',
+      'title' => 'Text',
+    ),
+
+    array(
+      'id'    => 'opt-nested-textarea',
+      'type'  => 'textarea',
+      'title' => 'Textarea',
+    ),
+
+  ),
+) );
+
+//
+// Create a section
+//
+CSF::createSection( $prefix, array(
+  'parent'   => 'nested_panel',
+  'title'    => 'Nested Panel 2',
+  'priority' => 4,
+  'fields'   => array(
+
+    array(
+      'id'    => 'opt-nested-color-1',
+      'type'  => 'color',
+      'title' => 'Color 1',
+    ),
+
+    array(
+      'id'    => 'opt-nested-color-2',
+      'type'  => 'color',
+      'title' => 'Color 2',
+    ),
+
+    array(
+      'id'    => 'opt-nested-color-3',
+      'type'  => 'color',
+      'title' => 'Color 3',
+    ),
+
+  ),
+) );
+
+//
+// Create a section
+//
+CSF::createSection( $prefix, array(
   'id'       => 'fields',
   'title'    => 'CSF - Fields',
-  'priority' => 2,
+  'priority' => 5,
 ) );
 
 //
@@ -438,21 +501,13 @@ CSF::createSection( $prefix, array(
     array(
       'id'          => 'opt-select-15',
       'type'        => 'select',
-      'title'       => 'Select with locations',
-      'placeholder' => 'Select a location',
-      'options'     => 'locations',
-    ),
-
-    array(
-      'id'          => 'opt-select-16',
-      'type'        => 'select',
       'title'       => 'Select with sidebars',
       'placeholder' => 'Select a sidebar',
       'options'     => 'sidebars',
     ),
 
     array(
-      'id'          => 'opt-select-17',
+      'id'          => 'opt-select-16',
       'type'        => 'select',
       'title'       => 'Select with wp roles',
       'placeholder' => 'Select a role',
@@ -460,7 +515,7 @@ CSF::createSection( $prefix, array(
     ),
 
     array(
-      'id'          => 'opt-select-18',
+      'id'          => 'opt-select-17',
       'type'        => 'select',
       'title'       => 'Select with users',
       'placeholder' => 'Select a user',
@@ -468,7 +523,7 @@ CSF::createSection( $prefix, array(
     ),
 
     array(
-      'id'          => 'opt-select-19',
+      'id'          => 'opt-select-18',
       'type'        => 'select',
       'title'       => 'Select with post type',
       'placeholder' => 'Select a post type',
@@ -476,7 +531,7 @@ CSF::createSection( $prefix, array(
     ),
 
     array(
-      'id'          => 'opt-select-20',
+      'id'          => 'opt-select-19',
       'type'        => 'select',
       'title'       => 'Select with CPT (custom post type) posts',
       'placeholder' => 'Select a post',
@@ -487,7 +542,7 @@ CSF::createSection( $prefix, array(
     ),
 
     array(
-      'id'          => 'opt-select-21',
+      'id'          => 'opt-select-20',
       'type'        => 'select',
       'title'       => 'Select with CPT (custom post type) categories',
       'placeholder' => 'Select a category',
@@ -2692,35 +2747,6 @@ CSF::createSection( $prefix, array(
 ) );
 
 //
-// Field: link
-//
-CSF::createSection( $prefix, array(
-  'parent'      => 'fields',
-  'title'       => 'Link',
-  'description' => 'Visit documentation for more details on this field: <a href="http://codestarframework.com/documentation/#/fields?id=link" target="_blank">Field: link</a>',
-  'fields'      => array(
-
-    array(
-      'id'    => 'opt-link-1',
-      'type'  => 'link',
-      'title' => 'Link',
-    ),
-
-    array(
-      'id'       => 'opt-link-2',
-      'type'     => 'link',
-      'title'    => 'Link with default',
-      'default'  => array(
-        'url'    => 'http://codestarframework.com/',
-        'text'   => 'Codestar Framework',
-        'target' => '_blank'
-      ),
-    ),
-
-  )
-) );
-
-//
 // Field: date
 //
 CSF::createSection( $prefix, array(
@@ -2784,9 +2810,10 @@ CSF::createSection( $prefix, array(
       'type'    => 'image_select',
       'title'   => 'Image Select',
       'options' => array(
-        'opt-1' => 'http://codestarframework.com/assets/images/placeholder/80x80-e74c3c.gif',
-        'opt-2' => 'http://codestarframework.com/assets/images/placeholder/80x80-ffbc00.gif',
-        'opt-3' => 'http://codestarframework.com/assets/images/placeholder/80x80-3498db.gif',
+        'opt-1' => 'http://codestarframework.com/assets/images/placeholder/150x125-2ecc71.gif',
+        'opt-2' => 'http://codestarframework.com/assets/images/placeholder/150x125-e74c3c.gif',
+        'opt-3' => 'http://codestarframework.com/assets/images/placeholder/150x125-ffbc00.gif',
+        'opt-4' => 'http://codestarframework.com/assets/images/placeholder/150x125-3498db.gif',
       ),
     ),
 
@@ -2798,8 +2825,12 @@ CSF::createSection( $prefix, array(
         'opt-1' => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
         'opt-2' => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
         'opt-3' => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+        'opt-4' => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+        'opt-5' => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+        'opt-6' => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+        'opt-7' => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
       ),
-      'default' => 'opt-2'
+      'default' => 'opt-4'
     ),
 
     array(
@@ -2811,6 +2842,7 @@ CSF::createSection( $prefix, array(
         'opt-1'  => 'http://codestarframework.com/assets/images/placeholder/80x80-e74c3c.gif',
         'opt-2'  => 'http://codestarframework.com/assets/images/placeholder/80x80-ffbc00.gif',
         'opt-3'  => 'http://codestarframework.com/assets/images/placeholder/80x80-3498db.gif',
+        'opt-4'  => 'http://codestarframework.com/assets/images/placeholder/80x80-2ecc71.gif',
       ),
     ),
 
@@ -2828,23 +2860,8 @@ CSF::createSection( $prefix, array(
         'opt-6'  => 'http://codestarframework.com/assets/images/placeholder/80x80-2ecc71.gif',
         'opt-7'  => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
         'opt-8'  => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
-        'opt-9'  => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
       ),
       'default'  => array( 'opt-3', 'opt-4', 'opt-5', 'opt-6' )
-    ),
-
-    array(
-      'id'      => 'opt-image-select-5',
-      'type'    => 'image_select',
-      'title'   => 'Image Select inline style',
-      'inline'  => true,
-      'options' => array(
-        'opt-1' => 'http://codestarframework.com/assets/images/placeholder/80x80-e74c3c.gif',
-        'opt-2' => 'http://codestarframework.com/assets/images/placeholder/80x80-ffbc00.gif',
-        'opt-3' => 'http://codestarframework.com/assets/images/placeholder/80x80-3498db.gif',
-        'opt-4' => 'http://codestarframework.com/assets/images/placeholder/80x80-2ecc71.gif',
-      ),
-      'default' => 'opt-1'
     ),
 
   )
@@ -3383,7 +3400,7 @@ CSF::createSection( $prefix, array(
 //
 CSF::createSection( $prefix, array(
   'title'    => 'CSF - Reset & Backup',
-  'priority' => 3,
+  'priority' => 6,
   'fields'   => array(
 
     array(

@@ -6,10 +6,6 @@ $( document ).ready(function() {
   // Check if have Fancybox
   if (typeof $.fn.fancybox == 'function') {
     // Customize icons
-    var data_autostat = false;
-    if (wpgs_js_data.thumb_autoStart == '1'){
-      data_autostat = true;
-    }
     $.fancybox.defaults = $.extend(true, {}, $.fancybox.defaults, {
       btnTpl: {
 
@@ -25,17 +21,11 @@ $( document ).ready(function() {
 
       },
       thumbs: {
-        autoStart: data_autostat,
-        hideOnClose: true,
-        parentEl: ".fancybox-container",
-        axis: wpgs_js_data.thumb_axis
+        autoStart: false, // Display thumbnails on opening
+        hideOnClose: true, // Hide thumbnail grid when closing animation starts
+        parentEl: ".fancybox-container", // Container is injected into this element
+        axis: "y" // Vertical (y) or horizontal (x) scrolling
       },
-      mobile: {
-        thumbs: {
-          autoStart: false,
-          axis: "y"
-        }
-      }
     });
 
 
@@ -93,15 +83,16 @@ $( document ).ready(function() {
   });	
  
   // Reset Slider location to '0' when variation change
-  $('.woocommerce-product-gallery__image .img-attr').on('load', function () {
-    $('.wpgs-image').slick('slickGoTo', 0);
+  $('.woocommerce-product-gallery__image .img-attr').load(function () {
+    $('.wpgs-image').slick('slickGoTo', 0); 
+
   });
-  
   // Remove SRCSET for Thumbanils
   $('.wpgs-thumb img').each(function () {
     $(this).removeAttr('srcset','data-thumb_image');
     $(this).removeAttr('data-thumb_image');
     $(this).removeAttr('sizes');
+    $(this).removeAttr('class');
     $(this).removeAttr('data-large_image');
   });
 

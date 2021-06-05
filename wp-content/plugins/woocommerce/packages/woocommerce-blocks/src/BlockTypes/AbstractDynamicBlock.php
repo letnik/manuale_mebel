@@ -1,5 +1,13 @@
 <?php
+/**
+ * Abstract dynamic block class.
+ *
+ * @package WooCommerce/Blocks
+ */
+
 namespace Automattic\WooCommerce\Blocks\BlockTypes;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * AbstractDynamicBlock class.

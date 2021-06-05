@@ -1,58 +1,74 @@
 <?php
 
+
+
+
+
+
+
 // add attribut catalog
 
 function my_after_shop_loop_item_title(){
+
     global $product;
+
+    // получаем категории
+    $terms = wp_get_post_terms( $product->ID, 'product_cat' );
+    foreach ( $terms as $term ) $cats_array[] = $term->term_id;
+
+    if ($terms == 126) {
+      $length = $product->get_length();
+      $width = $product->get_width();
+      $height = $product->get_height();
+      $lengthArrt = $product->get_attribute('razmer-mesta-dlinna');
+  
+      $custom_attribute  = '<div class="product-attributes-wrap">';
+      $custom_attribute .= '<div class="product-attributes-list">';
+      $custom_attribute .= '<div class="product-attributes-item">';
+      $custom_attribute .= '<div class="product-attributes-title"><span>Размер</span></div>';
+      $custom_attribute .= '<div class="product-size-table d-flex">';
+      $custom_attribute .= '<div class="product-size product-length">';
+      $custom_attribute .= '<div class="product-size-title">длина</div>';
+      $custom_attribute .= '<div class="product-size-value">'. $length .'</div>';
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '<div class="product-size product-width">';
+      $custom_attribute .= '<div class="product-size-title">ширина</div>';
+      $custom_attribute .= '<div class="product-size-value">'. $width .'</div>';
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '<div class="product-size product-height">';
+      $custom_attribute .= '<div class="product-size-title">высота</div>';
+      $custom_attribute .= '<div class="product-size-value">'. $height .'</div>';
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '<div class="product-attributes-item">';
+      $custom_attribute .= '<div class="product-attributes-title"><span>Размер спального места</span></div>';
+      $custom_attribute .= '<div class="product-size-table d-flex">';
+      $custom_attribute .= '<div class="product-size product-length">';
+      $custom_attribute .= '<div class="product-size-title">длина</div>';
+      $custom_attribute .= '<div class="product-size-value">12</div>';
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '<div class="product-size product-width">';
+      $custom_attribute .= '<div class="product-size-title">ширина</div>';
+      $custom_attribute .= '<div class="product-size-value">13</div>';
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '</div>';
+  
+      $custom_attribute .= '</div>';
+      
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '<div><a href="'.esc_url( $product->get_permalink( $product->id )).'" class="button product_type_simple add_to_cart_button">Подробнее</a></div>';
+  
+      $custom_attribute .= '</div>';
+      $custom_attribute .= '<div class="product-box-shasow"></div>';
+  
+      echo  $custom_attribute;
+
+    }
 
     // $dimensions = $product->get_dimensions();
 
-    $length = $product->get_length();
-    $width = $product->get_width();
-    $height = $product->get_height();
-    $lengthArrt = $product->get_attribute('razmer-mesta-dlinna');
 
-    $custom_attribute  = '<div class="product-attributes-wrap">';
-    $custom_attribute .= '<div class="product-attributes-list">';
-    $custom_attribute .= '<div class="product-attributes-item">';
-    $custom_attribute .= '<div class="product-attributes-title"><span>Размер</span></div>';
-    $custom_attribute .= '<div class="product-size-table d-flex">';
-    $custom_attribute .= '<div class="product-size product-length">';
-    $custom_attribute .= '<div class="product-size-title">длина</div>';
-    $custom_attribute .= '<div class="product-size-value">'. $length .'</div>';
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '<div class="product-size product-width">';
-    $custom_attribute .= '<div class="product-size-title">ширина</div>';
-    $custom_attribute .= '<div class="product-size-value">'. $width .'</div>';
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '<div class="product-size product-height">';
-    $custom_attribute .= '<div class="product-size-title">высота</div>';
-    $custom_attribute .= '<div class="product-size-value">'. $height .'</div>';
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '<div class="product-attributes-item">';
-    $custom_attribute .= '<div class="product-attributes-title"><span>Размер спального места</span></div>';
-    $custom_attribute .= '<div class="product-size-table d-flex">';
-    $custom_attribute .= '<div class="product-size product-length">';
-    $custom_attribute .= '<div class="product-size-title">длина</div>';
-    $custom_attribute .= '<div class="product-size-value">12</div>';
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '<div class="product-size product-width">';
-    $custom_attribute .= '<div class="product-size-title">ширина</div>';
-    $custom_attribute .= '<div class="product-size-value">13</div>';
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '</div>';
-
-    $custom_attribute .= '</div>';
-    
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '<div><a href="'.esc_url( $product->get_permalink( $product->id )).'" class="button product_type_simple add_to_cart_button">Подробнее</a></div>';
-
-    $custom_attribute .= '</div>';
-    $custom_attribute .= '<div class="product-box-shasow"></div>';
-
-    echo  $custom_attribute;
 
 }
 add_action( 'woocommerce_after_shop_loop_item', 'my_after_shop_loop_item_title', 10 );

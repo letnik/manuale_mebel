@@ -47,11 +47,9 @@ const bankTransferPaymentMethod = {
 	label: <Label />,
 	content: <Content />,
 	edit: <Content />,
+	icons: null,
 	canMakePayment: () => true,
 	ariaLabel: label,
-	supports: {
-		features: settings?.supports ?? [],
-	},
 };
 
-registerPaymentMethod( bankTransferPaymentMethod );
+registerPaymentMethod( ( Config ) => new Config( bankTransferPaymentMethod ) );

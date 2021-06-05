@@ -1,5 +1,13 @@
 <?php
+/**
+ * Hand-picked Products block.
+ *
+ * @package WooCommerce/Blocks
+ */
+
 namespace Automattic\WooCommerce\Blocks\BlockTypes;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * HandpickedProducts class.

@@ -1,5 +1,13 @@
 <?php
+/**
+ * Active filters block.
+ *
+ * @package WooCommerce/Blocks
+ */
+
 namespace Automattic\WooCommerce\Blocks\BlockTypes;
+
+defined( 'ABSPATH' ) || exit;
 
 use Automattic\WooCommerce\Blocks\Assets;
 

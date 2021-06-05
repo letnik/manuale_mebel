@@ -31,10 +31,6 @@ export const DISPLAY_ITEMIZED_TAXES = getSetting(
 	'displayItemizedTaxes',
 	false
 );
-export const HAS_DARK_EDITOR_STYLE_SUPPORT = getSetting(
-	'hasDarkEditorStyleSupport',
-	false
-);
 export const DISPLAY_SHOP_PRICES_INCLUDING_TAX = getSetting(
 	'displayShopPricesIncludingTax',
 	false
@@ -66,11 +62,6 @@ export const ALLOWED_STATES = getSetting( 'allowedStates', {} );
 export const SHIPPING_METHODS_EXIST = getSetting(
 	'shippingMethodsExist',
 	false
-);
-
-export const PAYMENT_GATEWAY_SORT_ORDER = getSetting(
-	'paymentGatewaySortOrder',
-	[]
 );
 
 export const CHECKOUT_SHOW_LOGIN_REMINDER = getSetting(
@@ -109,4 +100,3 @@ export const CHECKOUT_ALLOWS_SIGNUP = getSetting(
 	'checkoutAllowsSignup',
 	false
 );
-export const LOGIN_URL = getSetting( 'loginUrl', '/wp-login.php' );
