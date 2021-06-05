@@ -10239,7 +10239,7 @@ msgstr "Заказ обновлён и отправлен."
 #: packages/woocommerce-blocks/build/checkout-frontend.js:14
 #: packages/woocommerce-blocks/build/checkout.js:1
 msgid "There are no shipping options available. Please ensure that your address has been entered correctly, or contact us if you need any help."
-msgstr "Нет доступных способов доставки. Пожалуйста, убедитесь, что вы ввели корректный адрес, или свяжитесь с нами для получения помощи."
+msgstr " - Нет доступных способов доставки. Пожалуйста, убедитесь, что вы ввели корректный адрес, или свяжитесь с нами для получения помощи."
 
 #: includes/widgets/class-wc-widget-top-rated-products.php:24
 msgid "Products by Rating"
